@@ -1,0 +1,83 @@
+.topDiv {
+    display: inline-block; 
+    height: 60vh;
+    width: 100vw;
+    -webkit-filter: grayscale(30%);
+    background-image: url("../../images/zanzibar_reizen.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.logo {
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 40px;
+    color: white;
+    width: 50vw;
+}
+
+.helpIcon {
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.textDiv {
+    padding-top: 15%;
+    text-align: center
+}
+
+.bottomDiv {
+    display: inline-block;
+    height: 40vh;
+    width: 100vw;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.tripText {
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+.subTripText {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.garantyTitle {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.garantyText {
+    display: inline-block;
+    font-size: 15px;
+    width: 50vw;
+    font-weight: 200;
+}
+
+.ggtoLogo {
+    padding-top: 10px;
+    width: 4%;
+    height: auto;
+}
+
+.line {
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.links {
+    display: block;
+    margin-top: 70px
+}
