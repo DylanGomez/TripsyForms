@@ -4,7 +4,12 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import formSvg from '../../../Icons/icons_forms.svg'
+import bunnyIcon from '../../../Icons/bunny.svg'
+import meditateIcon from '../../../Icons/padmasana.svg'
+import turtleIcon from '../../../Icons/turtle.svg'
+import questionmark from '../../../Icons/information.svg'
+
+
 
 class Step4Speed extends Component {
 
@@ -17,45 +22,45 @@ class Step4Speed extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={30} />
+                    <ProgressBar className="progressBar" variant="success" now={45} />
                     <h3 className="title">In welk tempo wil je reizen?</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step5", "fast");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="speedIcon" src={bunnyIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Actief
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step5", "balanced");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="speedIcon" src={meditateIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     In balans
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step5", "slow");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="speedIcon" src={turtleIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Rustig aan
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step5", "dontknow");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="speedIcon" src={questionmark} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Weet ik niet

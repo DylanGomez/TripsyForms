@@ -1,11 +1,20 @@
+$break-small: 400px;
+$break-large: 1025px;
+
 .formBoxWithButton {
     margin: auto;
-    width: 60%;
+    width: 70%;
     background-color: white;
     border: 1px solid #eaeaea;
     padding: 48px 48px 78px 48px ;
     margin-bottom: 20px;
-    border-radius: 4px
+    border-radius: 4px;
+    position: relative;
+    top: -9vh;
+    @media screen and (max-width: $break-large) {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .addSpan {
@@ -17,6 +26,9 @@
     margin: auto;
     padding: 20px 20px 10px 20px;
     vertical-align: bottom;
+    @media screen and (max-width: $break-large) {
+        padding: 20px 10px 10px 10px;
+    }
 }
 
 .add-button {
@@ -34,29 +46,9 @@
     size: 12px;
 }
 
-.cardFooter {
-    text-align: center;
-    margin: 4px !important;
-    background-color: white;
-}
-
-.card-deck {
-    padding: 0px !important;
-}
-
-.card {
-    margin: 4px !important;
-}
-
-.card-body {
-    display: flex;
-    height: 150px;
-    padding: 10px !important;
-    align-content: center !important; 
-}
-
 .stepButton {
     margin-top: 20px !important;
     padding: 15px 25px 15px 25px !important; 
     float: right;
+    
 }

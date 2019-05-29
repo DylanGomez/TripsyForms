@@ -1,51 +1,18 @@
-.formBox {
-    margin: auto;
-    width: 60% !important;
-    background-color: white;
-    border: 1px solid #eaeaea;
-    padding: 48px;
-    border-radius: 4px
-}
-.background {
-    margin-top: 30px;
-}
+$break-small: 400px;
+$break-large: 1025px;
 
-.svgIcon {
-    padding: 40px 0px 40px 0px;
+.groupIcon {
     margin: auto; 
-    fill: none
-}
-
-
-.title {
-    text-align: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    size: 12px;
-}
-
-.cardFooter {
-    text-align: center;
-    margin: 4px !important;
-    background-color: white;
-}
-
-.card-deck {
-    padding: 0px !important;
+    fill: none;
+    height: 64px;
 }
 
 .card:hover {
-    margin: 4px !important;
     cursor: pointer;
-    .svgIcon {
-        padding: 40px 0px 40px 0px;
-        margin: auto;
+    .groupIcon {
+        margin: auto; 
+        fill: none;
+        height: 64px;
         filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
     }
-}
-
-.card-body {
-    display: flex;
-    padding: 10px !important;
-    align-content: center !important; 
 }

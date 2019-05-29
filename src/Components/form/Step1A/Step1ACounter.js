@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Step1ACounter.scss'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
@@ -65,9 +64,9 @@ class Step1ACounter extends Component {
         return (
             <div className="background">
                 <div className="formBoxWithButton">
-                    <ProgressBar className="progressBar" variant="success" now={30} />
+                    <ProgressBar className="progressBar" variant="success" now={28} />
                     <h3 className="title"> Met hoeveel personen ga je op reis?</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card>
                                 <Card.Body>
@@ -120,7 +119,7 @@ class Step1ACounter extends Component {
                         </CardDeck>
                     </div>
                     <Button color="green" className="ui large button stepButton" onClick={() => 
-                        this.handleSubmit("finalPage")}>Volgende</Button>
+                        this.handleSubmit("step2")}>Volgende</Button>
                 </div>
             </div>
         )

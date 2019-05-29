@@ -4,7 +4,14 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import formSvg from '../../../Icons/icons_forms.svg'
+import threeStars from '../../../Icons/3stars.svg'
+import fourStars from '../../../Icons/4stars.svg'
+import fiveStars from '../../../Icons/5stars.svg'
+import questionmark from '../../../Icons/information.svg'
+
+
+
+
 
 class Step6AStars extends Component {
 
@@ -17,45 +24,45 @@ class Step6AStars extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={30} />
+                    <ProgressBar className="progressBar" variant="success" now={60} />
                     <h3 className="title">Hoe luxe wil je verblijven?</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
-                            <Card>
-                                <Card.Body onClick={() => {
-                                    this.handleClick("step7", "3stars");
+                            <Card onClick={() => {
+                                    this.handleClick("finalPage", "3stars");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="starsIcon" src={threeStars} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     3 sterren
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
-                                    this.handleClick("step7", "4stars");
+                            <Card onClick={() => {
+                                    this.handleClick("finalPage", "4stars");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="starsIcon" src={fourStars} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     4 sterren
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
-                                    this.handleClick("step7", "5 sterren");
+                            <Card onClick={() => {
+                                    this.handleClick("finalPage", "5stars");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="starsIcon" src={fiveStars} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Strandhutje
+                                    5 sterren
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
-                                    this.handleClick("step7", "dontknow");
+                            <Card onClick={() => {
+                                    this.handleClick("finalPage", "dontknow");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="starsIcon" src={questionmark} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Weet ik niet

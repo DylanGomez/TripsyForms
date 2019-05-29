@@ -4,7 +4,11 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import formSvg from '../../../Icons/icons_forms.svg'
+import hotelIcon from '../../../Icons/resort.svg'
+import resortIcon from '../../../Icons/sun-bath.svg'
+import beachhouseIcon from '../../../Icons/stilt-home.svg'
+import questionmark from '../../../Icons/information.svg'
+
 
 class Step6Accomodation extends Component {
 
@@ -17,45 +21,45 @@ class Step6Accomodation extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={30} />
+                    <ProgressBar className="progressBar" variant="success" now={55} />
                     <h3 className="title">Welk type verblijf heeft je voorkeur</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step6A", "hotel");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="accomodationIcon" src={hotelIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Hotels
+                                    Hotel
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step6A", "resort");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="accomodationIcon" src={resortIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Resorts
+                                    Resort
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
-                                    this.handleClick("step7", "beachhouse");
+                            <Card onClick={() => {
+                                    this.handleClick("finalPage", "beachhouse");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="accomodationIcon" src={beachhouseIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Strandhutje
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
-                                    this.handleClick("step7", "dontknow");
+                            <Card onClick={() => {
+                                    this.handleClick("finalPage", "dontknow");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="accomodationIcon" src={questionmark} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Weet ik niet

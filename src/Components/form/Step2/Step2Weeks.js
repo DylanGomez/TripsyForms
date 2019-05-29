@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Step2Weeks.scss'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import formSvg from '../../../Icons/icons_forms.svg'
+import datePickerSvg from '../../../Icons/datepicker.svg'
 
 class Step2Weeks extends Component {
 
@@ -18,45 +17,45 @@ class Step2Weeks extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={30} />
+                    <ProgressBar className="progressBar" variant="success" now={35} />
                     <h3 className="title">Hoe lang wil je op reis?</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step3", "1week");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="pickerIcon" src={datePickerSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     1 week
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step3", "2weeks");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="pickerIcon" src={datePickerSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     2 weken
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step3", "3weeks");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="pickerIcon" src={datePickerSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     3 weken
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step3", "4+ weeks");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="pickerIcon" src={datePickerSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     4+ weken

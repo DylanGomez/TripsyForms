@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Step1BGroup.scss'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import formSvg from '../../../Icons/icons_forms.svg'
+import enterpriseIcon from '../../../Icons/enterprise.svg'
+import friendshipIcon from '../../../Icons/friendship.svg'
+import congressIcon from '../../../Icons/ho-chi-minh-mausoleum.svg'
+import clubIcon from '../../../Icons/football-club.svg'
+
 
 class Step1BGroup extends Component {
 
@@ -20,43 +23,43 @@ class Step1BGroup extends Component {
                 <div className="formBox">
                     <ProgressBar className="progressBar" variant="success" now={25} />
                     <h3 className="title"> Met welke groep ga je op reis?</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step1A", "friendgroup");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="groupIcon" src={friendshipIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Vriendengroep
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step1A", "club");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="groupIcon" src={clubIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Club/ Vereniging
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step1A", "business");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body>
+                                    <img className="groupIcon" src={enterpriseIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Werk/ Business
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step1A", "congres");
                                 }}>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                <Card.Body >
+                                    <img className="groupIcon" src={congressIcon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Congress/ Cursus

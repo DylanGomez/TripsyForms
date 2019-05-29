@@ -3,9 +3,10 @@ import './MainScreen.scss'
 
 import GGTOLogo from '../../images/GGTO.jpg'
 
-import SendForm from '../form/SendForm/SendForm';
-
 import { Icon } from 'semantic-ui-react';
+import MediaQuery from 'react-responsive';
+import { Redirect } from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Step1Who from '../form/Step1/Step1Who';
 import Step1ACounter from '../form/Step1A/Step1ACounter';
@@ -21,7 +22,7 @@ import Step6AStars from '../form/Step6A/Step6AStars';
 class MainScreen extends Component {
     constructor(props) {
         super(props);
-        this.state = { 
+        this.state = {
             currentForm: 'startForm',
             who: "",
             howMany: {},
@@ -33,14 +34,19 @@ class MainScreen extends Component {
             accomodationStars: "",
             userInfo: {}
         };
+
+        window.history.replaceState('startForm', null, "");
+
         this.toggleForm = this.toggleForm.bind(this);
         this.addState = this.addState.bind(this);
+        this.onBackButtonEvent = this.onBackButtonEvent.bind(this);
+
     }
 
     getForm(currentForm) {
-        console.log(this.state);
+
         const forms = {
-            startForm: <Step1Who toggleForm={this.toggleForm} addState={this.addState}/>,
+            startForm: <Step1Who toggleForm={this.toggleForm} addState={this.addState} />,
             step1A: <Step1ACounter toggleForm={this.toggleForm} addState={this.addState} />,
             step1B: <Step1BGroup toggleForm={this.toggleForm} addState={this.addState} />,
             step2: <Step2Weeks toggleForm={this.toggleForm} addState={this.addState} />,
@@ -50,20 +56,39 @@ class MainScreen extends Component {
             step6: <Step6Accomodation toggleForm={this.toggleForm} addState={this.addState} />,
             step6A: <Step6AStars toggleForm={this.toggleForm} addState={this.addState} />,
 
-            finalPage: <SendForm toggleForm={this.toggleForm} addState={this.addState} />
+            finalPage: this.goToSuccess()
+
         }
 
         return forms[currentForm];
     }
 
-    addState(question, value){
+    componentDidMount() {
+        window.onpopstate = this.onBackButtonEvent;
+    }
+
+    goToSuccess() {
+        return <Redirect to={{ pathname: '/success', givenState: { state: this.state } }} />;
+    }
+
+    addState(question, value) {
         this.setState({
             [question]: value
         })
     }
 
-    toggleForm(currentForm) {
-        this.setState({currentForm});
+    toggleForm = (currentForm) => {
+        window.history.pushState(currentForm, null, "")
+        this.setState({ currentForm });
+    }
+
+    onBackButtonEvent(e) {
+        e.preventDefault();
+        this.previousForm(e.state);
+    }
+
+    previousForm(currentForm) {
+        this.setState({ currentForm })
     }
 
     country = "Thailand";
@@ -77,10 +102,23 @@ class MainScreen extends Component {
                     <div className="textDiv">
                         <span className="tripText">Jouw droomtrip naar {this.country}</span>
                         <br />
-                        <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
-                        {this.getForm(this.state.currentForm)}
+                        <MediaQuery query='(min-device-width: 1224px)'>
+                            <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
+                        </MediaQuery>
+                        <MediaQuery query='(max-device-width: 1224px)'>
+                            <span className="subTripText">gratis en vrijblijvend</span>
+                        </MediaQuery>
                     </div>
                 </div>
+                <ReactCSSTransitionGroup
+                   transitionName="example"
+                   transitionAppear={true}
+                   transitionAppearTimeout={1000}
+                   transitionEnter={true}
+                   transitionLeave={false}>
+
+                    {this.getForm(this.state.currentForm)}
+                </ReactCSSTransitionGroup>
                 <div className="bottomDiv">
                     <span className="garantyTitle">Garantiefonds</span>
                     <br />
@@ -94,9 +132,10 @@ class MainScreen extends Component {
                     <br />
                     <div className="line"></div>
                     <br />
-                    <span className="links"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp; Reisvoorwaarden &nbsp;&nbsp;&nbsp;&nbsp;Privacybeleid</span>
+                    <span className="links"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp; Reisvoorwaarden &nbsp;&nbsp;&nbsp;Privacybeleid</span>
                 </div>
             </div>
+
         )
     }
 }

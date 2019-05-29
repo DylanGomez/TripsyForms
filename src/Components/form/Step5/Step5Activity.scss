@@ -1,0 +1,18 @@
+$break-small: 400px;
+$break-large: 1025px;
+
+.activityIcon {
+    margin: auto; 
+    fill: none;
+    height: 64px;
+}
+
+.card:hover {
+    cursor: pointer;
+    .activityIcon {
+        margin: auto; 
+        fill: none;
+        height: 64px;
+        filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
+    }
+}

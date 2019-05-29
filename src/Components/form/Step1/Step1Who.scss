@@ -1,11 +1,22 @@
+$break-small: 400px;
+$break-large: 1025px;
+
 .formBox {
     margin: auto;
-    width: 60% !important;
+    width: 70%;
     background-color: white;
     border: 1px solid #eaeaea;
     padding: 48px;
-    border-radius: 4px
+    border-radius: 4px;
+    position: relative;
+    top: -9vh;
+    transition: all 200ms linear 0s;
+    @media screen and (max-width: $break-large) {
+        width: 100%;
+        padding: 0;
+    }
 }
+
 .background {
     margin-top: 30px;
 }
@@ -16,12 +27,12 @@
     fill: none
 }
 
-
 .title {
     text-align: center;
     padding-top: 24px;
     padding-bottom: 24px;
     size: 12px;
+
 }
 
 .cardFooter {
@@ -30,12 +41,15 @@
     background-color: white;
 }
 
-.card-deck {
-    padding: 0px !important;
+ .card-deck {
+     @media screen and (max-width: $break-large) {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .card:hover {
-    margin: 4px !important;
     cursor: pointer;
     .svgIcon {
         padding: 40px 0px 40px 0px;
@@ -44,8 +58,32 @@
     }
 }
 
+.card {
+    margin: 4px !important;
+
+    @media screen and (max-width: $break-large) {
+        // width: 150px;        
+    }
+}
+
 .card-body {
     display: flex;
+    height: 150px;
     padding: 10px !important;
-    align-content: center !important; 
+    align-content: center !important;
+    @media screen and (max-width: $break-large) {
+    }
 }
+
+.progress-bar {
+    @media screen and (max-width: $break-large) {
+        top: 10px;
+    }
+}
+
+.cardPosition {
+    @media screen and (max-width: $break-large) {
+        padding: 0px 24px 10px 24px;
+    }
+}
+

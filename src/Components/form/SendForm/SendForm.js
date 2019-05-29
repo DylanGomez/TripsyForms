@@ -35,8 +35,13 @@ class SendForm extends Component {
         const value = event.target.value;
 
         this.setState({
-            [name]: value
+            [name]: value  
         });
+    }
+
+    componentDidMount(){
+        var states = this.props.location.givenState;
+        console.log(states);
     }
 
     handleSubmit(form) {

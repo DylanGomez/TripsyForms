@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './Step1Who.scss'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
@@ -20,42 +19,42 @@ class Step1Who extends Component {
                 <div className="formBox">
                     <ProgressBar className="progressBar" variant="success" now={20} />
                     <h3 className="title"> Met wie ga je op reis?</h3>
-                    <div>
+                    <div className="cardPosition">
                         <CardDeck className="cardDeck">
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step2", "alone");
                                 }}>
+                                <Card.Body>
                                     <img className="svgIcon" src={formSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Individueel
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step2", "partner");
                                 }}>
+                                <Card.Body>
                                     <img className="svgIcon" src={formSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met Partner
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step1A", "family");
                                 }}>
+                                <Card.Body>
                                     <img className="svgIcon" src={formSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met Familie
                                 </Card.Footer>
                             </Card>
-                            <Card>
-                                <Card.Body onClick={() => {
+                            <Card onClick={() => {
                                     this.handleClick("step1B", "group");
                                 }}>
+                                <Card.Body>
                                     <img className="svgIcon" src={formSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
