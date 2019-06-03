@@ -17,6 +17,7 @@ import Step4Speed from '../form/Step4/Step4Speed';
 import Step5Activity from '../form/Step5/Step5Activity';
 import Step6Accomodation from '../form/Step6/Step6Accomodation';
 import Step6AStars from '../form/Step6A/Step6AStars';
+import LoadScreen from '../form/LoadScreen/LoadScreen';
 
 
 class MainScreen extends Component {
@@ -32,7 +33,8 @@ class MainScreen extends Component {
             activity: "",
             accomodation: "",
             accomodationStars: "",
-            userInfo: {}
+            userInfo: {},
+            helpOpen: false,
         };
 
         window.history.replaceState('startForm', null, "");
@@ -55,6 +57,7 @@ class MainScreen extends Component {
             step5: <Step5Activity toggleForm={this.toggleForm} addState={this.addState} />,
             step6: <Step6Accomodation toggleForm={this.toggleForm} addState={this.addState} />,
             step6A: <Step6AStars toggleForm={this.toggleForm} addState={this.addState} />,
+            loading: <LoadScreen toggleForm={this.toggleForm} />,
 
             finalPage: this.goToSuccess()
 
@@ -91,6 +94,10 @@ class MainScreen extends Component {
         this.setState({ currentForm })
     }
 
+    toggleHelp(){
+        this.setState(prevState => ({helpOpen: !prevState.helpOpen})) 
+    }
+
     country = "Thailand";
 
     render() {
@@ -98,7 +105,20 @@ class MainScreen extends Component {
             <div>
                 <div className="topDiv">
                     <div className="logo"> Tripsy </div>
-                    <div className="helpIcon"> <Icon name="help circle" /> Help</div>
+                    <div className="helpIcon" onClick={() => {this.toggleHelp()}}> <Icon name="help circle" /> Help</div>
+                    {this.state.helpOpen && 
+                    <div className="helpHover">
+                        <h3>Hulp nodig?</h3>
+                        <br/>
+                        <span>Wij helpen je graag via de telefoon of email met het boeken van je droomreis</span>
+                        <br/>
+                        <img></img>
+                        <br /> 
+                        <span>Telefoonnummer</span>
+                        <br/>
+                        <span>E-mail</span>
+                    </div> 
+                    }
                     <div className="textDiv">
                         <span className="tripText">Jouw droomtrip naar {this.country}</span>
                         <br />

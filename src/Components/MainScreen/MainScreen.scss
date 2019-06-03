@@ -20,11 +20,10 @@ $break-large: 1025px;
     position: fixed;
     margin-left: 20px;
     margin-top: 15px;
-    font-size: 40px;
+    content: url(../../Icons/TRIPSYICON.svg);
     color: white;
-    width: 50vw;
+    width: 20vw;
     @media screen and (max-width: $break-large) {
-        font-size: 20px;
         position: absolute;
     }
 }
@@ -35,6 +34,15 @@ $break-large: 1025px;
     float: right;
     margin-right: 20px;
     margin-top: 15px;
+}
+
+.helpHover {
+    position: fixed;
+    width: 20vw;
+    height: 30vh;
+    background-color:white;
+    right: 10px;
+    top: 5vh;
 }
 
 .textDiv {

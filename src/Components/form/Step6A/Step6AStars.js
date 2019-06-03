@@ -29,7 +29,7 @@ class Step6AStars extends Component {
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
-                                    this.handleClick("finalPage", "3stars");
+                                    this.handleClick("loading", "3stars");
                                 }}>
                                 <Card.Body >
                                     <img className="starsIcon" src={threeStars} alt=""/>
@@ -39,7 +39,7 @@ class Step6AStars extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("finalPage", "4stars");
+                                    this.handleClick("loading", "4stars");
                                 }}>
                                 <Card.Body >
                                     <img className="starsIcon" src={fourStars} alt=""/>
@@ -49,7 +49,7 @@ class Step6AStars extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("finalPage", "5stars");
+                                    this.handleClick("loading", "5stars");
                                 }}>
                                 <Card.Body>
                                     <img className="starsIcon" src={fiveStars} alt=""/>
@@ -59,7 +59,7 @@ class Step6AStars extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("finalPage", "dontknow");
+                                    this.handleClick("loading", "dontknow");
                                 }}>
                                 <Card.Body >
                                     <img className="starsIcon" src={questionmark} alt=""/>

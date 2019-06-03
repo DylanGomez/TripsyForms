@@ -14,11 +14,59 @@ class SendForm extends Component {
             name: "",
             lastname: "",
             email: "",
-            phoneNumber: ""
+            phoneNumber: "",
+            formInfo: {
+
+            },
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
+    }
+    getAmountOfPeople(whoState) {
+        if(whoState === "alone"){
+            return 1;
+        } else if (whoState === "partner"){
+            return 2;
+        } else {
+            return 0;
+        }
+    }
+
+    handleSubmit(event) {
+        var tripName = this.state.name + "'s Trip"
+
+        var amount = this.getAmountOfPeople(this.state.formInfo.who);
+
+        event.preventDefault();
+        const data = JSON.stringify({
+            tripTitle: tripName,
+            tripType: "NATURE",
+            tripSpeed: this.state.formInfo.state.speed,
+            tripCountry: "Thailand",
+            tripDescription: tripName,
+            tripLength: this.state.formInfo.state.weeks,
+            tripPeople: amount,
+            email: this.state.email,
+            customerName: this.state.name,
+            prefferedActivity: this.state.formInfo.state.activity,
+            accomodation: this.state.formInfo.state.accomodation
+        });
+
+        fetch('http://localhost:8042/api/trips', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: data
+        }).then(res => {
+            if (res.ok) {
+                res.json().then(json => {
+                    console.log(json)
+                })
+                return res;
+            }      
+        });
     }
 
 
@@ -27,7 +75,6 @@ class SendForm extends Component {
             phoneNumber: value
         });
     }
-
 
     changeHandler = event => {
 
@@ -41,13 +88,12 @@ class SendForm extends Component {
 
     componentDidMount(){
         var states = this.props.location.givenState;
-        console.log(states);
+
+        this.setState({
+            formInfo: states
+        })
     }
 
-    handleSubmit(form) {
-        this.props.addState("userInfo", this.state);
-        this.props.toggleForm(form);
-    }
     render() {
         return (
             <div className="pageDiv">
@@ -87,8 +133,7 @@ class SendForm extends Component {
                         onlyCountries={['nl', 'be']}
                     />
 
-                    <Button variant="success" size="lg" onClick={() => {
-                        this.handleSubmit("startForm")}}>Ja, verstuur het reisaanbod</Button>
+                    <Button variant="success" size="lg" onClick={this.handleSubmit}>Ja, verstuur het reisaanbod</Button>
                     <br />
                     <span><i>Gratis en vrijblijvend </i></span>
 

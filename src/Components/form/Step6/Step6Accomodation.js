@@ -46,7 +46,7 @@ class Step6Accomodation extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("finalPage", "beachhouse");
+                                    this.handleClick("loading", "beachhouse");
                                 }}>
                                 <Card.Body >
                                     <img className="accomodationIcon" src={beachhouseIcon} alt=""/>
@@ -56,7 +56,7 @@ class Step6Accomodation extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("finalPage", "dontknow");
+                                    this.handleClick("loading", "dontknow");
                                 }}>
                                 <Card.Body >
                                     <img className="accomodationIcon" src={questionmark} alt=""/>

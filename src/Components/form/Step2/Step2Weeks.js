@@ -22,7 +22,7 @@ class Step2Weeks extends Component {
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
-                                    this.handleClick("step3", "1week");
+                                    this.handleClick("step3", 7);
                                 }}>
                                 <Card.Body >
                                     <img className="pickerIcon" src={datePickerSvg} alt=""/>
@@ -32,7 +32,7 @@ class Step2Weeks extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step3", "2weeks");
+                                    this.handleClick("step3", 14);
                                 }}>
                                 <Card.Body >
                                     <img className="pickerIcon" src={datePickerSvg} alt=""/>
@@ -42,7 +42,7 @@ class Step2Weeks extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step3", "3weeks");
+                                    this.handleClick("step3", 21);
                                 }}>
                                 <Card.Body>
                                     <img className="pickerIcon" src={datePickerSvg} alt=""/>
@@ -52,7 +52,7 @@ class Step2Weeks extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step3", "4+ weeks");
+                                    this.handleClick("step3", 31);
                                 }}>
                                 <Card.Body >
                                     <img className="pickerIcon" src={datePickerSvg} alt=""/>
