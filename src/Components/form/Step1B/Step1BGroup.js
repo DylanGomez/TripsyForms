@@ -8,20 +8,46 @@ import enterpriseIcon from '../../../Icons/enterprise.svg'
 import friendshipIcon from '../../../Icons/friendship.svg'
 import congressIcon from '../../../Icons/ho-chi-minh-mausoleum.svg'
 import clubIcon from '../../../Icons/football-club.svg'
+import Slide from 'react-reveal/Slide';
+
 
 
 class Step1BGroup extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false
+        };
+
+    }
+
     handleClick(form, value) {
         this.props.addState("group", value);
-        this.props.toggleForm(form);
+        this.animate();
+        var _this = this;
+        setTimeout(function () {
+            _this.props.toggleForm(form)
+        }, 200);
+    }    
+
+
+    animate() {
+        this.setState({
+            show: false
+        });
+    }  
+
+    componentDidMount(){
+        this.setState({
+            show: true
+        })
     }
 
     render() {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={25} />
                     <h3 className="title"> Met welke groep ga je op reis?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">

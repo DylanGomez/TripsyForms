@@ -16,6 +16,7 @@ $break-large: 1025px;
     }
 }
 
+
 .logo {
     position: fixed;
     margin-left: 24px;
@@ -59,8 +60,40 @@ $break-large: 1025px;
 }
 
 .textDiv {
-    padding-top: 18vh;
-    text-align: center
+    padding-top: 20vh;
+    text-align: center;
+
+    @media screen and (max-width: $break-large) {
+       padding-top: 15vh;
+    }
+
+}
+
+@-webkit-keyframes left-to-right{
+    from{left:-100%}
+    to{left:0}
+}
+@-webkit-keyframes right-to-left{
+    from{left:0}
+    to{left:100%}
+}
+
+@keyframes left-to-right{
+    from{left:-100%}
+    to{left:0}
+}
+@keyframes right-to-left{
+    from{left:0}
+    to{left:100%}
+}
+
+.cardBox {
+    position: relative;
+    padding-top: 0vh;
+    text-align: center;
+    @media screen and (max-width: $break-large) {
+        padding-top: 7vh;
+     }
 }
 
 .bottomDiv {
@@ -68,6 +101,19 @@ $break-large: 1025px;
     padding: 24px 32px;
     width: 100vw;
     text-align: left;
+}
+
+.progress {
+    position: relative;
+    top: 80px;
+    width: 63%;
+    vertical-align: middle;
+    margin: auto;
+    z-index: 10;
+    @media screen and (max-width: $break-large) {
+        width: 100vw;
+        top: 45px;
+     }
 
 }
 
@@ -156,14 +202,14 @@ $break-large: 1025px;
   
 .example-enter.example-enter-active {
     opacity: 1;
-    transition: opacity 500ms ease-in;
+    transition: opacity 300ms ease-in;
 }
 
-.example-leave {
+.example-show {
     opacity: 1;
 }
   
-.example-leave.example-leave-active {
+.example-show.example-show-active {
     opacity: 0.01;
     transition: opacity 300ms ease-in;
 }

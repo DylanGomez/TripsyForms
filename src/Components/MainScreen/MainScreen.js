@@ -6,7 +6,6 @@ import GGTOLogo from '../../images/GGTO.jpg'
 import HelpIcon from '@material-ui/icons/Help';
 import MediaQuery from 'react-responsive';
 import { Redirect } from 'react-router-dom';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Step1Who from '../form/Step1/Step1Who';
 import Step1ACounter from '../form/Step1A/Step1ACounter';
@@ -18,9 +17,15 @@ import Step5Activity from '../form/Step5/Step5Activity';
 import Step6Accomodation from '../form/Step6/Step6Accomodation';
 import Step6AStars from '../form/Step6A/Step6AStars';
 import LoadScreen from '../form/LoadScreen/LoadScreen';
+import Slide from 'react-reveal/Slide';
+import ProgressBar from 'react-bootstrap/ProgressBar'
+
+
 
 
 class MainScreen extends Component {
+    progress = 10;
+
     constructor(props) {
         super(props);
         this.state = {
@@ -35,6 +40,7 @@ class MainScreen extends Component {
             accomodationStars: "",
             userInfo: {},
             helpOpen: false,
+            show: true
         };
 
         window.history.replaceState('startForm', null, "");
@@ -60,7 +66,6 @@ class MainScreen extends Component {
             loading: <LoadScreen toggleForm={this.toggleForm} />,
 
             finalPage: this.goToSuccess()
-
         }
 
         return forms[currentForm];
@@ -82,7 +87,9 @@ class MainScreen extends Component {
 
     toggleForm = (currentForm) => {
         window.history.pushState(currentForm, null, "")
-        this.setState({ currentForm });
+        this.setState({
+            currentForm,
+        });
     }
 
     onBackButtonEvent(e) {
@@ -92,10 +99,28 @@ class MainScreen extends Component {
 
     previousForm(currentForm) {
         this.setState({ currentForm })
+        this.progress -= 10;
     }
 
-    toggleHelp(){
-        this.setState(prevState => ({helpOpen: !prevState.helpOpen})) 
+    toggleHelp() {
+        this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
+    }
+
+    getProgress(currentForm) {
+        const progress = {
+            startForm: 10,
+            step1A: 20,
+            step1B: 30,
+            step2: 40,
+            step3: 50,
+            step4: 60,
+            step5: 70,
+            step6: 80,
+            step6A: 90,
+            loading: 100,
+
+        }
+        return progress[currentForm];
     }
 
     country = "Thailand";
@@ -128,18 +153,13 @@ class MainScreen extends Component {
                         <MediaQuery query='(max-device-width: 1224px)'>
                             <span className="subTripText">gratis en vrijblijvend</span>
                         </MediaQuery>
+                        <div className="cardBox">
+                            <ProgressBar animated className="progressBar" variant="success" now={this.getProgress(this.state.currentForm)} />
+                            {this.getForm(this.state.currentForm)}
+                        </div>
                     </div>
-                    <ReactCSSTransitionGroup
-                   transitionName="example"
-                   transitionAppear={true}
-                   transitionAppearTimeout={1000}
-                   transitionEnter={true}
-                   transitionLeave={false}>
-
-                    {this.getForm(this.state.currentForm)}
-                </ReactCSSTransitionGroup>
                 </div>
-                
+
                 <div className="bottomDiv">
                     {/* <span className="garantyTitle">Garantiefonds</span>
                     <br />

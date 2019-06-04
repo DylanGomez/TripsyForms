@@ -8,21 +8,47 @@ import bunnyIcon from '../../../Icons/bunny.svg'
 import meditateIcon from '../../../Icons/padmasana.svg'
 import turtleIcon from '../../../Icons/turtle.svg'
 import questionmark from '../../../Icons/information.svg'
+import Slide from 'react-reveal/Fade';
+
 
 
 
 class Step4Speed extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false
+        };
+
+    }
+
     handleClick(form, value) {
         this.props.addState("speed", value);
-        this.props.toggleForm(form);
+        this.animate();
+        var _this = this;
+        setTimeout(function () {
+            _this.props.toggleForm(form)
+        }, 200);
+    }    
+
+
+    animate() {
+        this.setState({
+            show: false
+        });
+    }  
+
+    componentDidMount(){
+        this.setState({
+            show: true
+        })
     }
 
     render() {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={45} />
                     <h3 className="title">In welk tempo wil je reizen?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">

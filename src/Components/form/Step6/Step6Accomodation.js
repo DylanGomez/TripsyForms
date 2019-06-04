@@ -8,21 +8,47 @@ import hotelIcon from '../../../Icons/resort.svg'
 import resortIcon from '../../../Icons/sun-bath.svg'
 import beachhouseIcon from '../../../Icons/stilt-home.svg'
 import questionmark from '../../../Icons/information.svg'
+import Slide from 'react-reveal/Fade';
+
 
 
 class Step6Accomodation extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false
+        };
+
+    }
+
     handleClick(form, value) {
         this.props.addState("accomodation", value);
-        this.props.toggleForm(form);
+        this.animate();
+        var _this = this;
+        setTimeout(function () {
+            _this.props.toggleForm(form)
+        }, 200);
+    }    
+
+
+    animate() {
+        this.setState({
+            show: false
+        });
+    }  
+
+    componentDidMount(){
+        this.setState({
+            show: true
+        })
     }
 
     render() {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={55} />
-                    <h3 className="title">Welk type verblijf heeft je voorkeur</h3>
+                   <h3 className="title">Welk type verblijf heeft je voorkeur</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {

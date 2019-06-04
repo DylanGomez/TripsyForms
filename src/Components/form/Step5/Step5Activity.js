@@ -9,21 +9,47 @@ import templeIcon from '../../../Icons/pagoda.svg'
 import scubaIcon from '../../../Icons/scuba.svg'
 
 import questionmark from '../../../Icons/information.svg'
+import Slide from 'react-reveal/Fade';
+
 
 
 
 class Step5Activity extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false
+        };
+
+    }
+
     handleClick(form, value) {
         this.props.addState("activity", value);
-        this.props.toggleForm(form);
+        this.animate();
+        var _this = this;
+        setTimeout(function () {
+            _this.props.toggleForm(form)
+        }, 200);
+    }    
+
+
+    animate() {
+        this.setState({
+            show: false
+        });
+    }  
+
+    componentDidMount(){
+        this.setState({
+            show: true
+        })
     }
 
     render() {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={50} />
                     <h3 className="title">Welke activiteit spreekt je het meeste aan?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">

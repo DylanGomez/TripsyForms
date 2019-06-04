@@ -5,19 +5,45 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
 import planeSvg from '../../../Icons/world.svg'
+import Slide from 'react-reveal/Fade';
+
 
 class Step3When extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false
+        };
+
+    }
+
     handleClick(form, value) {
         this.props.addState("when", value);
-        this.props.toggleForm(form);
+        this.animate();
+        var _this = this;
+        setTimeout(function () {
+            _this.props.toggleForm(form)
+        }, 200);
+    }    
+
+
+    animate() {
+        this.setState({
+            show: false
+        });
+    }  
+
+    componentDidMount(){
+        this.setState({
+            show: true
+        })
     }
 
     render() {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={40} />
                     <h3 className="title">Wanneer wil je op reis?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
