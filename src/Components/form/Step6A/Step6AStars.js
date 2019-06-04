@@ -8,25 +8,48 @@ import threeStars from '../../../Icons/3stars.svg'
 import fourStars from '../../../Icons/4stars.svg'
 import fiveStars from '../../../Icons/5stars.svg'
 import questionmark from '../../../Icons/information.svg'
-
-
-
+import Slide from 'react-reveal/Fade';
 
 
 class Step6AStars extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false
+        };
+    }
+
     handleClick(form, value) {
         this.props.addState("acommodationStars", value);
-        this.props.toggleForm(form);
+        this.animate();
+        var _this = this;
+        setTimeout(function () {
+            _this.props.toggleForm(form)
+        }, 200);
+    }    
+
+
+    animate() {
+        this.setState({
+            show: false
+        });
+    }  
+    
+    componentDidMount(){
+        this.setState({
+            show: true
+        })
     }
 
     render() {
         return (
             <div className="background">
                 <div className="formBox">
-                    <ProgressBar className="progressBar" variant="success" now={60} />
                     <h3 className="title">Hoe luxe wil je verblijven?</h3>
                     <div className="cardPosition">
+                    <Slide right opposite when={this.state.show}>
+
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("loading", "3stars");
@@ -69,6 +92,7 @@ class Step6AStars extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
+                        </Slide>
                     </div>
                 </div>
             </div>
