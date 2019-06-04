@@ -1,12 +1,12 @@
-$break-small: 320px;
+$break-small: 574px;
 $break-large: 1025px;
 
 .topDiv {
     display: inline-block; 
-    height: 40vh;
+    height: 106vh;
     width: 100vw;
     -webkit-filter: grayscale(30%);
-    background-image: url("../../images/zanzibar_reizen.jpg");
+    background-image: linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url("../../images/Rondreis-Thailand-Phuket.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,22 +18,35 @@ $break-large: 1025px;
 
 .logo {
     position: fixed;
-    margin-left: 20px;
-    margin-top: 15px;
-    content: url(../../Icons/TRIPSYICON.svg);
+    margin-left: 24px;
+    margin-top: 24px;
+    content: url(../../Icons/Logo_tripsy.svg);
     color: white;
-    width: 20vw;
-    @media screen and (max-width: $break-large) {
+    width: 12vh;
+    @media screen and (max-width: $break-small) {
         position: absolute;
+        margin-left: 24px;
+        margin-top: 16px;
+        width: 10vh;
     }
 }
 
 .helpIcon {
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     float: right;
-    margin-right: 20px;
-    margin-top: 15px;
+    margin-right: 24px;
+    margin-top: 24px;
+    @media screen and (max-width: $break-small) {
+        margin-right: 24px;
+        margin-top: 16px;
+    }
+}
+
+.helpword {
+    margin-left: 6px;
+    vertical-align: center;
+    font-size: 16px
 }
 
 .helpHover {
@@ -46,23 +59,25 @@ $break-large: 1025px;
 }
 
 .textDiv {
-    padding-top: 20vh;
+    padding-top: 18vh;
     text-align: center
 }
 
 .bottomDiv {
     display: inline-block;
-    height: 40vh;
+    padding: 24px 32px;
     width: 100vw;
-    text-align: center;
+    text-align: left;
 
 }
 
 .tripText {
-    font-size: 50px;
+    font-family: catamaran;
+    font-size: 44px;
+    line-height: 56px;
     color: white;
-    font-weight: 400;
-
+    font-weight: 700;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: $break-large) {
         display: block;
         font-size: 30px;
@@ -71,10 +86,13 @@ $break-large: 1025px;
 }
 
 .subTripText {
-    font-size: 20px;
+    font-family: lato;
+    font-size: 16px;
+    line-height: 0px;
     color: white;
     font-weight: 400;
-
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: -24px;
     @media screen and (max-width: $break-large) {
         font-size: 15px;
         position: relative;
@@ -122,7 +140,9 @@ $break-large: 1025px;
 
 .links {
     display: block;
-    margin-top: 70px;
+    font-family: lato;
+    font-size: 14px;
+    color: #404348;
     @media screen and (max-width: $break-large) {
         margin-top: 10px;
         margin-bottom: 20px;
