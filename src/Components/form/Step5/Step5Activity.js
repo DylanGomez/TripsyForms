@@ -52,7 +52,6 @@ class Step5Activity extends Component {
                 <div className="formBox">
                     <h3 className="title">Welke activiteit spreekt je het meeste aan?</h3>
                     <div className="cardPosition">
-                    <Slide right opposite when={this.state.show}>
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("step6", "elephantPark");
@@ -95,7 +94,6 @@ class Step5Activity extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
-                        </Slide>
                     </div>
                 </div>
             </div>

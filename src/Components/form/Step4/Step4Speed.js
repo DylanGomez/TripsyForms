@@ -51,8 +51,6 @@ class Step4Speed extends Component {
                 <div className="formBox">
                     <h3 className="title">In welk tempo wil je reizen?</h3>
                     <div className="cardPosition">
-                    <Slide right opposite when={this.state.show}>
-
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("step5", "FAST");
@@ -95,7 +93,6 @@ class Step4Speed extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
-                        </Slide>
                     </div>
                 </div>
             </div>

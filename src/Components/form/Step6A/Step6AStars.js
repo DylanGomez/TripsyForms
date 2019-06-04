@@ -48,8 +48,6 @@ class Step6AStars extends Component {
                 <div className="formBox">
                     <h3 className="title">Hoe luxe wil je verblijven?</h3>
                     <div className="cardPosition">
-                    <Slide right opposite when={this.state.show}>
-
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("loading", "3stars");
@@ -92,7 +90,6 @@ class Step6AStars extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
-                        </Slide>
                     </div>
                 </div>
             </div>

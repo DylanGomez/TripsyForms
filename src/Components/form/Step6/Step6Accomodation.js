@@ -50,7 +50,6 @@ class Step6Accomodation extends Component {
                 <div className="formBox">
                    <h3 className="title">Welk type verblijf heeft je voorkeur</h3>
                     <div className="cardPosition">
-                        <Slide right opposite when={this.state.show}>
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("step6A", "hotel");
@@ -93,7 +92,6 @@ class Step6Accomodation extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
-                        </Slide>
                     </div>
                 </div>
             </div>

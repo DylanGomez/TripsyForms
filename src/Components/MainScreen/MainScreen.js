@@ -153,7 +153,7 @@ class MainScreen extends Component {
                         <MediaQuery query='(max-device-width: 1224px)'>
                             <span className="subTripText">gratis en vrijblijvend</span>
                         </MediaQuery>
-                        <div className="divTest">
+                        <div className="cardBox">
                             <ProgressBar animated className="progressBar" variant="success" now={this.getProgress(this.state.currentForm)} />
                             {this.getForm(this.state.currentForm)}
                         </div>

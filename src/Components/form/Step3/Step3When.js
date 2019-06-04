@@ -46,7 +46,6 @@ class Step3When extends Component {
                 <div className="formBox">
                     <h3 className="title">Wanneer wil je op reis?</h3>
                     <div className="cardPosition">
-                    <Slide right opposite when={this.state.show}>
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("step4", "1to3Months");
@@ -89,7 +88,6 @@ class Step3When extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
-                        </Slide>
                     </div>
                 </div>
             </div>

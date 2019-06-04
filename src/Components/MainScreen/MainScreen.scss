@@ -87,10 +87,13 @@ $break-large: 1025px;
     to{left:100%}
 }
 
-.divTest {
+.cardBox {
     position: relative;
-    padding-top: 18vh;
-    text-align: center
+    padding-top: 0vh;
+    text-align: center;
+    @media screen and (max-width: $break-large) {
+        padding-top: 7vh;
+     }
 }
 
 .bottomDiv {

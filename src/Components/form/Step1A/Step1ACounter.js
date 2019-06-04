@@ -84,7 +84,6 @@ class Step1ACounter extends Component {
                     <div className="formBoxWithButton">
                         <h3 className="title"> Met hoeveel personen ga je op reis?</h3>
                         <div className="cardPosition">
-                        <Slide right opposite when={this.state.show}>
                             <CardDeck className="cardDeck">
                                 <Card>
                                     <Card.Body>
@@ -135,7 +134,6 @@ class Step1ACounter extends Component {
                                 </Card.Footer>
                                 </Card>
                             </CardDeck>
-                            </Slide>
                         </div>
                         <Button color="green" className="ui large button stepButton" onClick={() =>
                             this.handleSubmit("step2")}>Volgende</Button>

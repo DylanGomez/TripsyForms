@@ -45,7 +45,6 @@ class Step1Who extends Component {
                 <div className="formBox">
                     <h3 className="title"> Met wie ga je op reis?</h3>
                     <div className="cardPosition">
-                    <Slide right opposite when={this.state.show}>
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                     this.handleClick("step2", "alone");
@@ -88,8 +87,6 @@ class Step1Who extends Component {
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
-                        </Slide>
-
                     </div>
                 </div>
             </div>
