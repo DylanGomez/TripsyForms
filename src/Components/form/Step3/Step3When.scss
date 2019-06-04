@@ -4,15 +4,15 @@ $break-large: 1025px;
 .planeIcon {
     margin: auto; 
     fill: none;
-    height: 64px;
+    height: 56px;
 }
 
 .card:hover {
     cursor: pointer;
-    .planIcon {
+    .planeIcon {
         margin: auto; 
         fill: none;
-        height: 64px;
+        height: 56px;
         filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
     }
 }

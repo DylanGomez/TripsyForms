@@ -53,7 +53,7 @@ class SendForm extends Component {
             accomodation: this.state.formInfo.state.accomodation
         });
 
-        fetch('http://localhost:8042/api/trips', {
+        fetch('http://192.168.2.5:8042/api/trips', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

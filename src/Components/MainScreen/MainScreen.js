@@ -3,7 +3,7 @@ import './MainScreen.scss'
 
 import GGTOLogo from '../../images/GGTO.jpg'
 
-import { Icon } from 'semantic-ui-react';
+import HelpIcon from '@material-ui/icons/Help';
 import MediaQuery from 'react-responsive';
 import { Redirect } from 'react-router-dom';
 
@@ -130,19 +130,19 @@ class MainScreen extends Component {
             <div>
                 <div className="topDiv">
                     <div className="logo"> Tripsy </div>
-                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <Icon name="help circle" /> Help</div>
-                    {this.state.helpOpen &&
-                        <div className="helpHover">
-                            <h3>Hulp nodig?</h3>
-                            <br />
-                            <span>Wij helpen je graag via de telefoon of email met het boeken van je droomreis</span>
-                            <br />
-                            <img></img>
-                            <br />
-                            <span>Telefoonnummer</span>
-                            <br />
-                            <span>E-mail</span>
-                        </div>
+                    <div className="helpIcon" onClick={() => {this.toggleHelp()}}> <HelpIcon/><span class="helpword">Help</span></div>
+                    {this.state.helpOpen && 
+                    <div className="helpHover">
+                        <h3>Hulp nodig?</h3>
+                        <br/>
+                        <span>Wij helpen je graag via de telefoon of email met het boeken van je droomreis</span>
+                        <br/>
+                        <img></img>
+                        <br /> 
+                        <span>Telefoonnummer</span>
+                        <br/>
+                        <span>E-mail</span>
+                    </div> 
                     }
                     <div className="textDiv">
                         <span className="tripText">Jouw droomtrip naar {this.country}</span>
@@ -161,7 +161,7 @@ class MainScreen extends Component {
                 </div>
 
                 <div className="bottomDiv">
-                    <span className="garantyTitle">Garantiefonds</span>
+                    {/* <span className="garantyTitle">Garantiefonds</span>
                     <br />
                     <span className="garantyText"> Al onze reizen vallen onder het garantiefonds van de GGTO.
                     Hierdoor heb je de garantie dat wanneer de organisator van de reis,
@@ -172,8 +172,8 @@ class MainScreen extends Component {
                     <img className="ggtoLogo" src={GGTOLogo} alt="" />
                     <br />
                     <div className="line"></div>
-                    <br />
-                    <span className="links"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp; Reisvoorwaarden &nbsp;&nbsp;&nbsp;Privacybeleid</span>
+                    <br /> */}
+                    <span className="links"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reisvoorwaarden &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacybeleid</span>
                 </div>
             </div>
 

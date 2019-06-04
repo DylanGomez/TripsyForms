@@ -64,7 +64,7 @@ class Step1Who extends Component {
                                     <img className="svgIcon" src={formSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Met Partner
+                                    Met partner
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
@@ -74,7 +74,7 @@ class Step1Who extends Component {
                                     <img className="svgIcon" src={formSvg} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Met Familie
+                                    Met familie
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
