@@ -187,7 +187,7 @@ $break-large: 1025px;
 
 .links1 {
     display: table-cell !important;
-    vertical-align: right !important;
+    vertical-align: middle !important;
     font-family: lato;
     font-size: 14px;
     width: 50vw;
@@ -202,7 +202,7 @@ $break-large: 1025px;
 
 .links2 {
     display: table-cell !important;
-    vertical-align: right !important;
+    vertical-align: middle !important;
     font-family: lato;
     font-size: 14px;
     width: 50vw;
@@ -213,6 +213,10 @@ $break-large: 1025px;
         margin-bottom: 20px;
         margin: 10px 50px 20px 50px;
     }
+}
+
+.linksLeft {
+    margin-right: 24px;
 }
 
 .example-enter {

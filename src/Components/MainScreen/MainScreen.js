@@ -174,7 +174,9 @@ class MainScreen extends Component {
                     <div className="line"></div>
                     <br /> */}
                     <div className="links1">
-                        <span className="linksLeft"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reisvoorwaarden &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacybeleid</span>
+                        <span className="linksLeft"> Disclaimer </span>
+                        <span className="linksLeft"> Reisvoorwaarden </span>
+                        <span className="linksLeft"> Privacybeleid</span>
                     </div>
                     <div className="links2">
                         <span className="linksRight"> © Tripsy B.V. 2019</span>
