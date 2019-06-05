@@ -8,9 +8,6 @@ import meditateIcon from '../../../Icons/padmasana.svg'
 import turtleIcon from '../../../Icons/turtle.svg'
 import questionmark from '../../../Icons/information.svg'
 
-
-
-
 class Step4Speed extends Component {
 
     constructor(props) {

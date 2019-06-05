@@ -7,8 +7,7 @@ import enterpriseIcon from '../../../Icons/enterprise.svg'
 import friendshipIcon from '../../../Icons/friendship.svg'
 import congressIcon from '../../../Icons/ho-chi-minh-mausoleum.svg'
 import clubIcon from '../../../Icons/football-club.svg'
-
-
+import ggtoSvg from '../../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
 
 class Step1BGroup extends Component {
 
@@ -22,19 +21,11 @@ class Step1BGroup extends Component {
 
     handleClick(form, value) {
         this.props.addState("group", value);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
     }    
-
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }  
 
     componentDidMount(){
         this.setState({

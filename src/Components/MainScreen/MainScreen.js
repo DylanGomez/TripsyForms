@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './MainScreen.scss'
-// import GGTOLogo from '../../images/GGTO.jpg'
 
 import HelpIcon from '@material-ui/icons/Help';
+
 import MediaQuery from 'react-responsive';
 import { Redirect } from 'react-router-dom';
 
@@ -20,7 +20,10 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import elephantIcon from '../../Icons/elephant.svg';
 import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg'
+import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
 
+import onClickOutside from "react-onclickoutside";
+import HelpModal from './helpModal/HelpModal';
 
 class MainScreen extends Component {
 
@@ -48,13 +51,15 @@ class MainScreen extends Component {
         this.toggleForm = this.toggleForm.bind(this);
         this.addState = this.addState.bind(this);
         this.onBackButtonEvent = this.onBackButtonEvent.bind(this);
+        this.toggleHelp = this.toggleHelp.bind(this);
     }
 
     destination = this.props.match.params.destination;
 
-    destinations =  [{
+    destinations = [{
         thailand: {
-            backgroundImage: BackgroundThailand,
+            countryName: "Thailand",
+            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url(${BackgroundThailand})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -93,7 +98,8 @@ class MainScreen extends Component {
     },
     {
         vietnam: {
-            backgroundImage: BackgroundVietnam,
+            countryName: "Vietnam",
+            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -157,8 +163,6 @@ class MainScreen extends Component {
         window.onpopstate = this.onBackButtonEvent;
         this.getObject();
 
-        
-        console.log(this.state.currentCountry.backgroundImage)
     }
 
     goToSuccess() {
@@ -179,11 +183,11 @@ class MainScreen extends Component {
     }
 
     getObject() {
-        for(var i = 0; i < this.destinations.length; i++) {
+        for (var i = 0; i < this.destinations.length; i++) {
             var obj = this.destinations[i];
-            if (this.destination in obj){
-                this.setState({ 
-                    currentCountry : obj[this.destination] 
+            if (this.destination in obj) {
+                this.setState({
+                    currentCountry: obj[this.destination]
                 })
             }
         }
@@ -221,9 +225,8 @@ class MainScreen extends Component {
     }
 
     render() {
-
         this.backgroundStyle = {
-            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url(${this.state.currentCountry.backgroundImage})`,
+            backgroundImage: this.state.currentCountry.backgroundImage,
         }
 
         return (
@@ -232,20 +235,10 @@ class MainScreen extends Component {
                     <div className="logo"> Tripsy </div>
                     <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpword">Help</span></div>
                     {this.state.helpOpen &&
-                        <div className="helpHover">
-                            <h3>Hulp nodig?</h3>
-                            <br />
-                            <span>Wij helpen je graag via de telefoon of email met het boeken van je droomreis</span>
-                            <br />
-                            <img alt="" ></img>
-                            <br />
-                            <span>Telefoonnummer</span>
-                            <br />
-                            <span>E-mail</span>
-                        </div>
+                        <HelpModal toggleHelp={this.toggleHelp} />
                     }
                     <div className="textDiv">
-                        <span className="tripText">Jouw droomtrip naar {this.country}</span>
+                        <span className="tripText">Jouw droomtrip naar {this.state.currentCountry.countryName}</span>
                         <br />
                         <MediaQuery query='(min-device-width: 1224px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
@@ -256,11 +249,20 @@ class MainScreen extends Component {
                         <div className="cardBox">
                             <ProgressBar animated className="progressBar" variant="success" now={this.getProgress(this.state.currentForm)} />
                             {this.getForm(this.state.currentForm)}
-                           
                         </div>
-
+                        <div className="garrantyDiv">
+                            <div className="onsGarantiefonds">
+                                <span >Ons garantiefonds:</span>
+                            </div>
+                            <div className="Garantiefonds">
+                                <a href="https://www.stichting-ggto.nl/html/Welkom.asp" target="_blank" without rel="noopener noreferrer"> <img src={ggtoSvg} alt="GGTO garantiefonds" className="ggtogrey" /></a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
+
+
 
                 <div className="bottomDiv">
                     {/* <span className="garantyTitle">Garantiefonds</span>

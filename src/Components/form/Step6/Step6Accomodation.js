@@ -8,8 +8,6 @@ import resortIcon from '../../../Icons/sun-bath.svg'
 import beachhouseIcon from '../../../Icons/stilt-home.svg'
 import questionmark from '../../../Icons/information.svg'
 
-
-
 class Step6Accomodation extends Component {
 
     constructor(props) {

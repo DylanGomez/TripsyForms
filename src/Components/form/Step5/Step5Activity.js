@@ -10,8 +10,6 @@ import scubaIcon from '../../../Icons/scuba.svg'
 import questionmark from '../../../Icons/information.svg'
 
 
-
-
 class Step5Activity extends Component {
 
     constructor(props) {

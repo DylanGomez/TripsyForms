@@ -6,6 +6,7 @@ import CardDeck from 'react-bootstrap/CardDeck'
 import datePickerSvg from '../../../Icons/datepicker.svg'
 
 
+
 class Step2Weeks extends Component {
 
     constructor(props) {

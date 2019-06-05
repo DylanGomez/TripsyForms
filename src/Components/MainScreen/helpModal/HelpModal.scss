@@ -1,0 +1,66 @@
+.helpDiv {
+    position: fixed;
+    z-index: 15;
+    width: 20vw;
+    height: 35vh;
+    background-color:white;
+    right: 24px;
+    top: 7vh;
+    text-align: center;
+    -moz-box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+}
+
+.helpDiv:after {
+	bottom: 100%;
+	left: 94%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.helpDiv:after {
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #FFFF;
+	border-width: 10px;
+	margin-left: -30px;
+}
+.helpDiv:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: #ffff;
+	border-width: 36px;
+	margin-left: -36px;
+}
+
+.helpText {
+    position: relative;
+    top: -8px;
+    font-size: 12px;
+}
+
+.helpTitle {
+    position: relative;
+    margin-top: 10px !important;
+    margin-bottom: 0;
+}
+
+.helpPhoto {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.helpPhone {
+    font-size: 12px;
+}
+.helpMail {
+    font-size: 12px;
+}
+
+.subText {
+    font-size: 10px;
+    color: #898f98;
+}

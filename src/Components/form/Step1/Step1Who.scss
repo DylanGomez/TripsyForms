@@ -4,8 +4,8 @@ $break-large: 1025px;
 .formBox {
     margin: auto;
     width: 72%;
+    height: 55vh;
     background-color: white;
-    // border: 1px solid #eaeaea;
     padding: 40px 40px 32px 40px;
     border-radius: 4px;
     position: relative;
@@ -48,7 +48,7 @@ $break-large: 1025px;
     background-color: white;
     color: #404348;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
     font-family: lato;
     border-top: 1px solid #f2f2f2;
     border-radius: 0px 0px 4px 4px !important;
@@ -83,17 +83,20 @@ $break-large: 1025px;
     margin: 4px !important;
     border-radius: 2px;
     border-width: 0px;
+
+    min-height: 210px;
+    max-height: 210px;
+
     box-shadow: 0px 1px 4px rgba(23,33,52,0.3);
     @media screen and (max-width: $break-large) {
-        // width: 150px;        
+        // min-height: 0;
+        // max-height: 0;        
     }
 }
 
 .card-body {
     display: flex;
-
-    height: 164px;
-    padding: 10px !important;
+    margin: auto !important;
     align-content: center !important;
     @media screen and (max-width: $break-large) {
     }
@@ -114,7 +117,6 @@ $break-large: 1025px;
 }
 
 .cardPosition {    
-
     @media screen and (max-width: $break-large) {
         padding: 0px 24px 10px 24px;
     }
@@ -144,9 +146,3 @@ $break-large: 1025px;
       opacity: 1;
     }
   }
-.onsGarantiefonds {
-    margin: 20px 0 6px;
-    font-family: lato;
-    font-size: 14px;
-    color: #B4B8BD;
-}

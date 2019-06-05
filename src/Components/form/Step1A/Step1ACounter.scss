@@ -4,23 +4,23 @@ $break-large: 1025px;
 .formBoxWithButton {
     margin: auto;
     width: 72%;
+    height: 55vh;
     background-color: white;
     border: 1px solid #eaeaea;
     padding: 48px 48px 78px 48px ;
     margin-bottom: 20px;
     border-radius: 4px;
     position: relative;
+    overflow: hidden;
     @media screen and (max-width: $break-large) {
         width: 100%;
         padding: 0;
     }
-
 }
 
 .addSpan {
     margin: auto !important;
 }
-
 
 .background {
     margin-top: 30px;
@@ -39,7 +39,7 @@ $break-large: 1025px;
 }
 
 .add-button {
-    padding: 10px !important;
+    padding: 7px !important;
     background-color: white !important;
     border: 1px solid #eaeaea !important;
     border-radius: 4px;
@@ -57,5 +57,6 @@ $break-large: 1025px;
     margin-top: 20px !important;
     padding: 15px 25px 15px 25px !important; 
     float: right;
-    
+    position: relative;
+    z-index: 25;
 }
