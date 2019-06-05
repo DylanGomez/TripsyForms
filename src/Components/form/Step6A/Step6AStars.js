@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Step6AStars.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
@@ -8,7 +7,6 @@ import threeStars from '../../../Icons/3stars.svg'
 import fourStars from '../../../Icons/4stars.svg'
 import fiveStars from '../../../Icons/5stars.svg'
 import questionmark from '../../../Icons/information.svg'
-import Slide from 'react-reveal/Fade';
 
 
 class Step6AStars extends Component {

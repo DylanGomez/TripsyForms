@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Step1BGroup.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
@@ -8,7 +7,6 @@ import enterpriseIcon from '../../../Icons/enterprise.svg'
 import friendshipIcon from '../../../Icons/friendship.svg'
 import congressIcon from '../../../Icons/ho-chi-minh-mausoleum.svg'
 import clubIcon from '../../../Icons/football-club.svg'
-import Slide from 'react-reveal/Slide';
 
 
 

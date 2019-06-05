@@ -13,15 +13,11 @@ $break-large: 1025px;
     -moz-box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
     box-shadow: 0px 3px 7px rgba(0,0,0,0.1);
+    overflow: hidden;
     @media screen and (max-width: $break-large) {
         width: 100%;
         padding: 0;
     }
-}
-
-.background {
-    margin-top: 24px;
-    height: 0vh;
 }
 
 .svgIcon {
@@ -55,6 +51,8 @@ $break-large: 1025px;
 
  .card-deck {
      margin: -4px !important;
+     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
      @media screen and (max-width: $break-large) {
         display: grid;
         grid-gap: .5rem;
@@ -64,7 +62,7 @@ $break-large: 1025px;
 
 .card:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 14px rgba(23,33,52,0.3);
+    box-shadow: 0px 2px 10px rgba(23,33,52,0.3);
     .svgIcon {
         padding: 40px 0px 40px 0px;
         margin: auto;
@@ -74,7 +72,7 @@ $break-large: 1025px;
 
 .card {
     margin: 4px !important;
-    border-radius: 4px;
+    border-radius: 2px;
     border-width: 0px;
     box-shadow: 0px 1px 4px rgba(23,33,52,0.3);
     @media screen and (max-width: $break-large) {
@@ -84,6 +82,7 @@ $break-large: 1025px;
 
 .card-body {
     display: flex;
+
     height: 164px;
     padding: 10px !important;
     align-content: center !important;
@@ -103,12 +102,36 @@ $break-large: 1025px;
     @media screen and (max-width: $break-large) {
         top: 10px;
     }
-   
 }
 
-.cardPosition {
+.cardPosition {    
+
     @media screen and (max-width: $break-large) {
         padding: 0px 24px 10px 24px;
     }
 }
 
+@-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(500px);
+              transform: translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(500px);
+              transform: translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }

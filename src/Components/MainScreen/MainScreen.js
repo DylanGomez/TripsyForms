@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './MainScreen.scss'
-
-import GGTOLogo from '../../images/GGTO.jpg'
+// import GGTOLogo from '../../images/GGTO.jpg'
 
 import HelpIcon from '@material-ui/icons/Help';
 import MediaQuery from 'react-responsive';
@@ -17,14 +16,13 @@ import Step5Activity from '../form/Step5/Step5Activity';
 import Step6Accomodation from '../form/Step6/Step6Accomodation';
 import Step6AStars from '../form/Step6A/Step6AStars';
 import LoadScreen from '../form/LoadScreen/LoadScreen';
-import Slide from 'react-reveal/Slide';
 import ProgressBar from 'react-bootstrap/ProgressBar'
-
-
+import elephantIcon from '../../Icons/elephant.svg';
+import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
+import BackgroundVietnam from '../../images/VietnamBackground.jpg'
 
 
 class MainScreen extends Component {
-    progress = 10;
 
     constructor(props) {
         super(props);
@@ -40,16 +38,100 @@ class MainScreen extends Component {
             accomodationStars: "",
             userInfo: {},
             helpOpen: false,
-            show: true
+            show: true,
+            currentCountry: {}
         };
 
         window.history.replaceState('startForm', null, "");
 
+        this.getObject = this.getObject.bind(this);
         this.toggleForm = this.toggleForm.bind(this);
         this.addState = this.addState.bind(this);
         this.onBackButtonEvent = this.onBackButtonEvent.bind(this);
-
     }
+
+    destination = this.props.match.params.destination;
+
+    destinations =  [{
+        thailand: {
+            backgroundImage: BackgroundThailand,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    },
+    {
+        vietnam: {
+            backgroundImage: BackgroundVietnam,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: elephantIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Duiken",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    },
+    ]
+
 
     getForm(currentForm) {
 
@@ -60,8 +142,8 @@ class MainScreen extends Component {
             step2: <Step2Weeks toggleForm={this.toggleForm} addState={this.addState} />,
             step3: <Step3When toggleForm={this.toggleForm} addState={this.addState} />,
             step4: <Step4Speed toggleForm={this.toggleForm} addState={this.addState} />,
-            step5: <Step5Activity toggleForm={this.toggleForm} addState={this.addState} />,
-            step6: <Step6Accomodation toggleForm={this.toggleForm} addState={this.addState} />,
+            step5: <Step5Activity country={this.state.currentCountry} toggleForm={this.toggleForm} addState={this.addState} />,
+            step6: <Step6Accomodation country={this.getObject} toggleForm={this.toggleForm} addState={this.addState} />,
             step6A: <Step6AStars toggleForm={this.toggleForm} addState={this.addState} />,
             loading: <LoadScreen toggleForm={this.toggleForm} />,
 
@@ -73,6 +155,10 @@ class MainScreen extends Component {
 
     componentDidMount() {
         window.onpopstate = this.onBackButtonEvent;
+        this.getObject();
+
+        
+        console.log(this.state.currentCountry.backgroundImage)
     }
 
     goToSuccess() {
@@ -92,6 +178,17 @@ class MainScreen extends Component {
         });
     }
 
+    getObject() {
+        for(var i = 0; i < this.destinations.length; i++) {
+            var obj = this.destinations[i];
+            if (this.destination in obj){
+                this.setState({ 
+                    currentCountry : obj[this.destination] 
+                })
+            }
+        }
+    }
+
     onBackButtonEvent(e) {
         e.preventDefault();
         this.previousForm(e.state);
@@ -107,10 +204,11 @@ class MainScreen extends Component {
     }
 
     getProgress(currentForm) {
+
         const progress = {
             startForm: 10,
-            step1A: 20,
-            step1B: 30,
+            step1A: 30,
+            step1B: 20,
             step2: 40,
             step3: 50,
             step4: 60,
@@ -118,31 +216,33 @@ class MainScreen extends Component {
             step6: 80,
             step6A: 90,
             loading: 100,
-
         }
         return progress[currentForm];
     }
 
-    country = "Thailand";
-
     render() {
+
+        this.backgroundStyle = {
+            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url(${this.state.currentCountry.backgroundImage})`,
+        }
+
         return (
             <div>
-                <div className="topDiv">
+                <div style={this.backgroundStyle} className="topDiv">
                     <div className="logo"> Tripsy </div>
-                    <div className="helpIcon" onClick={() => {this.toggleHelp()}}> <HelpIcon/><span class="helpword">Help</span></div>
-                    {this.state.helpOpen && 
-                    <div className="helpHover">
-                        <h3>Hulp nodig?</h3>
-                        <br/>
-                        <span>Wij helpen je graag via de telefoon of email met het boeken van je droomreis</span>
-                        <br/>
-                        <img></img>
-                        <br /> 
-                        <span>Telefoonnummer</span>
-                        <br/>
-                        <span>E-mail</span>
-                    </div> 
+                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpword">Help</span></div>
+                    {this.state.helpOpen &&
+                        <div className="helpHover">
+                            <h3>Hulp nodig?</h3>
+                            <br />
+                            <span>Wij helpen je graag via de telefoon of email met het boeken van je droomreis</span>
+                            <br />
+                            <img alt="" ></img>
+                            <br />
+                            <span>Telefoonnummer</span>
+                            <br />
+                            <span>E-mail</span>
+                        </div>
                     }
                     <div className="textDiv">
                         <span className="tripText">Jouw droomtrip naar {this.country}</span>
@@ -176,7 +276,6 @@ class MainScreen extends Component {
                     <span className="links"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reisvoorwaarden &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacybeleid</span>
                 </div>
             </div>
-
         )
     }
 }

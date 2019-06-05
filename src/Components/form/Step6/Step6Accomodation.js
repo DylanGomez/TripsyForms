@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Step6Accomodation.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
@@ -8,7 +7,6 @@ import hotelIcon from '../../../Icons/resort.svg'
 import resortIcon from '../../../Icons/sun-bath.svg'
 import beachhouseIcon from '../../../Icons/stilt-home.svg'
 import questionmark from '../../../Icons/information.svg'
-import Slide from 'react-reveal/Fade';
 
 
 

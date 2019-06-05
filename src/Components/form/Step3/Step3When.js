@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './Step3When.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
 import planeSvg from '../../../Icons/world.svg'
-import Slide from 'react-reveal/Fade';
-
 
 class Step3When extends Component {
 

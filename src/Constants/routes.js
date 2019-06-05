@@ -11,7 +11,7 @@ import MainScreen from '../Components/MainScreen/MainScreen';
 const RouterForms = () => (
     <Router>
         <div>
-            <Route path="/main" component={MainScreen} />
+            <Route path="/main/:destination" component={MainScreen} />
             <Route path="/success" component={SendForm} />
         </div>
     </Router>
