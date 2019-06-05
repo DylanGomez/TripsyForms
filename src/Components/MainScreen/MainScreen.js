@@ -256,7 +256,9 @@ class MainScreen extends Component {
                         <div className="cardBox">
                             <ProgressBar animated className="progressBar" variant="success" now={this.getProgress(this.state.currentForm)} />
                             {this.getForm(this.state.currentForm)}
+                           
                         </div>
+
                     </div>
                 </div>
 
@@ -273,7 +275,12 @@ class MainScreen extends Component {
                     <br />
                     <div className="line"></div>
                     <br /> */}
-                    <span className="links"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reisvoorwaarden &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacybeleid</span>
+                    <div className="links1">
+                        <span className="linksLeft"> Disclaimer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reisvoorwaarden &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacybeleid</span>
+                    </div>
+                    <div className="links2">
+                        <span className="linksRight"> © Tripsy B.V. 2019</span>
+                    </div>
                 </div>
             </div>
         )

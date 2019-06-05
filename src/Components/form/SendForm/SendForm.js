@@ -93,13 +93,15 @@ class SendForm extends Component {
         return (
             <div className="pageDiv">
                 <div className="textArea">
-                    <div className="textBlock">
-                        <span className="successText">Gelukt!</span>
+                    {/* <div className="textBlock">
+                        <span className="successText">Yes!</span>
                         <br />
-                        <span className="subtitleSuccess">We hebben een passend reisaanbod voor je</span>
-                    </div>
+                        <span className="subtitleSuccess">We hebben een passend reisaanbod voor je gevonden</span>
+                    </div> */}
                 </div>
+            
                 <div className="formArea">
+                <div className="formAreaRight">
                     <span className="whoText">Wie mag het reisaanbod ontvangen?</span>
                     <br />
                     <div className="radio-buttons">
@@ -113,11 +115,11 @@ class SendForm extends Component {
                         </div>
                     </div>
                     <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} />
-                    <br />
+            
                     <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} />
-                    <br />
+                   
                     <Form.Control className="formField" name="email" size="lg" type="text" placeholder="E-mailadres" onChange={this.changeHandler} />
-                    < br />
+                    
                     <IntlTelInput
                         className="telephoneInput"
                         name="phoneNumber"
@@ -131,8 +133,8 @@ class SendForm extends Component {
                     <Button variant="success" size="lg" onClick={this.handleSubmit}>Ja, verstuur het reisaanbod</Button>
                     <br />
                     <span><i>Gratis en vrijblijvend </i></span>
-
                 </div>
+                </div>  
             </div>
         )
     }
