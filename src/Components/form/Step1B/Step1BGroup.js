@@ -7,7 +7,6 @@ import enterpriseIcon from '../../../Icons/enterprise.svg'
 import friendshipIcon from '../../../Icons/friendship.svg'
 import congressIcon from '../../../Icons/ho-chi-minh-mausoleum.svg'
 import clubIcon from '../../../Icons/football-club.svg'
-import ggtoSvg from '../../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
 
 class Step1BGroup extends Component {
 

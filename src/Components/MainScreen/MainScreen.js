@@ -22,7 +22,6 @@ import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg'
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
 
-import onClickOutside from "react-onclickoutside";
 import HelpModal from './helpModal/HelpModal';
 
 class MainScreen extends Component {
