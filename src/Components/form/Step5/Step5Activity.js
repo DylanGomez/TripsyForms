@@ -3,7 +3,6 @@ import './Step5Activity.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import elephantIcon from '../../../Icons/elephant.svg'
 import templeIcon from '../../../Icons/pagoda.svg'
 import scubaIcon from '../../../Icons/scuba.svg'
 

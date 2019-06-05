@@ -6,7 +6,7 @@ $break-large: 1025px;
     height: 106vh;
     width: 100vw;
     -webkit-filter: grayscale(30%);
-    // background-image: linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url("../../images/Rondreis-Thailand-Phuket.jpg");
+    // background-image: linear-gradient(to bottom, rgba(51, 104, 168, 0.5), rgba(51, 104, 168, 0.1), rgba(0, 0, 0, 0.0)),url("../../images/Rondreis-Thailand-Phuket.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -140,11 +140,11 @@ $break-large: 1025px;
 
 .links1 {
     display: table-cell !important;
-    vertical-align: right !important;
+    vertical-align: middle !important;
     font-family: lato;
     font-size: 14px;
     width: 50vw;
-    color: #404348;
+    // color: #404348 !important;
     text-align: left;
     @media screen and (max-width: $break-large) {
         margin-top: 10px;
@@ -155,7 +155,7 @@ $break-large: 1025px;
 
 .links2 {
     display: table-cell !important;
-    vertical-align: right !important;
+    vertical-align: middle !important;
     font-family: lato;
     font-size: 14px;
     width: 50vw;
@@ -213,4 +213,15 @@ $break-large: 1025px;
     position: relative;
     top: 350px;
     z-index: 20;    
+.linksLeft {
+    margin-right: 16px;
+    color: #404348;
+}
+
+.linksLeft:hover {
+    color: #009249;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
