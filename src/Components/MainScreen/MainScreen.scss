@@ -6,7 +6,7 @@ $break-large: 1025px;
     height: 106vh;
     width: 100vw;
     -webkit-filter: grayscale(30%);
-    background-image: linear-gradient(to bottom, rgba(28, 78, 151, 0.5), rgba(0, 0, 0, 0.01)),url("../../images/Rondreis-Thailand-Phuket.jpg");
+    background-image: linear-gradient(to bottom, rgba(51, 104, 168, 0.5), rgba(51, 104, 168, 0.1), rgba(0, 0, 0, 0.0)),url("../../images/Rondreis-Thailand-Phuket.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -47,7 +47,8 @@ $break-large: 1025px;
 .helpword {
     margin-left: 6px;
     vertical-align: center;
-    font-size: 16px
+    font-size: 16px;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .helpHover {
@@ -60,7 +61,7 @@ $break-large: 1025px;
 }
 
 .textDiv {
-    padding-top: 20vh;
+    padding-top: 16vh;
     text-align: center;
 
     @media screen and (max-width: $break-large) {
@@ -105,8 +106,8 @@ $break-large: 1025px;
 
 .progress {
     position: relative;
-    top: 80px;
-    width: 63%;
+    top: 69px;
+    width: 66%;
     vertical-align: middle;
     margin: auto;
     z-index: 10;
@@ -123,7 +124,7 @@ $break-large: 1025px;
     line-height: 56px;
     color: white;
     font-weight: 700;
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.02);
     @media screen and (max-width: $break-large) {
         display: block;
         font-size: 30px;
@@ -137,7 +138,7 @@ $break-large: 1025px;
     line-height: 0px;
     color: white;
     font-weight: 400;
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     margin-top: -24px;
     @media screen and (max-width: $break-large) {
         font-size: 15px;
@@ -184,11 +185,29 @@ $break-large: 1025px;
     }
 }
 
-.links {
-    display: block;
+.links1 {
+    display: table-cell !important;
+    vertical-align: right !important;
     font-family: lato;
     font-size: 14px;
+    width: 50vw;
     color: #404348;
+    text-align: left;
+    @media screen and (max-width: $break-large) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin: 10px 50px 20px 50px;
+    }
+}
+
+.links2 {
+    display: table-cell !important;
+    vertical-align: right !important;
+    font-family: lato;
+    font-size: 14px;
+    width: 50vw;
+    color: #B4B8BD;
+    text-align: right;
     @media screen and (max-width: $break-large) {
         margin-top: 10px;
         margin-bottom: 20px;

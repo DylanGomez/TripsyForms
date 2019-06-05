@@ -4,11 +4,11 @@ $break-large: 1025px;
 .textArea {
     display: inline-block;
     vertical-align: top;
-    padding-top: 25%;
-    width: 50vw;
+    padding-top: 38vh;
+    width: 38vw;
     -webkit-filter: grayscale(40%);
     height: 100vh;
-    background-image: url('../../../images/ai-petri-mountain-bridge-wallpaper.jpg');
+    background-image: url('../../../images/Rondreis-Thailand-Phuket.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,7 +26,7 @@ $break-large: 1025px;
 .formArea {
     padding: 100px 48px 48px 48px;
     display: inline-block;
-    width: 50vw;
+    width: 62vw;
     height: 100vh;
     text-align: center;
     background-color: white; 
@@ -38,6 +38,12 @@ $break-large: 1025px;
       width: 100vw;
   }
 }
+
+.formAreaRight {
+    max-width: 396px;
+    margin: auto;
+}
+
 
 .inputGroup {
     background-color: #fff;
@@ -147,9 +153,12 @@ $break-large: 1025px;
 }
 
 .whoText {
+    font-family: Lato; 
     font-weight: 700;
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 24px;
     padding-bottom: 20px;
+    color: #404348;
     @media screen and (max-width: $break-large) {
       position: relative;
       font-size: 20px;
@@ -180,19 +189,49 @@ input {
 }
 
 .successText {
-    font-size: 50px;
+    font-family: catamaran;
+    font-size: 44px;
+    line-height: 56px;
     color: white;
-    font-weight: 400;
+    font-weight: 700;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .subtitleSuccess {
-    font-size: 20px;
+   font-family: lato;
+   font-size: 16px;
+   line-height: 0px;
     color: white;
     font-weight: 400;
+   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .line {
   display: none;
 }
 
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d3d5d8;
+  transition: border-color ease-in-out .15s;
+  padding: 24px 16px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-weight: 500;
+  font-family: lato;
+  margin-bottom: 12px;
+}
 
+.form-control:hover {
+  border: 1px solid #17AC61;
+}
+
+.form-control:focus {
+  border-color: #17AC61;
+  box-shadow: inset 0 0px 0px #17AC61, 0 0 0px #17AC61;
+}
