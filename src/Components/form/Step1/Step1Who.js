@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import formSvg from '../../../Icons/icons_forms.svg'
 import ggtoSvg from '../../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
-import ggtoSvgOrange from '../../../Icons/ggtoOranje.svg'
 
 class Step1Who extends Component {
 
@@ -91,7 +90,7 @@ class Step1Who extends Component {
                                 <span className="onsGarantiefonds">Ons garantiefonds:</span>
                     </div>
                     <div className="Garantiefonds">
-                               <a href="https://www.stichting-ggto.nl/html/Welkom.asp" target="_blank"> <img src={ggtoSvg} alt="GGTO garantiefonds" className="ggtogrey"/></a>
+                               <a href="https://www.stichting-ggto.nl/html/Welkom.asp" target="_blank" rel="noopener noreferrer"> <img src={ggtoSvg} alt="GGTO garantiefonds" className="ggtogrey"/></a>
                     </div>
                 </div>
             </div>

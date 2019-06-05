@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Step1ACounter.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import { Button } from 'semantic-ui-react';

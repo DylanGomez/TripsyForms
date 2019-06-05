@@ -54,7 +54,7 @@ class MainScreen extends Component {
 
     destinations =  [{
         thailand: {
-            backgroundImage: BackgroundThailand,
+            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)),url(${BackgroundThailand})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -93,7 +93,7 @@ class MainScreen extends Component {
     },
     {
         vietnam: {
-            backgroundImage: BackgroundVietnam,
+            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -223,7 +223,7 @@ class MainScreen extends Component {
     render() {
 
         this.backgroundStyle = {
-            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url(${this.state.currentCountry.backgroundImage})`,
+            backgroundImage: this.state.currentCountry.backgroundImage
         }
 
         return (
@@ -276,9 +276,9 @@ class MainScreen extends Component {
                     <div className="line"></div>
                     <br /> */}
                     <div className="links1">
-                        <span className="linksLeft"> Disclaimer </span>
-                        <span className="linksLeft"> Reisvoorwaarden </span>
-                        <span className="linksLeft"> Privacybeleid</span>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
                     </div>
                     <div className="links2">
                         <span className="linksRight"> © Tripsy B.V. 2019</span>
