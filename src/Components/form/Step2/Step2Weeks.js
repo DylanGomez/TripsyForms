@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import './Step2Weeks.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
 import datePickerSvg from '../../../Icons/datepicker.svg'
-import Slide from 'react-reveal/Slide';
 
 
 class Step2Weeks extends Component {

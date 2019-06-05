@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Step4Speed.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
@@ -8,7 +7,6 @@ import bunnyIcon from '../../../Icons/bunny.svg'
 import meditateIcon from '../../../Icons/padmasana.svg'
 import turtleIcon from '../../../Icons/turtle.svg'
 import questionmark from '../../../Icons/information.svg'
-import Slide from 'react-reveal/Fade';
 
 
 

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './Step1Who.scss'
-import ProgressBar from 'react-bootstrap/ProgressBar'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-
-import Slide from 'react-reveal/Slide';
-
 import formSvg from '../../../Icons/icons_forms.svg'
 import ggtoSvg from '../../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
 import ggtoSvgOrange from '../../../Icons/ggtoOranje.svg'
@@ -35,7 +31,8 @@ class Step1Who extends Component {
         });
     }
 
-    componentDidMount(){
+    componentDidMount() {
+        
         this.setState({
             show: true
         })
@@ -49,40 +46,40 @@ class Step1Who extends Component {
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
-                                    this.handleClick("step2", "alone");
-                                }}>
+                                this.handleClick("step2", "alone");
+                            }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                    <img className="svgIcon" src={formSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Individueel
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step2", "partner");
-                                }}>
+                                this.handleClick("step2", "partner");
+                            }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                    <img className="svgIcon" src={formSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met partner
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step1A", "family");
-                                }}>
+                                this.handleClick("step1A", "family");
+                            }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                    <img className="svgIcon" src={formSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met familie
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step1B", "group");
-                                }}>
+                                this.handleClick("step1B", "group");
+                            }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt=""/>
+                                    <img className="svgIcon" src={formSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met een groep

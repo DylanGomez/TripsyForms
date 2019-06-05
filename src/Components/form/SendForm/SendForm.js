@@ -3,9 +3,6 @@ import './SendForm.scss'
 import { Form, Button } from 'react-bootstrap';
 import IntlTelInput from 'react-intl-tel-input';
 
-
-
-
 class SendForm extends Component {
     constructor() {
         super();
@@ -15,9 +12,7 @@ class SendForm extends Component {
             lastname: "",
             email: "",
             phoneNumber: "",
-            formInfo: {
-
-            },
+            formInfo: {},
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -65,7 +60,7 @@ class SendForm extends Component {
                     console.log(json)
                 })
                 return res;
-            }      
+            }
         });
     }
 

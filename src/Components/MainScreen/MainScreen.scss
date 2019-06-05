@@ -6,7 +6,7 @@ $break-large: 1025px;
     height: 106vh;
     width: 100vw;
     -webkit-filter: grayscale(30%);
-    background-image: linear-gradient(to bottom, rgba(51, 104, 168, 0.5), rgba(51, 104, 168, 0.1), rgba(0, 0, 0, 0.0)),url("../../images/Rondreis-Thailand-Phuket.jpg");
+    // background-image: linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.01)),url("../../images/Rondreis-Thailand-Phuket.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,7 +15,6 @@ $break-large: 1025px;
         height: 35vh;
     }
 }
-
 
 .logo {
     position: fixed;
@@ -68,24 +67,6 @@ $break-large: 1025px;
        padding-top: 15vh;
     }
 
-}
-
-@-webkit-keyframes left-to-right{
-    from{left:-100%}
-    to{left:0}
-}
-@-webkit-keyframes right-to-left{
-    from{left:0}
-    to{left:100%}
-}
-
-@keyframes left-to-right{
-    from{left:-100%}
-    to{left:0}
-}
-@keyframes right-to-left{
-    from{left:0}
-    to{left:100%}
 }
 
 .cardBox {
@@ -214,34 +195,6 @@ $break-large: 1025px;
         margin: 10px 50px 20px 50px;
     }
 }
-
 .linksLeft {
     margin-right: 24px;
-}
-
-.example-enter {
-    opacity: 0.01;
-  }
-  
-.example-enter.example-enter-active {
-    opacity: 1;
-    transition: opacity 300ms ease-in;
-}
-
-.example-show {
-    opacity: 1;
-}
-  
-.example-show.example-show-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
-}
-  
-.example-appear {
-    opacity: 0.01;
-}
-  
-.example-appear.example-appear-active {
-    opacity: 1;
-    transition: opacity .5s ease-in;
 }
