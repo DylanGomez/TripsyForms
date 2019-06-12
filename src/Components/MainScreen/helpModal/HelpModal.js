@@ -34,25 +34,25 @@ class HelpModal extends Component {
         }
     }
 
-        render() {
-            return (
-                <div ref={this.setWrapperRef} className="helpDiv">
-                    <h3 className="helpTitle">Hulp nodig?</h3>
-                    <br />
-                    <span className="helpText">Wij helpen je graag via <br /> de telefoon of email met het <br /> boeken van je droomreis</span>
-                    <br />
-                    <img alt="" className="helpPhoto" src={helpPhoto}></img>
-                    <br />
-                    <span className="helpPhone"> <PhoneIcon /> 030-7116127</span>
-                    <br />
-                    <span className="subText">ma t/m vr 9:30u - 17:00u</span>
-                    <br />
-                    <span className="helpMail"> <MailIcon /> hallo@tripsy.nl</span>
-                    <br />
-                    <span className="subText">binnen 24u antwoord</span>
-                </div>
-            )
-        }
+    render() {
+        return (
+            <div ref={this.setWrapperRef} className="helpDiv">
+                <h3 className="helpTitle">Hulp nodig?</h3>
+                <br />
+                <span className="helpText">Wij helpen je graag via <br /> de telefoon of email met het <br /> boeken van je droomreis</span>
+                <br />
+                <img alt="" className="helpPhoto" src={helpPhoto}></img>
+                <br />
+                <span className="helpPhone"> <PhoneIcon /> 030-7116127</span>
+                <br />
+                <span className="subText">ma t/m vr 9:30u - 17:00u</span>
+                <br />
+                <span className="helpMail"> <MailIcon /> hallo@tripsy.nl</span>
+                <br />
+                <span className="subText">binnen 24u antwoord</span>
+            </div>
+        )
     }
+}
 
 export default HelpModal;

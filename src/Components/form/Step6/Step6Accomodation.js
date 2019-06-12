@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Step6Accomodation.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-
 import hotelIcon from '../../../Icons/resort.svg'
 import resortIcon from '../../../Icons/sun-bath.svg'
 import beachhouseIcon from '../../../Icons/stilt-home.svg'
@@ -10,35 +9,13 @@ import questionmark from '../../../Icons/information.svg'
 
 class Step6Accomodation extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false
-        };
-
-    }
-
     handleClick(form, value) {
         this.props.addState("accomodation", value);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
     }    
-
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }  
-
-    componentDidMount(){
-        this.setState({
-            show: true
-        })
-    }
 
     render() {
         return (

@@ -94,8 +94,7 @@ class MainScreen extends Component {
                 },
             }
         }
-    },
-    {
+    }, {
         vietnam: {
             countryName: "Vietnam",
             backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1)),url(${BackgroundVietnam})`,
@@ -134,9 +133,7 @@ class MainScreen extends Component {
                 },
             }
         }
-    },
-    ]
-
+    }]
 
     getForm(currentForm) {
 
@@ -165,7 +162,7 @@ class MainScreen extends Component {
     }
 
     goToSuccess() {
-        return <Redirect to={{ pathname: '/success', givenState: { state: this.state } }} />;
+        return <Redirect to={{ pathname: '/sendform', givenState: { state: this.state } }} />;
     }
 
     addState(question, value) {
@@ -260,9 +257,6 @@ class MainScreen extends Component {
                     </div>
 
                 </div>
-
-
-
                 <div className="bottomDiv">
                     {/* <span className="garantyTitle">Garantiefonds</span>
                     <br />

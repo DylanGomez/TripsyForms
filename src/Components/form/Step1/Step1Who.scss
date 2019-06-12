@@ -4,7 +4,7 @@ $break-large: 1025px;
 .formBox {
     margin: auto;
     width: 72%;
-    height: 55vh;
+    height: 45vh;
     background-color: white;
     padding: 40px 40px 32px 40px;
     border-radius: 4px;
@@ -17,6 +17,7 @@ $break-large: 1025px;
     @media screen and (max-width: $break-large) {
         width: 100%;
         padding: 0;
+        height: 100vh;
     }
 }
 
@@ -86,7 +87,7 @@ $break-large: 1025px;
     border-width: 0px;
 
     min-height: 210px;
-    max-height: 210px;
+    max-height: 220px;
 
     box-shadow: 0px 1px 4px rgba(23,33,52,0.3);
     @media screen and (max-width: $break-large) {

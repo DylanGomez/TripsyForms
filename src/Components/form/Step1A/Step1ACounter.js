@@ -13,7 +13,6 @@ class Step1ACounter extends Component {
         TeenCount: 0,
         ChildCount: 0,
         BabyCount: 0,
-        show: false
     }
 
     increment = (typeCount) => {
@@ -58,23 +57,10 @@ class Step1ACounter extends Component {
 
     handleSubmit(form) {
         this.props.addState("howMany", this.state);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
-    }
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }
-
-    componentDidMount() {
-        this.setState({
-            show: true
-        })
     }
 
     render() {

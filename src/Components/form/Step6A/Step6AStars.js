@@ -8,38 +8,15 @@ import fourStars from '../../../Icons/4stars.svg'
 import fiveStars from '../../../Icons/5stars.svg'
 import questionmark from '../../../Icons/information.svg'
 
-
-
 class Step6AStars extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false
-        };
-    }
 
     handleClick(form, value) {
         this.props.addState("acommodationStars", value);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
     }    
-
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }  
-    
-    componentDidMount(){
-        this.setState({
-            show: true
-        })
-    }
 
     render() {
         return (

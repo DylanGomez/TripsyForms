@@ -1,0 +1,51 @@
+$break-small: 400px;
+$break-large: 1025px;
+
+.pageDiv {
+  height: 100vh;
+}
+.successTitle {
+    font-family: catamaran;
+    font-size: 44px;
+    line-height: 40px;
+    color: black;
+    font-weight: 700;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.successSub {
+  font-family: lato;
+  font-size: 24px;
+  line-height: 0px;
+  color: black;
+  font-weight: 400;
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formAreaSuccess {
+  padding: 48px 48px 48px 48px;
+  width: 40%;
+  height: 50%;
+  text-align: center;
+  background-color: white; 
+  margin: auto;
+  position: relative;
+  top: 15vh;
+
+    @media screen and (max-width: $break-large) {
+      padding: 20px;
+      margin: auto;
+      height: 50vh;
+      width: 100vw;
+  }
+}
+
+.bottomDivSuc {
+  display: inline-block;
+  padding: 24px 32px;
+  width: 100vw;
+  text-align: left;
+  bottom: 0px;
+  position: fixed;
+
+}

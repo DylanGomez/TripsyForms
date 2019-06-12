@@ -2,46 +2,20 @@ import React, { Component } from 'react';
 import './Step5Activity.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-
 import templeIcon from '../../../Icons/pagoda.svg'
 import scubaIcon from '../../../Icons/scuba.svg'
-
 import questionmark from '../../../Icons/information.svg'
 
 
 class Step5Activity extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false,
-            formInfo: {}
-        };
-
-    }
-
     handleClick(form, value) {
         this.props.addState("activity", value);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
-    }    
-
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }  
-
-    componentDidMount(){
-
-        this.setState({
-            show: true
-        })
-    }
+    }     
 
     render() {
         return (

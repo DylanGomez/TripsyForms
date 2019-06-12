@@ -10,14 +10,6 @@ import clubIcon from '../../../Icons/football-club.svg'
 
 class Step1BGroup extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false
-        };
-
-    }
-
     handleClick(form, value) {
         this.props.addState("group", value);
         var _this = this;
@@ -25,12 +17,6 @@ class Step1BGroup extends Component {
             _this.props.toggleForm(form)
         }, 200);
     }    
-
-    componentDidMount(){
-        this.setState({
-            show: true
-        })
-    }
 
     render() {
         return (

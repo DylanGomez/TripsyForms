@@ -6,34 +6,12 @@ import formSvg from '../../../Icons/icons_forms.svg'
 
 class Step1Who extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false
-        };
-
-    }
-
     handleClick(form, value) {
         var _this = this;
         this.props.addState("who", value);
-        this.animate();
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
-    }
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }
-
-    componentDidMount() {
-        
-        this.setState({
-            show: true
-        })
     }
 
     render() {

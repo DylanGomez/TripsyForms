@@ -10,35 +10,13 @@ import questionmark from '../../../Icons/information.svg'
 
 class Step4Speed extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false
-        };
-
-    }
-
     handleClick(form, value) {
         this.props.addState("speed", value);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
     }    
-
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }  
-
-    componentDidMount(){
-        this.setState({
-            show: true
-        })
-    }
 
     render() {
         return (

@@ -9,34 +9,12 @@ import datePickerSvg from '../../../Icons/datepicker.svg'
 
 class Step2Weeks extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            show: false
-        };
-
-    }
-
     handleClick(form, value) {
         this.props.addState("weeks", value);
-        this.animate();
         var _this = this;
         setTimeout(function () {
             _this.props.toggleForm(form)
         }, 200);
-    }
-
-
-    animate() {
-        this.setState({
-            show: false
-        });
-    }
-
-    componentDidMount() {
-        this.setState({
-            show: true
-        })
     }
 
     render() {

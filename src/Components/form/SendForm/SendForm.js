@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './SendForm.scss'
 import { Form, Button } from 'react-bootstrap';
 import IntlTelInput from 'react-intl-tel-input';
+import HelpIcon from '@material-ui/icons/Help';
+import HelpModal from '../../MainScreen/helpModal/HelpModal';
+import MediaQuery from 'react-responsive';
 
 class SendForm extends Component {
     constructor() {
@@ -13,15 +16,16 @@ class SendForm extends Component {
             email: "",
             phoneNumber: "",
             formInfo: {},
+            helpOpen: false,
         }
-
+        this.toggleHelp = this.toggleHelp.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
     }
     getAmountOfPeople(whoState) {
-        if(whoState === "alone"){
+        if (whoState === "alone") {
             return 1;
-        } else if (whoState === "partner"){
+        } else if (whoState === "partner") {
             return 2;
         } else {
             return 0;
@@ -48,7 +52,7 @@ class SendForm extends Component {
             accomodation: this.state.formInfo.state.accomodation
         });
 
-        fetch('http://192.168.2.5:8042/api/trips', {
+        fetch('http://localhost:8042/api/trips', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -57,7 +61,7 @@ class SendForm extends Component {
         }).then(res => {
             if (res.ok) {
                 res.json().then(json => {
-                    console.log(json)
+                    this.props.history.push('/success')
                 })
                 return res;
             }
@@ -77,64 +81,101 @@ class SendForm extends Component {
         const value = event.target.value;
 
         this.setState({
-            [name]: value  
+            [name]: value
         });
     }
 
-    componentDidMount(){
+    componentDidMount() {
         var states = this.props.location.givenState;
 
         this.setState({
             formInfo: states
         })
+
+    }
+
+    toggleHelp() {
+        this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
     render() {
+
         return (
             <div className="pageDiv">
-                <div className="textArea">
-                    {/* <div className="textBlock">
-                        <span className="successText">Yes!</span>
+                <div className="backgroundNew">
+                    <div className="logoSuccess">  </div>
+                    <div className="helpIconSuccess" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
+                    {this.state.helpOpen &&
+                        <HelpModal toggleHelp={this.toggleHelp} />
+                    }
+                    <div className="textDivSend">
+                        <span className="tripSendText">Jouw droomtrip naar Thailand</span>
                         <br />
-                        <span className="subtitleSuccess">We hebben een passend reisaanbod voor je gevonden</span>
-                    </div> */}
-                </div>
-            
-                <div className="formArea">
-                <div className="formAreaRight">
-                    <span className="whoText">Wie mag het reisaanbod ontvangen?</span>
-                    <br />
-                    <div className="radio-buttons">
-                        <div className="inputGroup">
-                            <input onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio" />
-                            <label htmlFor="radio1">Man</label>
-                        </div>
-                        <div className="inputGroup">
-                            <input onChange={this.changeHandler} value="Woman" id="radio2" name="gender" type="radio" />
-                            <label htmlFor="radio2">Vrouw</label>
+                        <MediaQuery query='(min-device-width: 1224px)'>
+                            <span className="subSendTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
+                        </MediaQuery>
+                        <MediaQuery query='(max-device-width: 1224px)'>
+                            <span className="subSendTripText">gratis en vrijblijvend</span>
+                        </MediaQuery>
+                        <div className="formArea">
+                            <div className="formAreaRight">
+                                <span className="whoText">Wie mag het reisaanbod ontvangen?</span>
+                                <br />
+                                <div className="radio-buttons">
+                                    <div className="inputGroup">
+                                        <input onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio" />
+                                        <label htmlFor="radio1">Man</label>
+                                    </div>
+                                    <div className="inputGroup">
+                                        <input onChange={this.changeHandler} value="Woman" id="radio2" name="gender" type="radio" />
+                                        <label htmlFor="radio2">Vrouw</label>
+                                    </div>
+                                </div>
+                                <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} />
+
+                                <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} />
+
+                                <Form.Control className="formField" name="email" size="lg" type="text" placeholder="E-mailadres" onChange={this.changeHandler} />
+
+                                <IntlTelInput
+                                    className="telephoneInput"
+                                    name="phoneNumber"
+                                    onPhoneNumberChange={(status, value, countryData, number, id) => {
+                                        this.onChange(number);
+                                    }}
+                                    preferredCountries={['nl']}
+                                    onlyCountries={['nl', 'be']}
+                                />
+
+                                <Button variant="success" size="lg" onClick={this.handleSubmit}>Ja, verstuur het reisaanbod</Button>
+                                <br />
+                                <span><i>Gratis en vrijblijvend </i></span>
+                            </div>
                         </div>
                     </div>
-                    <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} />
-            
-                    <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} />
-                   
-                    <Form.Control className="formField" name="email" size="lg" type="text" placeholder="E-mailadres" onChange={this.changeHandler} />
-                    
-                    <IntlTelInput
-                        className="telephoneInput"
-                        name="phoneNumber"
-                        onPhoneNumberChange={(status, value, countryData, number, id) => {
-                            this.onChange(number);
-                        }}
-                        preferredCountries={['nl']}
-                        onlyCountries={['nl', 'be']}
-                    />
-
-                    <Button variant="success" size="lg" onClick={this.handleSubmit}>Ja, verstuur het reisaanbod</Button>
-                    <br />
-                    <span><i>Gratis en vrijblijvend </i></span>
                 </div>
-                </div>  
+                <div className="bottomDiv">
+                    {/* <span className="garantyTitle">Garantiefonds</span>
+                    <br />
+                    <span className="garantyText"> Al onze reizen vallen onder het garantiefonds van de GGTO.
+                    Hierdoor heb je de garantie dat wanneer de organisator van de reis,
+                    zoals de lokale touroperator of de luchtvaartmaatschappij, failliet gaat je het betaalde bedrag vergoedt krijgt.
+                    Voor andere onvoorziene gebeurtenissen raden wij een goede reisverzekering aan.
+                    Wij kunnen je hierbij helpen.</span>
+                    <br />
+                    <img className="ggtoLogo" src={GGTOLogo} alt="" />
+                    <br />
+                    <div className="line"></div>
+                    <br /> */}
+                    <div className="links1">
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
+                    </div>
+                    <div className="links2">
+                        <span className="linksRight"> © Tripsy B.V. 2019</span>
+                    </div>
+                </div>
             </div>
         )
     }
