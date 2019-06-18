@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './LoadScreen.scss'
 
-import loadingIcon from "../../../Icons/Ripple-1s-200px.gif"
+import loadingIcon from "../../../Icons/Eclipse-1s-200px.gif"
 
 
 class LoadScreen extends Component {

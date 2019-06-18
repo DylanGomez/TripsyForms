@@ -28,29 +28,31 @@ class SendForm extends Component {
         } else if (whoState === "partner") {
             return 2;
         } else {
-            return 0;
+            return 1;
         }
     }
 
     handleSubmit(event) {
         var tripName = this.state.name + "'s Trip"
-
-        var amount = this.getAmountOfPeople(this.state.formInfo.who);
-
-        event.preventDefault();
-        const data = JSON.stringify({
-            tripTitle: tripName,
-            tripType: "NATURE",
-            tripSpeed: this.state.formInfo.state.speed,
-            tripCountry: "Thailand",
-            tripDescription: tripName,
-            tripLength: this.state.formInfo.state.weeks,
-            tripPeople: amount,
-            email: this.state.email,
-            customerName: this.state.name,
-            prefferedActivity: this.state.formInfo.state.activity,
-            accomodation: this.state.formInfo.state.accomodation
-        });
+        if (this.state.formInfo) {
+            var amount = this.getAmountOfPeople(this.state.formInfo.who);
+            event.preventDefault();
+            var data = JSON.stringify({
+                tripTitle: tripName,
+                tripType: "NATURE",
+                tripSpeed: this.state.formInfo.state.speed,
+                tripCountry: "Thailand",
+                tripDescription: tripName,
+                tripLength: this.state.formInfo.state.weeks,
+                tripPeople: amount,
+                email: this.state.email,
+                customerName: this.state.name,
+                prefferedActivity: this.state.formInfo.state.activity,
+                accomodation: this.state.formInfo.state.accomodation
+            });
+        } else {
+            data = "";
+        }
 
         fetch('http://localhost:8042/api/trips', {
             method: 'POST',
@@ -65,7 +67,9 @@ class SendForm extends Component {
                 })
                 return res;
             }
-        });
+        }).catch((error) => {
+            console.log("test");
+        })
     }
 
 
