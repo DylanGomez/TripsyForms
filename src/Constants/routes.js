@@ -13,7 +13,8 @@ import SuccessPage from '../Components/form/SuccesPage/SuccessPage';
 const RouterForms = () => (
     <TestRouter >
         <div>
-            <Route path="/main/:destination" component={MainScreen} />
+            <Route path="/" component={MainScreen} />
+            <Route path="/:destination" component={MainScreen} />
             <Route path="/sendform" component={SendForm} />
             <Route path="/success" component={SuccessPage} />
         </div>
