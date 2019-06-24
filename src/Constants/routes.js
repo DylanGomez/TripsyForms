@@ -11,9 +11,9 @@ import SuccessPage from '../Components/form/SuccesPage/SuccessPage';
 
 
 const RouterForms = () => (
-    <TestRouter >
+    <TestRouter>
         <div>
-            <Route path="/:destination" component={MainScreen} />
+            <Route path="/des/:destination" component={MainScreen} />
             <Route path="/sendform" component={SendForm} />
             <Route path="/success" component={SuccessPage} />
         </div>
