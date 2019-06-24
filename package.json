@@ -2,7 +2,7 @@
   "name": "tripsy-forms",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.tripsy.nl",
+  "homepage": "http://dylangomez.github.io/tripsyforms",
   "dependencies": {
     "@material-ui/core": "^4.0.1",
     "@material-ui/icons": "^4.0.1",
