@@ -158,7 +158,6 @@ class MainScreen extends Component {
     componentDidMount() {
         window.onpopstate = this.onBackButtonEvent;
         this.getObject();
-
     }
 
     goToSuccess() {
