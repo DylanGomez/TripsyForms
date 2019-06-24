@@ -181,9 +181,16 @@ class MainScreen extends Component {
         for (var i = 0; i < this.destinations.length; i++) {
             var obj = this.destinations[i];
             if (this.destination in obj) {
-                this.setState({
-                    currentCountry: obj[this.destination]
-                })
+                if(this.destination){
+                    this.setState({
+                        currentCountry: obj[this.destination]
+                    })
+                } else {
+                    this.setState({
+                        currentCountry: obj["thailand"]
+                    })
+                }
+
             }
         }
     }
