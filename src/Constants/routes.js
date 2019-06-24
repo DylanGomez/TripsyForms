@@ -1,6 +1,7 @@
 import React from 'react'
 import {
     BrowserRouter as Router,
+    HashRouter as TestRouter,
     Route,
 } from 'react-router-dom'
 import SendForm from '../Components/form/SendForm/SendForm';
@@ -10,13 +11,12 @@ import SuccessPage from '../Components/form/SuccesPage/SuccessPage';
 
 
 const RouterForms = () => (
-    <Router basename={process.env.PUBLIC_URL}>
+    <TestRouter >
         <div>
             <Route path="/main/:destination" component={MainScreen} />
             <Route path="/sendform" component={SendForm} />
             <Route path="/success" component={SuccessPage} />
-            <Route component={() => (<div>404 Not found </div>)} />
         </div>
-    </Router>
+    </TestRouter>
 )
 export default RouterForms
