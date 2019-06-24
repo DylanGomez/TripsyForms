@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TripsyForms/precache-manifest.f88f3be5db2ed113416a97808b9babff.js"
+  "/TripsyForms/precache-manifest.f97ac7cbf60f8a056f8574d7fd45ce1b.js"
 );
 
 self.addEventListener('message', (event) => {
