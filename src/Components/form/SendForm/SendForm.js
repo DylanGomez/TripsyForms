@@ -5,6 +5,8 @@ import IntlTelInput from 'react-intl-tel-input';
 import HelpIcon from '@material-ui/icons/Help';
 import HelpModal from '../../MainScreen/helpModal/HelpModal';
 import MediaQuery from 'react-responsive';
+import * as emailjs from 'emailjs-com';
+
 
 class SendForm extends Component {
     constructor() {
@@ -21,6 +23,7 @@ class SendForm extends Component {
         this.toggleHelp = this.toggleHelp.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
+        this.mailService = this.mailService.bind(this);
     }
     getAmountOfPeople(whoState) {
         if (whoState === "alone") {
@@ -71,6 +74,64 @@ class SendForm extends Component {
             console.log("test");
         })
     }
+
+    mailService(event) {
+        event.preventDefault();
+
+        var amount = this.getAmountOfPeople(this.state.formInfo.who);
+
+        var customerTemplate = {
+            from_name: 'tripsytravelservice@gmail.com',
+            to_name: this.state.email,
+            subject: this.state.name,
+            message_html: 'Beste ' + this.state.name + ', <br> ' +
+                '<br>' +
+                'Bedankt voor je aanvraag! ' +
+                '<br>' +
+                '<br>' +
+                'Wij sturen je zo snel mogelijk een reisplan op maat. We hebben nog een paar vragen, want: hoe meer we weten, hoe beter! <br>' +
+                '<br>' +
+                'Heb je deze vragen al ingevuld? Heel erg bedankt. Mocht je ze hebben gemist klik dan <a href="https://tripsy.nl/je-bent-er-bijna/">hier</a> en vul ze alsnog in zodat wij een zo goed mogelijk reisplan voor je kunnen maken.' +
+                '<br>' +
+                '<br>' +
+                'Met vriendelijke groet, ' +
+                'Het Tripsy team' +
+                '<br>' +
+                '<br>' +
+                'Bellen: 030 - 711 68 97 <br>' +
+                'Mailen: hallo@tripsy.nl <br>' +
+                'Website: www.tripsy.nl <br>' +
+                '<br>'
+        }
+        var tripsyTemplate = {
+            from_name: 'tripsytravelservice@gmail.com',
+            to_name: 'tripsytravelservice@gmail.com',
+            subject: 'Bevestiging aanvraag',
+            message_html: '<b>AANVRAAG REISVOORSTEL: Thailand </b> ' +
+                '<br> <br> <b>Aanvrager:</b> ' + this.state.name + ' <br> ' +
+                '<b>E-mailadres:</b> ' + this.state.email + '<br> <br> <br> ' +
+                '<b>Aantal personen:</b>' + amount + '<br>' +
+                '<b>Hoe lang wil je op reis:</b> ' + this.state.formInfo.state.weeks + ' dagen<br>' +
+                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity + '<br>' +
+                '<b>Voorkeur voor accomodatie:</b> ' + this.state.formInfo.state.accomodation + '<br>' +
+                + '<br>' +
+                'Met vriendelijke groet,<br> Het Tripsy Team <br> <br>' +
+                'Bellen: +31 (0)30 - 711 62 47 <br>' +
+                'Mailen: hallo@tripsy.nl<br>' +
+                'Website: www.tripsy.nl<br> <br>'
+        }
+
+        emailjs.send('gmail', 'custome_template', customerTemplate, 'user_pFcFNWKnDCsz1SB49OGyC')
+            .then(function (response) {
+                emailjs.send('gmail', 'template_swB6ioGg', tripsyTemplate, 'user_pFcFNWKnDCsz1SB49OGyC')
+                    .then(function (response) {
+                        this.props.history.push('/success')
+                    });
+            }, function (err) {
+                console.log(err)
+            });
+    }
+
 
 
     onChange(value) {
@@ -151,7 +212,7 @@ class SendForm extends Component {
                                     onlyCountries={['nl', 'be']}
                                 />
 
-                                <Button variant="success" size="lg" onClick={this.handleSubmit}>Ja, verstuur het reisaanbod</Button>
+                                <Button variant="success" size="lg" onClick={this.mailService}>Ja, verstuur het reisaanbod</Button>
                                 <br />
                                 <span><i>Gratis en vrijblijvend </i></span>
                             </div>
