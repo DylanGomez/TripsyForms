@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './SuccessPage.scss'
 import { Button } from 'react-bootstrap';
 import HelpIcon from '@material-ui/icons/Help';
+import { Redirect } from 'react-router-dom';
+
 
 import HelpModal from '../../MainScreen/helpModal/HelpModal';
 
@@ -17,7 +19,7 @@ class SuccessPage extends Component {
     }
 
     goToWebsite() {
-        this.props.history.push('/main/thailand')
+        return <Redirect to={{ pathname: 'www.tripsy.nl' }} />;
     }
 
     toggleHelp() {

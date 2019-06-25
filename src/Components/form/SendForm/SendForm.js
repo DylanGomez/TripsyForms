@@ -6,6 +6,8 @@ import HelpIcon from '@material-ui/icons/Help';
 import HelpModal from '../../MainScreen/helpModal/HelpModal';
 import MediaQuery from 'react-responsive';
 import * as emailjs from 'emailjs-com';
+import { Redirect } from 'react-router-dom';
+
 
 
 class SendForm extends Component {
@@ -24,6 +26,7 @@ class SendForm extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.changeHandler = this.changeHandler.bind(this);
         this.mailService = this.mailService.bind(this);
+        this.goToSucces = this.goToSucces.bind(this);
     }
     getAmountOfPeople(whoState) {
         if (whoState === "alone") {
@@ -108,31 +111,34 @@ class SendForm extends Component {
             to_name: 'tripsytravelservice@gmail.com',
             subject: 'Bevestiging aanvraag',
             message_html: '<b>AANVRAAG REISVOORSTEL: Thailand </b> ' +
-                '<br> <br> <b>Aanvrager:</b> ' + this.state.name + ' <br> ' +
-                '<b>E-mailadres:</b> ' + this.state.email + '<br> <br> <br> ' +
-                '<b>Aantal personen:</b>' + amount + '<br>' +
-                '<b>Hoe lang wil je op reis:</b> ' + this.state.formInfo.state.weeks + ' dagen<br>' +
-                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity + '<br>' +
-                '<b>Voorkeur voor accomodatie:</b> ' + this.state.formInfo.state.accomodation + '<br>' +
+                '<br> <br> <b>Aanvrager:</b> ' + this.state.name ||  + ' <br> ' +
+                '<b>E-mailadres:</b> ' + this.state.email || + '<br> <br> <br> ' +
+                '<b>Aantal personen:</b>' + amount || + '<br>' +
+                '<b>Hoe lang wil je op reis:</b> ' + this.state.formInfo.state.weeks || + ' dagen<br>' +
+                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity || + '<br>' +
+                '<b>Voorkeur voor accomodatie:</b> ' + this.state.formInfo.state.accomodation || + '<br>' +
                 + '<br>' +
                 'Met vriendelijke groet,<br> Het Tripsy Team <br> <br>' +
                 'Bellen: +31 (0)30 - 711 62 47 <br>' +
                 'Mailen: hallo@tripsy.nl<br>' +
                 'Website: www.tripsy.nl<br> <br>'
         }
+        var _this = this;
 
         emailjs.send('gmail', 'custome_template', customerTemplate, 'user_pFcFNWKnDCsz1SB49OGyC')
             .then(function (response) {
                 emailjs.send('gmail', 'template_swB6ioGg', tripsyTemplate, 'user_pFcFNWKnDCsz1SB49OGyC')
                     .then(function (response) {
-                        this.props.history.push('/success')
+                        _this.props.history.push("/success")
                     });
             }, function (err) {
-                console.log(err)
+                console.log(err) 
             });
     }
 
-
+    goToSucces(){
+        return <Redirect to={{ pathname: '/success' }} />;
+    }
 
     onChange(value) {
         this.setState({
