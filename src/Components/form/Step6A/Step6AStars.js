@@ -8,6 +8,7 @@ import fourStars from '../../../Icons/4stars.svg'
 import fiveStars from '../../../Icons/5stars.svg'
 import questionmark from '../../../Icons/information.svg'
 
+
 class Step6AStars extends Component {
 
     handleClick(form, value) {
