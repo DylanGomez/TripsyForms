@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SendForm.scss'
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Spinner } from 'react-bootstrap';
 import IntlTelInput from 'react-intl-tel-input';
 import HelpIcon from '@material-ui/icons/Help';
 import HelpModal from '../../MainScreen/helpModal/HelpModal';
@@ -21,6 +21,7 @@ class SendForm extends Component {
             phoneNumber: "",
             formInfo: {},
             helpOpen: false,
+            buttonPressed: false
         }
         this.toggleHelp = this.toggleHelp.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,7 +34,6 @@ class SendForm extends Component {
     handleSubmit(event) {
         var tripName = this.state.name + "'s Trip"
         if (this.state.formInfo) {
-            var amount = this.getAmountOfPeople(this.state.formInfo.who);
             event.preventDefault();
             var data = JSON.stringify({
                 tripTitle: tripName,
@@ -42,7 +42,6 @@ class SendForm extends Component {
                 tripCountry: "Thailand",
                 tripDescription: tripName,
                 tripLength: this.state.formInfo.state.weeks,
-                tripPeople: amount,
                 email: this.state.email,
                 customerName: this.state.name,
                 prefferedActivity: this.state.formInfo.state.activity,
@@ -72,7 +71,10 @@ class SendForm extends Component {
 
     mailService(event) {
         event.preventDefault();
-        var amount = this.getAmountOfPeople(this.state.formInfo.who);
+
+        this.setState({
+            buttonPressed: true
+        });
 
         var customerTemplate = {
             from_name: 'hallo@tripsy.nl',
@@ -98,7 +100,7 @@ class SendForm extends Component {
                 '<br>' +
                 '<br>' +
                 '<br>' +
-                '<br>' 
+                '<br>'
 
         }
         var tripsyTemplate = {
@@ -106,16 +108,19 @@ class SendForm extends Component {
             to_name: 'hallo@tripsy.nl',
             subject: 'Bevestiging aanvraag',
             message_html: '<b>AANVRAAG REISVOORSTEL: Thailand </b> ' +
-                '<br> <br> <b>Aanvrager:</b> ' + this.state.name   + ' <br> ' +
-                '<b>E-mailadres:</b> ' + this.state.email + '<br> <br> <br> ' +
-                '<b>Met wie wil je op reis: </b>' + this.state.formInfo.who  + '<br>' +
-                '<b>Met hoeveel personen wil je op reis: </b>' + this.state.formInfo.howMany  + '<br>' +
-                '<b>Hoe lang wil je op reis: </b> ' + this.state.formInfo.state.weeks  + ' dagen<br>' +
-                '<b>Wanneer wil je op reis: </b> ' + this.state.formInfo.state.when  + ' <br>' +
-                '<b>In welke snelheid wil je reizen: </b> ' + this.state.formInfo.state.speed  + ' <br>' +
-                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity  + '<br>' +
+                '<br> <br> <b>Aanvrager voornaam:</b> ' + this.state.name + ' <br> ' +
+                '<b>Achternaam:</b> ' + this.state.lastname + '<br> ' +
+                '<b>E-mailadres:</b> ' + this.state.email + '<br>  ' +
+                '<b>Telefoonnummer:</b> ' + this.state.phoneNumber + '<br> <br> <br> ' +
+
+                '<b>Met wie wil je op reis: </b>' + this.state.formInfo.state.who + '<br>' +
+                '<b>Met hoeveel personen wil je op reis: </b>' + JSON.stringify(this.state.formInfo.state.howMany) + '<br>' +
+                '<b>Hoe lang wil je op reis: </b> ' + this.state.formInfo.state.weeks + ' dagen<br>' +
+                '<b>Wanneer wil je op reis: </b> ' + this.state.formInfo.state.when + ' <br>' +
+                '<b>In welke snelheid wil je reizen: </b> ' + this.state.formInfo.state.speed + ' <br>' +
+                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity + '<br>' +
                 '<b>Voorkeur voor accomodatie:</b> ' + this.state.formInfo.state.accomodation + '<br>' +
-                '<b>Voorkeur voor accomodatie in sterren:</b> ' + this.state.formInfo.state.accomodationStars + '<br>' +
+                '<b>Optioneel: Met welke groep:</b> ' + this.state.formInfo.state.group + '<br>' +
                 + '<br>' +
                 'Met vriendelijke groet,<br> Het Tripsy Team <br> <br>' +
                 'Bellen: +31 (0)30 - 711 62 47 <br>' +
@@ -161,7 +166,7 @@ class SendForm extends Component {
 
     componentDidMount() {
         var states = this.props.location.givenState;
-    
+
         this.setState({
             formInfo: states
         })
@@ -174,7 +179,8 @@ class SendForm extends Component {
 
     render() {
         if (this.state.formInfo) {
-            console.log(this.state.formInfo)
+            console.log(this.state.formInfo);
+
             return (
                 <div className="pageDiv">
                     <div className="backgroundNew">
@@ -221,8 +227,14 @@ class SendForm extends Component {
                                         preferredCountries={['nl']}
                                         onlyCountries={['nl', 'be']}
                                     />
-
-                                    <Button variant="success" size="lg" onClick={this.mailService}>Ja, verstuur het reisaanbod</Button>
+                                    {!this.state.buttonPressed &&
+                                        <Button variant="success" size="lg" onClick={this.mailService}>Ja, verstuur het reisaanbod</Button>
+                                    }
+                                    {this.state.buttonPressed &&
+                                        <Button variant="success" size="lg" disabled>
+                                            <Spinner animation="border" />
+                                        </Button>
+                                    }
                                     <br />
                                     <span><i>Gratis en vrijblijvend </i></span>
                                 </div>
@@ -263,9 +275,9 @@ class SendForm extends Component {
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }
                         <div className="textDivSend">
-                        <span className="whoText">Wij hebben nog geen informatie van je!</span>
-                        <br/>
-                        <Button variant="success" size="lg" onClick={this.goToStart}>Start de aanvraag!</Button>
+                            <span className="whoText">Wij hebben nog geen informatie van je!</span>
+                            <br />
+                            <Button variant="success" size="lg" onClick={this.goToStart}>Start de aanvraag!</Button>
 
                         </div>
                     </div>
