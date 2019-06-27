@@ -30,17 +30,6 @@ class SendForm extends Component {
         this.goToStart = this.goToStart.bind(this);
     }
 
-    getAmountOfPeople(whoState) {
-        if (whoState === "alone") {
-            return 1;
-        } else if (whoState === "partner") {
-            return 2;
-        } else {
-            return 1;
-        }
-        return 0;
-    }
-
     handleSubmit(event) {
         var tripName = this.state.name + "'s Trip"
         if (this.state.formInfo) {
@@ -86,7 +75,7 @@ class SendForm extends Component {
         var amount = this.getAmountOfPeople(this.state.formInfo.who);
 
         var customerTemplate = {
-            from_name: 'tripsytravelservice@gmail.com',
+            from_name: 'hallo@tripsy.nl',
             to_name: this.state.email,
             subject: this.state.name,
             message_html: 'Beste ' + this.state.name + ', <br> ' +
@@ -94,9 +83,9 @@ class SendForm extends Component {
                 'Bedankt voor je aanvraag! ' +
                 '<br>' +
                 '<br>' +
-                'Wij sturen je zo snel mogelijk een reisplan op maat. We hebben nog een paar vragen, want: hoe meer we weten, hoe beter! <br>' +
+                'Wij nemen zo spoedig mogelijk contact met je op om een telefonische afspraak te plannen. Dit is nodig om een reisplan op maat voor je te kunnen maken die in alle opzichten spectaculair is! <br>' +
                 '<br>' +
-                'Heb je deze vragen al ingevuld? Heel erg bedankt. Mocht je ze hebben gemist klik dan <a href="https://tripsy.nl/je-bent-er-bijna/">hier</a> en vul ze alsnog in zodat wij een zo goed mogelijk reisplan voor je kunnen maken.' +
+                'Mocht je binnen 1 werkdag niks van ons hebben gehoord dan is er bij ons iets mis gegaan. Laat het ons alsjeblieft weten want we komen alsnog graag met je in contact.' +
                 '<br>' +
                 '<br>' +
                 'Met vriendelijke groet, ' +
@@ -106,19 +95,27 @@ class SendForm extends Component {
                 'Bellen: 030 - 711 68 97 <br>' +
                 'Mailen: hallo@tripsy.nl <br>' +
                 'Website: www.tripsy.nl <br>' +
-                '<br>'
+                '<br>' +
+                '<br>' +
+                '<br>' +
+                '<br>' 
+
         }
         var tripsyTemplate = {
-            from_name: 'tripsytravelservice@gmail.com',
-            to_name: 'tripsytravelservice@gmail.com',
+            from_name: 'hallo@tripsy.nl',
+            to_name: 'hallo@tripsy.nl',
             subject: 'Bevestiging aanvraag',
             message_html: '<b>AANVRAAG REISVOORSTEL: Thailand </b> ' +
-                '<br> <br> <b>Aanvrager:</b> ' + this.state.name || + ' <br> ' +
-                '<b>E-mailadres:</b> ' + this.state.email || + '<br> <br> <br> ' +
-                '<b>Aantal personen:</b>' + amount || + '<br>' +
-                '<b>Hoe lang wil je op reis:</b> ' + this.state.formInfo.state.weeks || + ' dagen<br>' +
-                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity || + '<br>' +
-                '<b>Voorkeur voor accomodatie:</b> ' + this.state.formInfo.state.accomodation || + '<br>' +
+                '<br> <br> <b>Aanvrager:</b> ' + this.state.name   + ' <br> ' +
+                '<b>E-mailadres:</b> ' + this.state.email + '<br> <br> <br> ' +
+                '<b>Met wie wil je op reis: </b>' + this.state.formInfo.who  + '<br>' +
+                '<b>Met hoeveel personen wil je op reis: </b>' + this.state.formInfo.howMany  + '<br>' +
+                '<b>Hoe lang wil je op reis: </b> ' + this.state.formInfo.state.weeks  + ' dagen<br>' +
+                '<b>Wanneer wil je op reis: </b> ' + this.state.formInfo.state.when  + ' <br>' +
+                '<b>In welke snelheid wil je reizen: </b> ' + this.state.formInfo.state.speed  + ' <br>' +
+                '<b>Wat wil je het liefst ervaren:</b> ' + this.state.formInfo.state.activity  + '<br>' +
+                '<b>Voorkeur voor accomodatie:</b> ' + this.state.formInfo.state.accomodation + '<br>' +
+                '<b>Voorkeur voor accomodatie in sterren:</b> ' + this.state.formInfo.state.accomodationStars + '<br>' +
                 + '<br>' +
                 'Met vriendelijke groet,<br> Het Tripsy Team <br> <br>' +
                 'Bellen: +31 (0)30 - 711 62 47 <br>' +
@@ -127,9 +124,9 @@ class SendForm extends Component {
         }
         var _this = this;
 
-        emailjs.send('gmail', 'custome_template', customerTemplate, 'user_pFcFNWKnDCsz1SB49OGyC')
+        emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
             .then(function (response) {
-                emailjs.send('gmail', 'template_swB6ioGg', tripsyTemplate, 'user_pFcFNWKnDCsz1SB49OGyC')
+                emailjs.send('gmail', 'tripsytemplate', tripsyTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                     .then(function (response) {
                         _this.props.history.push("/success")
                     });
@@ -164,7 +161,7 @@ class SendForm extends Component {
 
     componentDidMount() {
         var states = this.props.location.givenState;
-
+    
         this.setState({
             formInfo: states
         })
@@ -176,8 +173,8 @@ class SendForm extends Component {
     }
 
     render() {
-
         if (this.state.formInfo) {
+            console.log(this.state.formInfo)
             return (
                 <div className="pageDiv">
                     <div className="backgroundNew">
