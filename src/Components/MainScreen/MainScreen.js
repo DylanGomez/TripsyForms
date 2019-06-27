@@ -18,6 +18,7 @@ import Step6AStars from '../form/Step6A/Step6AStars';
 import LoadScreen from '../form/LoadScreen/LoadScreen';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import elephantIcon from '../../Icons/elephant.svg';
+
 import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg'
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
@@ -94,7 +95,8 @@ class MainScreen extends Component {
                 },
             }
         }
-    }, {
+    } //EINDE LAND
+    ,{
         vietnam: {
             countryName: "Vietnam",
             backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1)),url(${BackgroundVietnam})`,
@@ -132,8 +134,9 @@ class MainScreen extends Component {
                     value: "Beachhouse"
                 },
             }
-        }
-    }]
+        } 
+    }, // EINDE LAND
+]
 
     getForm(currentForm) {
 
