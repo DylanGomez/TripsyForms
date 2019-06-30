@@ -9,9 +9,9 @@ class LoadScreen extends Component {
 
     componentDidMount(){
         var _this = this
-        // setTimeout(function () {
-        //     _this.props.toggleForm("finalPage")
-        // }, 2000);
+        setTimeout(function () {
+            _this.props.toggleForm("finalPage")
+        }, 2000);
     }
 
     render() {
