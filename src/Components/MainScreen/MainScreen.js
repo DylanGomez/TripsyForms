@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MainScreen.scss'
 
-import HelpIcon from '@material-ui/icons/Help';
+// import HelpIcon from '@material-ui/icons/Help';
 
 import MediaQuery from 'react-responsive';
 import { Redirect } from 'react-router-dom';

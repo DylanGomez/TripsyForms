@@ -175,7 +175,7 @@ $break-large: 1025px;
     }
 }
 
-.helpIcon {
+/* .helpIcon {
     font-size: 16px;
     color: white;
     float: right;
@@ -185,21 +185,21 @@ $break-large: 1025px;
         margin-right: 0px;
         margin-top: 0px;
     }
-}
+}*/
 
-.helpIcon:hover {
+.helpword:hover {
     cursor: pointer;
 }
 
 .helpword {
     // margin-left: 6px;
+    float: right;
     vertical-align: center;
     font-size: 16px;
     font-weight: 600;
     // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #404348;
 }
-
 
 .onsGarantiefonds {
     margin: 15px 0 6px;
