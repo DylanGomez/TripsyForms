@@ -236,6 +236,16 @@ class MainScreen extends Component {
 
         return (
             <div>
+                <div className="HeaderDiv">
+                    <div className="links1">
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
+                    </div>
+                    <div className="links2">
+                        <span className="linksRight"> © Tripsy B.V. 2019</span>
+                    </div>
+                </div>
                 <div style={this.backgroundStyle} className="topDiv">
                     <div className="logo"> Tripsy </div>
                     <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpword">Help</span></div>

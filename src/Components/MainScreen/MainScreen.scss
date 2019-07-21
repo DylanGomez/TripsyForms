@@ -6,7 +6,7 @@ $break-large: 1025px;
     height: 106vh;
     width: 100vw;
     -webkit-filter: grayscale(30%);
-    // background-image: linear-gradient(to bottom, rgba(51, 104, 168, 0.5), rgba(51, 104, 168, 0.1), rgba(0, 0, 0, 0.0)),url("../../images/Rondreis-Thailand-Phuket.jpg");
+    background-image: linear-gradient(to bottom, rgba(1, 64, 81, 0.3), rgba(1, 64, 81, 0.05), rgba(0, 0, 0, 0.1)),url("../../images/Rondreis-Thailand-Aanvragen.jpg") !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,11 +73,11 @@ $break-large: 1025px;
 
 .tripText {
     font-family: 'Catamaran', sans-serif;
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 56px;
+    line-height: 64px;
     color: white;
-    font-weight: 700;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.02);
+    font-weight: 800;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: $break-large) {
         display: block;
         font-size: 30px;
@@ -90,7 +90,7 @@ $break-large: 1025px;
     font-size: 16px;
     line-height: 0px;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     margin-top: -24px;
     @media screen and (max-width: $break-large) {
