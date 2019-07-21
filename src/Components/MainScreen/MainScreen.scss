@@ -3,10 +3,12 @@ $break-large: 1025px;
 
 .topDiv {
     display: inline-block; 
-    height: 106vh;
+    height: 56vh;
     width: 100vw;
+    margin-top: -6px;
+    margin-bottom: 428px;
     -webkit-filter: grayscale(30%);
-    background-image: linear-gradient(to bottom, rgba(1, 64, 81, 0.3), rgba(1, 64, 81, 0.05), rgba(0, 0, 0, 0.1)),url("../../images/Rondreis-Thailand-Aanvragen.jpg") !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.01)),url("../../images/Thailand_forms.jpg") !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,21 +20,18 @@ $break-large: 1025px;
 
 .logo {
     position: fixed;
-    margin-left: 24px;
-    margin-top: 24px;
+    margin: 0;
     content: url(../../Icons/Logo_tripsy.svg);
-    color: white;
-    width: 12vh;
+    color: #white;
+    width: 9,6vh;
     @media screen and (max-width: $break-small) {
         position: absolute;
-        margin-left: 24px;
-        margin-top: 16px;
-        width: 10vh;
+        height: 25px;
     }
 }
 
 .textDiv {
-    padding-top: 16vh;
+    padding-top: 10vh;
     text-align: center;
 
     @media screen and (max-width: $break-large) {
@@ -48,6 +47,14 @@ $break-large: 1025px;
     @media screen and (max-width: $break-large) {
         padding-top: 0vh;
      }
+}
+
+.headerDiv {
+    display: inline-block;
+    padding: 24px 32px;
+    width: 100vw;
+    text-align: left;
+    border-bottom: 1px solid #e9e9eb;
 }
 
 .bottomDiv {
@@ -77,7 +84,7 @@ $break-large: 1025px;
     line-height: 64px;
     color: white;
     font-weight: 800;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
     @media screen and (max-width: $break-large) {
         display: block;
         font-size: 30px;
@@ -91,7 +98,7 @@ $break-large: 1025px;
     line-height: 0px;
     color: white;
     font-weight: 500;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
     margin-top: -24px;
     @media screen and (max-width: $break-large) {
         font-size: 15px;
@@ -172,11 +179,11 @@ $break-large: 1025px;
     font-size: 16px;
     color: white;
     float: right;
-    margin-right: 24px;
-    margin-top: 24px;
+    margin-right: 0px;
+    margin-top: 0px;
     @media screen and (max-width: $break-small) {
-        margin-right: 24px;
-        margin-top: 16px;
+        margin-right: 0px;
+        margin-top: 0px;
     }
 }
 
