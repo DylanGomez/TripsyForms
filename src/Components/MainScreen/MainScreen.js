@@ -238,7 +238,7 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <div className="logo"> Tripsy </div>
-                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpword">Help</span></div>
+                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Contact</span></div>
                 </div>
                 <div style={this.backgroundStyle} className="topDiv">
                     {this.state.helpOpen &&

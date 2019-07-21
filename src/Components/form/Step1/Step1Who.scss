@@ -3,9 +3,9 @@ $break-large: 1025px;
 
 .formBox {
     margin: auto;
-    width: 72%;
+    width: 1030px;
     background-color: white;
-    padding: 40px 40px 120px 40px;
+    padding: 40px 40px 120px;
     border-radius: 4px;
     position: relative;
     transition: all 200ms linear 0s;
@@ -33,12 +33,12 @@ $break-large: 1025px;
 
 .title {
     text-align: center;
-    padding-top: 32px !important;
-    padding-bottom: 24px;
-    font-family: lato;
+    padding-top: 22px !important;
+    padding-bottom: 20px !important;
+    font-family: catamaran;
     font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
+    line-height: 28px;
+    font-weight: 800 !important;
     color: #404348;
     margin-bottom: 0px !important;
 }
@@ -81,7 +81,7 @@ $break-large: 1025px;
 }
 
 .card {
-    margin: 4px !important;
+    margin: 8px !important;
     border-radius: 4px;
     border-width: 0px;
 
