@@ -245,7 +245,7 @@ class MainScreen extends Component {
                         <HelpModal toggleHelp={this.toggleHelp} />
                     }
                     <div className="textDiv">
-                        <span className="tripText">Jouw droomtrip naar {this.state.currentCountry.countryName}</span>
+                        <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
                         <MediaQuery query='(min-device-width: 1224px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
