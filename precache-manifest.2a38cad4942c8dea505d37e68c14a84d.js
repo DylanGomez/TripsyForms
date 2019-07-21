@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85cf6a990e77cfdc2cc6690a3a3a2089",
+    "revision": "043a4f64fc8d910a38a6e13d91d15403",
     "url": "/index.html"
   },
   {
-    "revision": "4b482d72ee39ebbfce55",
+    "revision": "bf5183430009a2f5c45a",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "19f3b3a1924a38196f58",
-    "url": "/static/css/main.c81b7e92.chunk.css"
+    "revision": "e04a769b7cd10e38664d",
+    "url": "/static/css/main.6ad1f9d3.chunk.css"
   },
   {
-    "revision": "4b482d72ee39ebbfce55",
-    "url": "/static/js/2.89a9484f.chunk.js"
+    "revision": "bf5183430009a2f5c45a",
+    "url": "/static/js/2.4c3fdb3d.chunk.js"
   },
   {
-    "revision": "19f3b3a1924a38196f58",
-    "url": "/static/js/main.7af4661b.chunk.js"
+    "revision": "e04a769b7cd10e38664d",
+    "url": "/static/js/main.7597de48.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -40,8 +40,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/GGTO_logo_grijs_zonder ondertitel.428d5abc.svg"
   },
   {
-    "revision": "4487991c273bdfa85e1e11b09876dbd1",
-    "url": "/static/media/Logo_tripsy.4487991c.svg"
+    "revision": "b1342f65e796184ece73c82c283762c3",
+    "url": "/static/media/Logo_tripsy.b1342f65.svg"
+  },
+  {
+    "revision": "72cfbc0ae5a0aae7447738dab9be9885",
+    "url": "/static/media/Phuket_thailand_mood.72cfbc0a.jpg"
   },
   {
     "revision": "786081465354796c198d930a078e4c87",
