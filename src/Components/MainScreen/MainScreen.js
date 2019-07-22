@@ -237,18 +237,16 @@ class MainScreen extends Component {
         return (
             <div>
                 <div className="headerDiv">
-                    <div className="logo"> Tripsy </div>
+                <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
                     <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Help</span>
-                    {this.state.helpOpen &&
-                        <HelpModal toggleHelp={this.toggleHelp} />
-                    }</div>
+                    </div>
                 </div>
                 <div style={this.backgroundStyle} className="topDiv">
-                     <div className="logoWhite"> Tripsy </div>
+                    <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logoWhite"> Tripsy </div></a>
                     <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpwordWhite">Help</span>
-                    {this.state.helpOpen &&
+                    </div>{this.state.helpOpen &&
                         <HelpModal toggleHelp={this.toggleHelp} />
-                    }</div>
+                    }
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
@@ -275,9 +273,8 @@ class MainScreen extends Component {
                 </div>
                 <div className="bottomDiv">
                     <div className="links1">
-                        <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
-                        <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
-                        <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
+                        <a href="https://www.tripsy.nl/algemene-voorwaarden"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://www.tripsy.nl/privacy-cookies"><span className="linksLeft">Privacy & Cookies</span></a>
                     </div>
                     <div className="links2">
                         <span className="linksRight"> © Tripsy B.V. 2019</span> 
