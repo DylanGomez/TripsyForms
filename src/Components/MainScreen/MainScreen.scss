@@ -19,8 +19,9 @@ $break-large: 1025px;
         margin-bottom: 500px;
     }
     @media screen and (max-width: $break-small) {
-        height: 30vh;
+        height: 36vh;
         margin-bottom: 500px;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.01)),url("../../images/Phuket_thailand_mood.jpg") !important;
     }
 }
 
@@ -36,6 +37,21 @@ $break-large: 1025px;
     }
 }
 
+.logoWhite {
+    float: left;
+    margin: 24px 0 0 24px;
+    content: url(../../Icons/Logo_tripsyWhite.svg);
+    color: #white;
+    width: 9,6vh;
+    @media screen and (max-width: $break-small) {
+        position: absolute;
+        height: 28px;
+    }
+    @media screen and (min-width: $break-small) {
+        display: none;
+    }
+}
+
 .textDiv {
     padding-top: 11vh;
     text-align: center;
@@ -44,7 +60,7 @@ $break-large: 1025px;
        padding-top: 11vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 7vh;
+        padding-top: 13vh;
      }
 
 }
@@ -55,7 +71,10 @@ $break-large: 1025px;
     text-align: center;
     @media screen and (max-width: $break-large) {
         padding-top: 3vh;
-     }
+    }
+    @media screen and (max-width: $break-small) {
+        padding-top: 4vh;
+    }
 }
 
 .headerDiv {
@@ -63,7 +82,9 @@ $break-large: 1025px;
     padding: 24px 32px;
     width: 100vw;
     text-align: left;
-    // border-bottom: 1px solid #e9e9eb;
+    @media screen and (max-width: $break-small) {
+        display: none;
+    }
 }
 
 .bottomDiv {
@@ -228,6 +249,19 @@ $break-large: 1025px;
     font-weight: 600;
     // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #404348;
+}
+
+.helpwordWhite {
+    margin: 25px 24px 0 0;
+    float: right;
+    vertical-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    @media screen and (min-width: $break-small) {
+        display: none;
+    }
 }
 
 .onsGarantiefonds {

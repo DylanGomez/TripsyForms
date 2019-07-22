@@ -20,8 +20,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import elephantIcon from '../../Icons/elephant.svg';
 
 import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
-import BackgroundVietnam from '../../images/VietnamBackground.jpg'
-import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg'
+import BackgroundVietnam from '../../images/VietnamBackground.jpg';
+import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
 
 import HelpModal from './helpModal/HelpModal';
 
@@ -238,12 +238,17 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <div className="logo"> Tripsy </div>
-                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Help</span></div>
-                </div>
-                <div style={this.backgroundStyle} className="topDiv">
+                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Help</span>
                     {this.state.helpOpen &&
                         <HelpModal toggleHelp={this.toggleHelp} />
-                    }
+                    }</div>
+                </div>
+                <div style={this.backgroundStyle} className="topDiv">
+                     <div className="logoWhite"> Tripsy </div>
+                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpwordWhite">Help</span>
+                    {this.state.helpOpen &&
+                        <HelpModal toggleHelp={this.toggleHelp} />
+                    }</div>
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
