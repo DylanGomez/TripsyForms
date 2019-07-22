@@ -96,7 +96,7 @@ class MainScreen extends Component {
             }
         }
     } //EINDE LAND
-    ,{
+        , {
         vietnam: {
             countryName: "Vietnam",
             backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1)),url(${BackgroundVietnam})`,
@@ -134,9 +134,9 @@ class MainScreen extends Component {
                     value: "Beachhouse"
                 },
             }
-        } 
+        }
     }, // EINDE LAND
-]
+    ]
 
     getForm(currentForm) {
 
@@ -184,7 +184,7 @@ class MainScreen extends Component {
         for (var i = 0; i < this.destinations.length; i++) {
             var obj = this.destinations[i];
             if (this.destination in obj) {
-                if(this.destination){
+                if (this.destination) {
                     this.setState({
                         currentCountry: obj[this.destination]
                     })
@@ -208,14 +208,14 @@ class MainScreen extends Component {
         this.progress -= 10;
     }
 
-    toggleHelp() {
+    toggleHelp(clickVar) {
         this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
     getProgress(currentForm) {
 
         const progress = {
-            startForm: 10,
+            startForm: 10, 
             step1A: 30,
             step1B: 20,
             step2: 40,
@@ -237,15 +237,15 @@ class MainScreen extends Component {
         return (
             <div>
                 <div className="headerDiv">
-                <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
-                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Help</span>
+                    <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
+                    <div className="helpIcon" style={{pointerEvents: this.state.helpOpen? 'none': 'fill'}} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
                     </div>
                 </div>
                 <div style={this.backgroundStyle} className="topDiv">
                     <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logoWhite"> Tripsy </div></a>
-                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpwordWhite">Help</span>
+                    <div className="helpIcon" style={{pointerEvents: this.state.helpOpen? 'none': 'fill'}} onClick={() => this.toggleHelp() }> <span className="helpwordWhite">Help</span>
                     </div>{this.state.helpOpen &&
-                        <HelpModal toggleHelp={this.toggleHelp} />
+                        <HelpModal toggleHelp={this.toggleHelp} /> 
                     }
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
@@ -277,7 +277,7 @@ class MainScreen extends Component {
                         <a href="https://www.tripsy.nl/privacy-cookies"><span className="linksLeft">Privacy & Cookies</span></a>
                     </div>
                     <div className="links2">
-                        <span className="linksRight"> © Tripsy B.V. 2019</span> 
+                        <span className="linksRight"> © Tripsy B.V. 2019</span>
                     </div>
                 </div>
             </div>
