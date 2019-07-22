@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f70d887ac2080af73b85c57184a1ed53",
+    "revision": "6ca81a8792779f71c5ed61a22434b7d2",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "a75da299c8c47c824c82",
-    "url": "/static/css/main.708f6944.chunk.css"
+    "revision": "6029361dc0b7cb75d3a7",
+    "url": "/static/css/main.6e21c36a.chunk.css"
   },
   {
     "revision": "bf5183430009a2f5c45a",
     "url": "/static/js/2.4c3fdb3d.chunk.js"
   },
   {
-    "revision": "a75da299c8c47c824c82",
-    "url": "/static/js/main.abac94f4.chunk.js"
+    "revision": "6029361dc0b7cb75d3a7",
+    "url": "/static/js/main.1d3aae50.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1342f65e796184ece73c82c283762c3",
     "url": "/static/media/Logo_tripsy.b1342f65.svg"
+  },
+  {
+    "revision": "b3951ff4e50fb41d63e3207dad32e005",
+    "url": "/static/media/Logo_tripsyWhite.b3951ff4.svg"
   },
   {
     "revision": "72cfbc0ae5a0aae7447738dab9be9885",
