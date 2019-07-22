@@ -1,4 +1,5 @@
-$break-small: 574px;
+$break-small: 575px;
+$break-tablet: 769px;
 $break-large: 1025px;
 
 .topDiv {
@@ -6,15 +7,20 @@ $break-large: 1025px;
     height: 64vh;
     width: 100vw;
     margin-top: -6px;
-    margin-bottom: 428px;
+    margin-bottom: 280px;
     -webkit-filter: grayscale(30%);
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url("../../images/Phuket_thailand_mood.jpg") !important;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4), rgba(0,0,0,0.01)),url("../../images/Phuket_thailand_mood.jpg") !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     @media screen and (max-width: $break-large) {
-        height: 35vh;
+        height: 64vh;
+        margin-bottom: 500px;
+    }
+    @media screen and (max-width: $break-small) {
+        height: 30vh;
+        margin-bottom: 500px;
     }
 }
 
@@ -31,21 +37,24 @@ $break-large: 1025px;
 }
 
 .textDiv {
-    padding-top: 10vh;
+    padding-top: 11vh;
     text-align: center;
 
     @media screen and (max-width: $break-large) {
-       padding-top: 15vh;
+       padding-top: 11vh;
     }
+    @media screen and (max-width: $break-small) {
+        padding-top: 7vh;
+     }
 
 }
 
 .cardBox {
     position: relative;
-    padding-top: 2vh;
+    padding-top: 3vh;
     text-align: center;
     @media screen and (max-width: $break-large) {
-        padding-top: 0vh;
+        padding-top: 3vh;
      }
 }
 
@@ -59,9 +68,10 @@ $break-large: 1025px;
 
 .bottomDiv {
     display: inline-block;
-    padding: 24px 32px;
+    padding: 24px 32px 24px;
     width: 100vw;
     text-align: left;
+    border-top: 1px solid #e9e9eb;
 }
 
 .progress {
@@ -72,9 +82,18 @@ $break-large: 1025px;
     margin: auto;
     z-index: 10;
     @media screen and (max-width: $break-large) {
-        width: 100vw;
-        top: 45px;
+        width: 640px;
+        top: 63px !important;
      }
+    @media screen and (max-width: $break-tablet) {
+        width: 80%;
+        top: 63px;
+    }
+    @media screen and (max-width: $break-small) {
+        width: 100%;
+        top: 28px !important;
+        border-radius: 0px;
+    }
 
 }
 
@@ -85,10 +104,14 @@ $break-large: 1025px;
     color: white;
     font-weight: 800;
     text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
-    @media screen and (max-width: $break-large) {
+    /*@media screen and (max-width: $break-large) {
         display: block;
         font-size: 30px;
         padding: 0px 64px 0px 64px;
+    }*/
+    @media screen and (max-width: $break-small) {
+        font-size: 32px;
+        line-height: 36px;
     }
 }
 
@@ -103,7 +126,13 @@ $break-large: 1025px;
     @media screen and (max-width: $break-large) {
         font-size: 15px;
         position: relative;
-        top: -15px;
+        top: 0px;
+    }
+    @media screen and (max-width: $break-small) {
+        font-size: 15px;
+        position: relative;
+        top: 3px;
+        width: 80%;
     }
 }
 
@@ -166,7 +195,7 @@ $break-large: 1025px;
     font-family: lato;
     font-size: 14px;
     width: 50vw;
-    color: #B4B8BD;
+    color: #404348;
     text-align: right;
     @media screen and (max-width: $break-large) {
         margin-top: 10px;
@@ -204,9 +233,15 @@ $break-large: 1025px;
 .onsGarantiefonds {
     margin: 15px 0 6px;
     font-family: lato;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     color: #B4B8BD;
     z-index: 20;
+}
+
+.ggtogrey {
+    height: 28px;
+    border-radius: 4px;
 }
 
 
@@ -220,12 +255,21 @@ $break-large: 1025px;
 
 .garrantyDiv {
     position: relative;
-    top: 350px;
+    top: 400px;
     z-index: 20;  
+    @media screen and (max-width: $break-large) {
+        top: 650px;
+    }
 }  
-.linksLeft {
-    margin-right: 16px;
+.linksRight {
     color: #404348;
+    font-weight: 500;
+}
+
+.linksLeft {
+    margin-right: 12px;
+    color: #404348;
+    font-weight: 500;
 }
 
 .linksLeft:hover {

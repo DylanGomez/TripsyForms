@@ -18,7 +18,7 @@ class Step1Who extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <h3 className="title"> Met wie ga je op reis?</h3>
+                    <h3 className="title"> Kies je reisgezelschap</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
@@ -58,7 +58,7 @@ class Step1Who extends Component {
                                     <img className="svgIcon" src={formSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Met een groep
+                                    Met je bedrijf
                                 </Card.Footer>
                             </Card>
                         </CardDeck>

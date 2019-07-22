@@ -238,7 +238,7 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <div className="logo"> Tripsy </div>
-                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Contact</span></div>
+                    <div className="helpIcon" onClick={() => { this.toggleHelp() }}> <span className="helpword">Help</span></div>
                 </div>
                 <div style={this.backgroundStyle} className="topDiv">
                     {this.state.helpOpen &&
@@ -247,11 +247,11 @@ class MainScreen extends Component {
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
-                        <MediaQuery query='(min-device-width: 1224px)'>
+                        <MediaQuery query='(min-device-width: 574px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
                         </MediaQuery>
-                        <MediaQuery query='(max-device-width: 1224px)'>
-                            <span className="subTripText">gratis en vrijblijvend</span>
+                        <MediaQuery query='(max-device-width: 574px)'>
+                            <span className="subTripText">Wij maken je reis - gratis en vrijblijvend</span>
                         </MediaQuery>
                         <div className="cardBox">
                             <ProgressBar animated className="progressBar" variant="success" now={this.getProgress(this.state.currentForm)} />
@@ -259,7 +259,7 @@ class MainScreen extends Component {
                         </div>
                         <div className="garrantyDiv">
                             <div className="onsGarantiefonds">
-                                <span >Ons garantiefonds:</span>
+                                <span >Ons garantiefonds</span>
                             </div>
                             <div className="Garantiefonds">
                                 <a href="https://www.stichting-ggto.nl/html/Welkom.asp" target="_blank" without rel="noopener noreferrer"> <img src={ggtoSvg} alt="GGTO garantiefonds" className="ggtogrey" /></a>
@@ -269,25 +269,13 @@ class MainScreen extends Component {
 
                 </div>
                 <div className="bottomDiv">
-                    {/* <span className="garantyTitle">Garantiefonds</span>
-                    <br />
-                    <span className="garantyText"> Al onze reizen vallen onder het garantiefonds van de GGTO.
-                    Hierdoor heb je de garantie dat wanneer de organisator van de reis,
-                    zoals de lokale touroperator of de luchtvaartmaatschappij, failliet gaat je het betaalde bedrag vergoedt krijgt.
-                    Voor andere onvoorziene gebeurtenissen raden wij een goede reisverzekering aan.
-                    Wij kunnen je hierbij helpen.</span>
-                    <br />
-                    <img className="ggtoLogo" src={GGTOLogo} alt="" />
-                    <br />
-                    <div className="line"></div>
-                    <br /> */}
                     <div className="links1">
                         <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
                         <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
                         <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
                     </div>
                     <div className="links2">
-                        <span className="linksRight"> © Tripsy B.V. 2019</span>
+                        <span className="linksRight"> © Tripsy B.V. 2019</span> 
                     </div>
                 </div>
             </div>
