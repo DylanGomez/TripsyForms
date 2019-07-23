@@ -149,7 +149,7 @@ class SendForm extends Component {
         //HET IS NIET MOGELIJK OM TE NAVIGEREN DAN 1 BEPAALD LAND OMDAT DIT NERGENS STAAT OPGESLAGEN,
         // HET IS HANDIG DAT DIT NAVIGEERT NAAR EEN WORDPRESS PAGINA WAAR
         // DE KLANT HET LAND KAN KIEZEN IPV DIRECT NAAR HET FORMULIER NAVIGEREN, OP DEZE MANIER VERLIEST JE CONTEXT. 
-        window.location.assign('https://forms.tripsy.nl/#/des/thailand');
+        window.location.assign('https://www.tripsy.nl/bestemmingen');
     }
 
     onChange(value) {
