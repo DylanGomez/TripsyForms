@@ -1,3 +1,6 @@
+$break-small: 575px;
+$break-tablet: 769px;
+
 .helpDiv {
     position: fixed;
     z-index: 15;
@@ -6,11 +9,17 @@
     background-color:white;
     border-radius: 4px;
     right: 24px;
-    top: 7vh;
+    top: 3vh;
     text-align: center;
     -moz-box-shadow: 0px 3px 7px rgba(44,62,71,0.2);
 	-webkit-box-shadow: 0px 3px 7px rgba(44,62,71,0.2);
     box-shadow: 0px 3px 7px rgba(44,62,71,0.2);
+    @media screen and (max-width: $break-tablet) {
+        top: 12vh;
+    }
+    @media screen and (max-width: $break-small) {
+        top: 12vh;
+    }
 }
 
 .helpDiv:after {
@@ -28,7 +37,10 @@
 	border-color: rgba(0, 0, 0, 0);
 	border-bottom-color: #FFFF;
 	border-width: 10px;
-	margin-left: -20px;
+    margin-left: -20px;
+    @media screen and (max-width: $break-small) {
+        margin-left: -12px;
+    }
 }
 .helpDiv:before {
 	border-color: rgba(0, 0, 0, 0);
@@ -59,17 +71,26 @@
     position: relative;
     border-radius: 50%;
     width: 48px;
-    margin: 8px 0 12px;
+    margin: 16px 0 20px;
 }
 
 .helpPhone {
-    font-size: 12px;
+    font-size: 16px;
+    font-family: lato;
+    color: #404348;
+    font-weight: 500;
 }
+
 .helpMail {
-    font-size: 12px;
+    font-size: 16px;
+    font-family: lato;
+    color: #404348;
+    font-weight: 500;
 }
 
 .subText {
-    font-size: 12px;
+    font-size: 14px;
     color: #898f98;
+    font-family: lato;
+    font-weight: 500;
 }

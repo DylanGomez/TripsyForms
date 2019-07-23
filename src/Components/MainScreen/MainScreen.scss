@@ -19,9 +19,9 @@ $break-large: 1025px;
         margin-bottom: 500px;
     }
     @media screen and (max-width: $break-small) {
-        height: 36vh;
+        height: 30vh;
         margin-bottom: 500px;
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.01)),url("../../images/Phuket_thailand_mood.jpg") !important;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../../images/Phuket_thailand_mood.jpg") !important;
     }
 }
 
@@ -60,7 +60,7 @@ $break-large: 1025px;
        padding-top: 11vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 15vh;
+        padding-top: 8vh;
      }
 
 }
@@ -82,9 +82,9 @@ $break-large: 1025px;
     padding: 24px 32px;
     width: 100vw;
     text-align: left;
-    @media screen and (max-width: $break-small) {
+    /*@media screen and (max-width: $break-small) {
         display: none;
-    }
+    }*/
 }
 
 .bottomDiv {
@@ -301,7 +301,7 @@ $break-large: 1025px;
 }
 
 .linksLeft {
-    margin-right: 12px;
+    margin: 0 4px;
     color: #404348;
     font-weight: 500;
 }

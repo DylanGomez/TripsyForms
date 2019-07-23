@@ -239,14 +239,12 @@ class MainScreen extends Component {
                 <div className="headerDiv">
                     <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
                     <div className="helpIcon" style={{pointerEvents: this.state.helpOpen? 'none': 'fill'}} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
+                        {this.state.helpOpen &&
+                        <HelpModal toggleHelp={this.toggleHelp} /> 
+                    }
                     </div>
                 </div>
                 <div style={this.backgroundStyle} className="topDiv">
-                    <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logoWhite"> Tripsy </div></a>
-                    <div className="helpIcon" style={{pointerEvents: this.state.helpOpen? 'none': 'fill'}} onClick={() => this.toggleHelp() }> <span className="helpwordWhite">Help</span>
-                    </div>{this.state.helpOpen &&
-                        <HelpModal toggleHelp={this.toggleHelp} /> 
-                    }
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
