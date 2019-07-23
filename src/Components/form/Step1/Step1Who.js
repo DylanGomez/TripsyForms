@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Step1Who.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import formSvg from '../../../Icons/icons_forms.svg'
 import travelerSvg from '../../../Icons/met-partner.svg'
 import familieSvg from '../../../Icons/met-familie.svg'
 import vriendenSvg from '../../../Icons/met-vrienden 14.22.16.svg'

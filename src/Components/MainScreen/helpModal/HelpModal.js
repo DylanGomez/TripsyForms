@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import PhoneIcon from '@material-ui/icons/Phone';
-import MailIcon from '@material-ui/icons/Mail'
 import './HelpModal.scss'
 import belIcon from '../../../Icons/bellen.svg'
 import mailIcon from '../../../Icons/mailIcon.svg'
