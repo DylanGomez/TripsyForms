@@ -37,21 +37,6 @@ $break-large: 1025px;
     }
 }
 
-.logoWhite {
-    float: left;
-    margin: 24px 0 0 24px;
-    content: url(../../Icons/Logo_tripsyWhite.svg);
-    color: #white;
-    width: 9,6vh;
-    @media screen and (max-width: $break-small) {
-        position: absolute;
-        height: 28px;
-    }
-    @media screen and (min-width: $break-small) {
-        display: none;
-    }
-}
-
 .textDiv {
     padding-top: 11vh;
     text-align: center;
@@ -249,19 +234,6 @@ $break-large: 1025px;
     font-weight: 600;
     // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #404348;
-}
-
-.helpwordWhite {
-    margin: 25px 24px 0 0;
-    float: right;
-    vertical-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    @media screen and (min-width: $break-small) {
-        display: none;
-    }
 }
 
 .onsGarantiefonds {
