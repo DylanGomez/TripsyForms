@@ -177,20 +177,12 @@ class SendForm extends Component {
 
     }
 
-    toggleHelp(typeClick) {
-        if (typeClick === "insideClick") {
-            console.log("no")
-            // this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
-        } if(typeClick === "outsideClick") {
-            console.log("yeah")
-        }
-
+    toggleHelp() {
+        this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
     render() {
         if (this.state.formInfo) {
-            console.log(this.state.formInfo);
-
             return (
                 <div className="pageDiv">
                     <div className="backgroundNew">
@@ -280,7 +272,7 @@ class SendForm extends Component {
                 <div className="pageDiv">
                     <div className="backgroundNew">
                         <div className="logoSuccess">  </div>
-                        <div className="helpIconSuccess" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
+                        <div className="helpIconSuccess" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
                         {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }
