@@ -3,6 +3,10 @@ import './Step1Who.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import formSvg from '../../../Icons/icons_forms.svg'
+import travelerSvg from '../../../Icons/met-partner.svg'
+import familieSvg from '../../../Icons/met-familie.svg'
+import vriendenSvg from '../../../Icons/met-vrienden 14.22.16.svg'
+import bedrijfSvg from '../../../Icons/Met bedrijf.svg'
 
 class Step1Who extends Component {
 
@@ -18,14 +22,14 @@ class Step1Who extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <h3 className="title"> Kies je reisgezelschap</h3>
+                    <h3 className="title">Met wie ga je op reis?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
                                 this.handleClick("step2", "alone");
                             }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt="" />
+                                    <img className="svgIcon" src={travelerSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met partner
@@ -35,7 +39,7 @@ class Step1Who extends Component {
                                 this.handleClick("step2", "partner");
                             }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt="" />
+                                    <img className="svgIcon" src={familieSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met familie
@@ -45,7 +49,7 @@ class Step1Who extends Component {
                                 this.handleClick("step1A", "family");
                             }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt="" />
+                                    <img className="svgIcon" src={vriendenSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met vrienden
@@ -55,7 +59,7 @@ class Step1Who extends Component {
                                 this.handleClick("step1B", "group");
                             }}>
                                 <Card.Body>
-                                    <img className="svgIcon" src={formSvg} alt="" />
+                                    <img className="svgIcon" src={bedrijfSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                     Met je bedrijf

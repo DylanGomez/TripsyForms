@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail'
 import './HelpModal.scss'
+import belIcon from '../../../Icons/bellen.svg'
+import mailIcon from '../../../Icons/mailIcon.svg'
 
 
 import helpPhoto from "../../../images/Foto-Elise-100x100.jpg"
@@ -43,12 +45,12 @@ class HelpModal extends Component {
                 <br />
                 <img alt="" className="helpPhoto" src={helpPhoto}></img>
                 <br />
-                <a href="tel:0031307116247"><span className="helpPhone"> <PhoneIcon /> 030-7116127</span></a>
+                <a href="tel:0031307116247"><span className="helpPhone"> <img alt="" className="bellenIcon" src={belIcon}></img> 030-7116127</span></a>
                 <br />
                 <a href="tel:0031307116247"><span className="subText">ma t/m vr 9:30u - 17:00u</span></a>
                 <br />
                 <br />
-                <a href="mailto:hallo@tripsy.nl"><span className="helpMail"> <MailIcon /> hallo@tripsy.nl</span></a>
+                <a href="mailto:hallo@tripsy.nl"><span className="helpMail"> <img alt="" className="mailenIcon" src={mailIcon}></img> hallo@tripsy.nl</span></a>
                 <br />
                 <a href="mailto:hallo@tripsy.nl"><span className="subText">binnen 24u antwoord</span></a>
             </div>

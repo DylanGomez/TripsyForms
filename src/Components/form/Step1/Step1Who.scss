@@ -24,12 +24,13 @@ $break-large: 1025px;
     }
     @media screen and (max-width: $break-small) {
         width: 100%;
-        padding: 0px 24px 40px;
+        padding: 0px 24px 140px;
         height: auto;
         border-radius: 0px;
         -moz-box-shadow: 0px 3px 7px rgba(44,62,71,0.0);
         -webkit-box-shadow: 0px 3px 7px rgba(44,62,71,0.0);
         box-shadow: 0px 3px 7px rgba(44,62,71,0.0);
+        background-color: #f6f7f8;
     }
 }
 
@@ -39,17 +40,18 @@ $break-large: 1025px;
 }
 
 .svgIcon {
-    padding: 40px 0px 40px 0px;
+    height: 38px;
     margin: auto; 
     fill: none;
     @media screen and (max-width: $break-small) {
-        padding: 10px 0;
+        height: 34px;
+        margin: auto; 
     }
 }
 
 .title {
     text-align: center;
-    padding-top: 24px !important;
+    padding-top: 28px !important;
     padding-bottom: 20px !important;
     font-family: catamaran;
     font-size: 18px;
@@ -57,22 +59,23 @@ $break-large: 1025px;
     font-weight: 800 !important;
     color: #404348;
     margin-bottom: 0px !important;
-    @media screen and (max-width: $break-small) {
-        padding-top: 28px !important;
-    }
 }
 
 .cardFooter {
     text-align: center;
     background-color: white;
     color: #404348;
-    font-size: 16px;
-    font-weight: 500 !important;
+    font-size: 15px;
+    font-weight: 600 !important;
     line-height: 24px;
     font-family: lato;
     border-top: 1px solid #f2f2f2;
     border-radius: 0px 0px 4px 4px !important;
     padding: 12px 8px 13px;
+    @media screen and (max-width: $break-small) {
+        padding: 8px 6px 9px;
+        font-size: 14px;
+    }
 }
 
  .card-deck {
@@ -94,9 +97,9 @@ $break-large: 1025px;
     -o-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
     .svgIcon {
-        padding: 40px 0px 40px 0px;
+        // padding: 40px 0px 40px 0px;
         margin: auto;
-        filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
+        filter: invert(34%) sepia(80%) saturate(3057%) hue-rotate(137deg) brightness(88%) contrast(107%);
     }
 }
 
@@ -109,9 +112,10 @@ $break-large: 1025px;
     max-height: 220px;
 
     box-shadow: 0px 1px 4px rgba(23,33,52,0.3);
-    @media screen and (max-width: $break-large) {
-        // min-height: 0;
-        // max-height: 0;        
+    @media screen and (max-width: $break-small) {
+        min-height: 150px;
+        max-height: 150px;   
+        margin: 4px !important;     
     }
 }
 

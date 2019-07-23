@@ -20,7 +20,7 @@ $break-large: 1025px;
     }
     @media screen and (max-width: $break-small) {
         height: 30vh;
-        margin-bottom: 500px;
+        margin-bottom: 435px;
         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("../../images/Phuket_thailand_mood.jpg") !important;
     }
 }
@@ -33,7 +33,7 @@ $break-large: 1025px;
     width: 9,6vh;
     @media screen and (max-width: $break-small) {
         position: absolute;
-        height: 25px;
+        height: 20px;
     }
 }
 
@@ -45,7 +45,7 @@ $break-large: 1025px;
        padding-top: 11vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 8vh;
+        padding-top: 6vh;
      }
 
 }
@@ -58,7 +58,7 @@ $break-large: 1025px;
         padding-top: 3vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 3vh;
+        padding-top: 1vh;
     }
 }
 
@@ -67,9 +67,9 @@ $break-large: 1025px;
     padding: 24px 32px;
     width: 100vw;
     text-align: left;
-    /*@media screen and (max-width: $break-small) {
-        display: none;
-    }*/
+    @media screen and (max-width: $break-small) {
+        padding: 24px;
+    }
 }
 
 .bottomDiv {
@@ -78,6 +78,10 @@ $break-large: 1025px;
     width: 100vw;
     text-align: left;
     border-top: 1px solid #e9e9eb;
+    @media screen and (max-width: $break-small) {
+        border-top: none;
+        padding: 24px;
+    }
 }
 
 .progress {
@@ -189,9 +193,14 @@ $break-large: 1025px;
     // color: #404348 !important;
     text-align: left;
     @media screen and (max-width: $break-large) {
-        margin-top: 10px;
-        margin-bottom: 20px;
         margin: 10px 50px 20px 50px;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: 0px;
+        display: inline-block !important;
+        vertical-align: top !important;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -204,9 +213,14 @@ $break-large: 1025px;
     color: #404348;
     text-align: right;
     @media screen and (max-width: $break-large) {
-        margin-top: 10px;
-        margin-bottom: 20px;
         margin: 10px 50px 20px 50px;
+    }
+    @media screen and (max-width: $break-small) {
+        margin: 8px 0;
+        display: inline-block !important;
+        vertical-align: top !important;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -231,9 +245,13 @@ $break-large: 1025px;
     float: right;
     vertical-align: center;
     font-size: 16px;
+    line-height: 24px;
     font-weight: 600;
     // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #404348;
+    @media screen and (max-width: $break-small) {
+        line-height: 20px;
+    }
 }
 
 .onsGarantiefonds {
@@ -266,19 +284,25 @@ $break-large: 1025px;
     @media screen and (max-width: $break-large) {
         top: 650px;
     }
+    @media screen and (max-width: $break-small) {
+        top: 410px;
+    }
 }  
 .linksRight {
     color: #404348;
     font-weight: 500;
+    @media screen and (max-width: $break-small) {
+        color: #B4B8BD;   
+    }
 }
 
 .linksLeft {
-    margin: 0 4px;
+    margin: 0 0 0 8px;
     color: #404348;
     font-weight: 500;
 }
 
-.linksLeft:hover {
+.linksRight:hover {
     color: #009249;
 }
 
