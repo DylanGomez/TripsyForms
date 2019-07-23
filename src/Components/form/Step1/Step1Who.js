@@ -3,7 +3,7 @@ import './Step1Who.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 import travelerSvg from '../../../Icons/met-partner.svg'
-import familieSvg from '../../../Icons/met-familie.svg'
+import familieSvg from '../../../Icons/Met-jezelf.svg'
 import vriendenSvg from '../../../Icons/met-vrienden 14.22.16.svg'
 import bedrijfSvg from '../../../Icons/Met bedrijf.svg'
 
