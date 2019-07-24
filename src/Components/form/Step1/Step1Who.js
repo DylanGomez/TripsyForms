@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './Step1Who.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import travelerSvg from '../../../Icons/met-partner.svg'
-import familieSvg from '../../../Icons/Met-jezelf.svg'
-import vriendenSvg from '../../../Icons/met-vrienden 14.22.16.svg'
-import bedrijfSvg from '../../../Icons/Met bedrijf.svg'
+import travelerSvg from '../../../Icons/Partner.svg'
+import familieSvg from '../../../Icons/Familie.svg'
+import vriendenSvg from '../../../Icons/Friends.svg'
+import bedrijfSvg from '../../../Icons/Bedrijf.svg'
 
 class Step1Who extends Component {
 

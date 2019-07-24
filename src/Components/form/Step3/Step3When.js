@@ -3,7 +3,7 @@ import './Step3When.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import planeSvg from '../../../Icons/world.svg'
+import planeSvg from '../../../Icons/wanneer-wil-je-op-reis.svg'
 
 
 class Step3When extends Component {

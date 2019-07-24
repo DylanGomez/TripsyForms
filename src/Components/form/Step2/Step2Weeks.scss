@@ -2,14 +2,16 @@ $break-small: 400px;
 $break-large: 1025px;
 
 .pickerIcon {
-    height: 98px;
-    top: 28px;
-    left: 26px;
-    position: relative;
-    margin: auto;
+    height: 40px;
+    margin: auto; 
+    fill: none;
+    @media screen and (max-width: $break-small) {
+        height: 34px;
+        margin: auto; 
+    }
 }
 
-.card:hover {
+/*.card:hover {
     cursor: pointer;
     .pickerIcon {
         height: 98px;
@@ -19,5 +21,13 @@ $break-large: 1025px;
         margin: auto;
         filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
         
+    }
+}*/
+
+.card:hover {
+    cursor: pointer;
+    .pickerIcon {
+        margin: auto;
+        filter: invert(34%) sepia(80%) saturate(3057%) hue-rotate(137deg) brightness(88%) contrast(107%);
     }
 }

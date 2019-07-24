@@ -2,17 +2,29 @@ $break-small: 400px;
 $break-large: 1025px;
 
 .planeIcon {
+    height: 40px;
     margin: auto; 
     fill: none;
-    height: 56px;
+    @media screen and (max-width: $break-small) {
+        height: 34px;
+        margin: auto; 
+    }
 }
 
-.card:hover {
+/*.card:hover {
     cursor: pointer;
     .planeIcon {
         margin: auto; 
         fill: none;
         height: 56px;
         filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
+    }
+}*/
+
+.card:hover {
+    cursor: pointer;
+    .planeIcon {
+        margin: auto;
+        filter: invert(34%) sepia(80%) saturate(3057%) hue-rotate(137deg) brightness(88%) contrast(107%);
     }
 }

@@ -9,7 +9,7 @@ $break-large: 1025px;
     margin-top: -6px;
     margin-bottom: 280px;
     -webkit-filter: grayscale(30%);
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4), rgba(0,0,0,0.01)),url("../../images/Phuket_thailand_mood.jpg") !important;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url("../../images/Phuket_thailand_mood.jpg") !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -258,13 +258,13 @@ $break-large: 1025px;
     margin: 15px 0 6px;
     font-family: lato;
     font-weight: 500;
-    font-size: 16px;
-    color: #B4B8BD;
+    font-size: 15px;
+    color: #CDCDCD;
     z-index: 20;
 }
 
 .ggtogrey {
-    height: 28px;
+    height: 24px;
     border-radius: 4px;
 }
 
@@ -279,7 +279,7 @@ $break-large: 1025px;
 
 .garrantyDiv {
     position: relative;
-    top: 400px;
+    top: 338px;
     z-index: 20;  
     @media screen and (max-width: $break-large) {
         top: 650px;

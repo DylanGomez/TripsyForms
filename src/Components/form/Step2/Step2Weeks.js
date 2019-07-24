@@ -3,7 +3,7 @@ import './Step2Weeks.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import datePickerSvg from '../../../Icons/datepicker.svg'
+import datePickerSvg from '../../../Icons/Hoe-lang-wil-je-op-reis.svg'
 
 
 

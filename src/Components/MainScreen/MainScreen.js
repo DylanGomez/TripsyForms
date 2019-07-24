@@ -4,7 +4,7 @@ import './MainScreen.scss'
 // import HelpIcon from '@material-ui/icons/Help';
 
 import MediaQuery from 'react-responsive';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 
 import Step1Who from '../form/Step1/Step1Who';
 import Step1ACounter from '../form/Step1A/Step1ACounter';
