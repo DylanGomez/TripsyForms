@@ -52,6 +52,7 @@ class MainScreen extends Component {
         this.addState = this.addState.bind(this);
         this.onBackButtonEvent = this.onBackButtonEvent.bind(this);
         this.toggleHelp = this.toggleHelp.bind(this);
+        this.goToSuccess = this.goToSuccess.bind(this);
     }
 
     destination = this.props.match.params.destination;
@@ -150,9 +151,9 @@ class MainScreen extends Component {
             step5: <Step5Activity country={this.state.currentCountry} toggleForm={this.toggleForm} addState={this.addState} />,
             step6: <Step6Accomodation country={this.getObject} toggleForm={this.toggleForm} addState={this.addState} />,
             step6A: <Step6AStars toggleForm={this.toggleForm} addState={this.addState} />,
-            loading: <LoadScreen toggleForm={this.toggleForm} />,
+            loading: <LoadScreen goToSuccess={this.goToSuccess} />,
 
-            finalPage: this.goToSuccess()
+            // finalPage: this.goToSuccess()
         }
 
         return forms[currentForm];
@@ -164,7 +165,12 @@ class MainScreen extends Component {
     }
 
     goToSuccess() {
-        return <Redirect to={{ pathname: '/sendform', givenState: { state: this.state } }} />;
+        this.props.history.push({
+            pathname: "/sendform",
+            givenState: {
+                state: this.state
+            }
+        });
     }
 
     addState(question, value) {
@@ -208,14 +214,14 @@ class MainScreen extends Component {
         this.progress -= 10;
     }
 
-    toggleHelp(clickVar) {
+    toggleHelp() {
         this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
     getProgress(currentForm) {
 
         const progress = {
-            startForm: 10, 
+            startForm: 10,
             step1A: 30,
             step1B: 20,
             step2: 40,
@@ -238,10 +244,10 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
-                    <div className="helpIcon" style={{pointerEvents: this.state.helpOpen? 'none': 'fill'}} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
+                    <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
                         {this.state.helpOpen &&
-                        <HelpModal toggleHelp={this.toggleHelp} /> 
-                    }
+                            <HelpModal toggleHelp={this.toggleHelp} />
+                        }
                     </div>
                 </div>
                 <div style={this.backgroundStyle} className="topDiv">

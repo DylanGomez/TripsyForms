@@ -10,7 +10,7 @@ class LoadScreen extends Component {
     componentDidMount(){
         var _this = this
         setTimeout(function () {
-            _this.props.toggleForm("finalPage")
+            _this.props.goToSuccess()
         }, 2000);
     }
 
