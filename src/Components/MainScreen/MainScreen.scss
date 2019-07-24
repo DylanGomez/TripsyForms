@@ -282,10 +282,13 @@ $break-large: 1025px;
     top: 338px;
     z-index: 20;  
     @media screen and (max-width: $break-large) {
-        top: 650px;
+        top: 580px;
+    }
+    @media screen and (max-width: $break-tablet) {
+        top: 569px;
     }
     @media screen and (max-width: $break-small) {
-        top: 410px;
+        top: 460px;
     }
 }  
 .linksRight {
