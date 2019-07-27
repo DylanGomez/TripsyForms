@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7bcb4e8adaf6bcfed820c4cc8d7eb68d",
+    "revision": "7c54a0f8061d789d4a56114f15ada9d4",
     "url": "/index.html"
   },
   {
-    "revision": "f78e4121a2fa2d1dfbd5",
+    "revision": "33a9e564880100ef18e8",
     "url": "/static/css/2.da91a66d.chunk.css"
   },
   {
-    "revision": "d52e387ab399decaec63",
-    "url": "/static/css/main.bd7c3a9d.chunk.css"
+    "revision": "5faa5a04e6e789e3ae4b",
+    "url": "/static/css/main.2d29675d.chunk.css"
   },
   {
-    "revision": "f78e4121a2fa2d1dfbd5",
-    "url": "/static/js/2.e8b8b91a.chunk.js"
+    "revision": "33a9e564880100ef18e8",
+    "url": "/static/js/2.0f243ec7.chunk.js"
   },
   {
-    "revision": "d52e387ab399decaec63",
-    "url": "/static/js/main.07ee2307.chunk.js"
+    "revision": "5faa5a04e6e789e3ae4b",
+    "url": "/static/js/main.8805362f.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "49c6aa88d098641fd0f8b90725f78a36",
     "url": "/static/media/Met bedrijf.49c6aa88.svg"
+  },
+  {
+    "revision": "e8cff680e39c0c0f4d261433b48ed1f1",
+    "url": "/static/media/Met-jezelf.e8cff680.svg"
   },
   {
     "revision": "72cfbc0ae5a0aae7447738dab9be9885",
@@ -110,10 +114,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c42175cd9603c83fd3d1839b5bb2251",
     "url": "/static/media/mailIcon.7c42175c.svg"
-  },
-  {
-    "revision": "1f69a1c1e68354ad1166566d1609003c",
-    "url": "/static/media/met-familie.1f69a1c1.svg"
   },
   {
     "revision": "762f0f8f6665a871894db355e9bc376d",
