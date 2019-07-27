@@ -4,7 +4,6 @@ import './MainScreen.scss'
 // import HelpIcon from '@material-ui/icons/Help';
 
 import MediaQuery from 'react-responsive';
-import { Redirect } from 'react-router-dom';
 
 import Step1Who from '../form/Step1/Step1Who';
 import Step1ACounter from '../form/Step1A/Step1ACounter';
@@ -214,7 +213,8 @@ class MainScreen extends Component {
         this.progress -= 10;
     }
 
-    toggleHelp() {
+    toggleHelp(e) {
+        e.preventDefault();
         this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
@@ -244,7 +244,7 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
-                    <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
+                    <div className="helpIcon"  style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <span className="helpword">Help</span>
                         {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }

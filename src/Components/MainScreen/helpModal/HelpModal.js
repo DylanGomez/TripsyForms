@@ -17,11 +17,13 @@ class HelpModal extends Component {
     }
 
     componentDidMount() {
-        document.addEventListener('mousedown', this.handleClickOutside);
+        document.addEventListener('click', this.handleClickOutside);
+        document.addEventListener('touchend', this.handleClickOutside);
     }
 
     componentWillUnmount() {
-        document.removeEventListener('mousedown', this.handleClickOutside);
+        document.removeEventListener('click', this.handleClickOutside);
+        document.removeEventListener('touchend', this.handleClickOutside);
     }
 
     setWrapperRef(node) {
@@ -30,7 +32,7 @@ class HelpModal extends Component {
 
     handleClickOutside(event) {
         if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
-            this.props.toggleHelp();
+            this.props.toggleHelp(event);
         }
     }
 
