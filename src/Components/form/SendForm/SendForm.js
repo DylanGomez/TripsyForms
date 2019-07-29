@@ -14,7 +14,7 @@ class SendForm extends Component {
     constructor() {
         super();
         this.state = {
-            gender: "",
+            gender: "Man",
             name: "",
             lastname: "",
             email: "",
@@ -177,7 +177,8 @@ class SendForm extends Component {
 
     }
 
-    toggleHelp() {
+    toggleHelp(e) {
+        e.preventDefault();
         this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
@@ -209,8 +210,8 @@ class SendForm extends Component {
                                     <br />
                                     <div className="radio-buttons">
                                         <div className="inputGroup">
-                                            <input onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio" />
-                                            <label htmlFor="radio1">dhr.</label>
+                                            <input  checked="checked" onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio"  />
+                                            <label htmlFor="radio1" >Man</label>
                                         </div>
                                         <div className="inputGroup">
                                             <input onChange={this.changeHandler} value="Woman" id="radio2" name="gender" type="radio" />
@@ -275,7 +276,7 @@ class SendForm extends Component {
                 <div className="pageDiv">
                     <div className="backgroundNew">
                         <div className="logoSuccess">  </div>
-                        <div className="helpIconSuccess" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
+                        <div className="helpIconSuccess" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
                         {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }

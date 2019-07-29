@@ -4,7 +4,6 @@ import './MainScreen.scss'
 // import HelpIcon from '@material-ui/icons/Help';
 
 import MediaQuery from 'react-responsive';
-// import { Redirect } from 'react-router-dom';
 
 import Step1Who from '../form/Step1/Step1Who';
 import Step1ACounter from '../form/Step1A/Step1ACounter';
@@ -214,7 +213,8 @@ class MainScreen extends Component {
         this.progress -= 10;
     }
 
-    toggleHelp() {
+    toggleHelp(e) {
+        e.preventDefault();
         this.setState(prevState => ({ helpOpen: !prevState.helpOpen }))
     }
 
@@ -244,7 +244,7 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
-                    <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
+                    <div className="helpIcon"  style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <span className="helpword">Help</span>
                         {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }
@@ -254,10 +254,10 @@ class MainScreen extends Component {
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
-                        <MediaQuery query='(min-device-width: 574px)'>
+                        <MediaQuery query='(min-device-width: 575px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
                         </MediaQuery>
-                        <MediaQuery query='(max-device-width: 574px)'>
+                        <MediaQuery query='(max-device-width: 575px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend</span>
                         </MediaQuery>
                         <div className="cardBox">
