@@ -31,7 +31,7 @@ class Step1Who extends Component {
                                     <img className="svgIcon" src={travelerSvg} alt="" />
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Met partner
+                                    Met jezelf of partner
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
