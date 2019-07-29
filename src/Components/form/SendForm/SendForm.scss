@@ -34,6 +34,10 @@ $break-large: 1025px;
       line-height: 36px;
   }
 }
+.invalid-feedback {
+  margin-bottom: 5px;
+  margin-top: -5px; 
+}
 
 .subSendTripText {
   font-family: lato;
