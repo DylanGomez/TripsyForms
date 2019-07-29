@@ -45,7 +45,7 @@ class Step1Who extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                this.handleClick("step1A", "family");
+                                this.handleClick("step2", "family");
                             }}>
                                 <Card.Body>
                                     <img className="svgIcon" src={vriendenSvg} alt="" />
