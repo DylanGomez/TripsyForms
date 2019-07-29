@@ -1,3 +1,7 @@
+$break-small: 575px;
+$break-tablet: 769px;
+$break-large: 1025px;
+
 .gifPosition {
     margin: 0;
 }
@@ -9,6 +13,36 @@
     width: 75px;
 }
 
-.formBox {
-    // HIER KAN JE HET LAADSCHERM STYLEN
+.formBoxLoadscreen {
+    margin: auto;
+    width: 1030px;
+    background-color: white;
+    padding: 40px 40px 98px;
+    border-radius: 4px;
+    position: relative;
+    height: 432px;
+    transition: all 200ms linear 0s;
+    -moz-box-shadow: 0px 3px 7px rgba(44,62,71,0.2);
+	-webkit-box-shadow: 0px 3px 7px rgba(44,62,71,0.2);
+    box-shadow: 0px 3px 7px rgba(44,62,71,0.2);
+    overflow: hidden;
+    @media screen and (max-width: $break-large) {
+        width: 768px;
+        height: 675px;
+    }
+    @media screen and (max-width: $break-tablet) {
+        width: 91%;
+        padding: 40px 40px 98px;
+        height: 665px;
+    }
+    @media screen and (max-width: $break-small) {
+        width: 100%;
+        padding: 0px 24px 160px;
+        height: 551px;
+        border-radius: 0px;
+        -moz-box-shadow: 0px 3px 7px rgba(44,62,71,0.0);
+        -webkit-box-shadow: 0px 3px 7px rgba(44,62,71,0.0);
+        box-shadow: 0px 3px 7px rgba(44,62,71,0.0);
+        background-color: #f6f7f8;
+    }
 }

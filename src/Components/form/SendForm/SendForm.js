@@ -185,20 +185,23 @@ class SendForm extends Component {
         if (this.state.formInfo) {
             return (
                 <div className="pageDiv">
-                    <div className="backgroundNew">
-                        <div className="logoSuccess">  </div>
-                        <div className="helpIconSuccess" style={{pointerEvents: this.state.helpOpen? 'none': 'fill'}} onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
+                    <div className="headerDiv">
+                    <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
+                    <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
                         {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }
+                    </div>
+                    </div>
+                    <div className="backgroundNew">
                         <div className="textDivSend">
-                            <span className="tripSendText">Jouw droomtrip naar Thailand</span>
+                            <span className="tripSendText">Jouw rondreis Thailand</span>
                             <br />
                             <MediaQuery query='(min-device-width: 1224px)'>
                                 <span className="subSendTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
                             </MediaQuery>
                             <MediaQuery query='(max-device-width: 1224px)'>
-                                <span className="subSendTripText">gratis en vrijblijvend</span>
+                                <span className="subSendTripText">Wij maken je reis - gratis en vrijblijvend</span>
                             </MediaQuery>
                             <div className="formArea">
                                 <div className="formAreaRight">
@@ -207,11 +210,11 @@ class SendForm extends Component {
                                     <div className="radio-buttons">
                                         <div className="inputGroup">
                                             <input onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio" />
-                                            <label htmlFor="radio1">Man</label>
+                                            <label htmlFor="radio1">dhr.</label>
                                         </div>
                                         <div className="inputGroup">
                                             <input onChange={this.changeHandler} value="Woman" id="radio2" name="gender" type="radio" />
-                                            <label htmlFor="radio2">Vrouw</label>
+                                            <label htmlFor="radio2">mevr.</label>
                                         </div>
                                     </div>
                                     <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} />

@@ -17,7 +17,7 @@ class LoadScreen extends Component {
     render() {
         return (
             <div className="background">
-                <div className="formBox">
+                <div className="formBoxLoadscreen">
                     <h3 className="title">Even geduld, wij zijn op zoek naar je perfecte reis</h3>
                     <div className="gifPosition">
                         <Spinner className="spinner" animation="border" variant="success" />                    

@@ -70,6 +70,7 @@ $break-large: 1025px;
 
 .addSpan {
     margin: auto !important;
+    min-width: 104px;
 }
 
 .background {
@@ -79,12 +80,15 @@ $break-large: 1025px;
 }
 
 .counter {
-    font-size: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: lato;
     margin: auto;
-    padding: 20px 20px 10px 20px;
+    padding: 20px 10px;
     vertical-align: bottom;
     @media screen and (max-width: $break-large) {
-        padding: 20px 10px 10px 10px;
+        padding: 20px 8px;
+        font-size: 18px;
     }
 }
 

@@ -1,9 +1,11 @@
-$break-small: 400px;
+$break-small: 575px;
+$break-tablet: 769px;
 $break-large: 1025px;
 
 .backgroundNew {
     -webkit-filter: grayscale(40%);
     height: 100vh;
+    margin-top: -6px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,33 +18,53 @@ $break-large: 1025px;
 }
 
 .tripSendText {
-    font-family: 'Catamaran';
-    font-size: 44px;
-    line-height: 56px;
-    color: black;
-    font-weight: bolder !important;
-    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.02);
-    @media screen and (max-width: $break-large) {
-        display: block;
-        font-size: 30px;
-        padding: 0px 64px 0px 64px;
-    }
+    font-family: 'Catamaran', sans-serif;
+    font-size: 56px;
+    line-height: 64px;
+    color: #404348;
+    font-weight: 800;
+    // text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    /*@media screen and (max-width: $break-large) {
+      display: block;
+      font-size: 30px;
+      padding: 0px 64px 0px 64px;
+    }*/
+    @media screen and (max-width: $break-small) {
+      font-size: 32px;
+      line-height: 36px;
+  }
 }
 
-.subTripText {
+.subSendTripText {
   font-family: lato;
   font-size: 16px;
   line-height: 0px;
-  color: black;
-  font-weight: 400;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  color: #404348;
+  font-weight: 500;
   margin-top: -24px;
   @media screen and (max-width: $break-large) {
-      font-size: 15px;
-      position: relative;
-      top: -15px;
-    }
+    font-size: 15px;
+    position: relative;
+    top: 0px;
+  }
+  @media screen and (max-width: $break-small) {
+    font-size: 15px;
+    position: relative;
+    top: 3px;
+    width: 80%;
+  }
 
+}
+
+.headerDiv {
+  display: inline-block;
+  padding: 24px 32px;
+  width: 100vw;
+  text-align: left;
+  border-bottom: 1px solid #e9e9eb;
+  @media screen and (max-width: $break-small) {
+      padding: 24px;
+  }
 }
 
 .formArea {
@@ -61,6 +83,13 @@ $break-large: 1025px;
       width: 100vw;
       top: 20px !important
   }
+    @media screen and (max-width: $break-large) {
+    padding: 20px;
+    margin: 0;
+    height: 50vh;
+    width: 100vw;
+    top: 2px !important
+}
 }
 
 .formAreaRight {
@@ -70,27 +99,41 @@ $break-large: 1025px;
 
 .textDivSend {
   position: relative;
-  padding-top: 10vh;
+  padding-top: 11vh;
   text-align: center;
 
   @media screen and (max-width: $break-large) {
-     padding-top: 10vh;
-     height: 10vh;
+    padding-top: 11vh;
+ }
+ @media screen and (max-width: $break-small) {
+     padding-top: 6vh;
   }
 
 }
 
+/*.inputGroup1 {
+  width: 50%;
+  display: flex;
+  text-align: right;
+}
+
+.inputGroup2 {
+  width: 50%;
+  display: flex;
+}*/
+
+
 .inputGroup {
     background-color: #fff;
     display: inline-block;
-    margin: 10px 0;
+    margin: 6px 0;
     @media screen and (max-width: $break-large) {
       width: 40%;
       margin: 10px 0;
     }
 
     label {
-      padding: 12px 100px;
+      padding: 12px 24px 12px 40px;
       width: 100%;
       display: block;
       text-align: left;
@@ -100,7 +143,7 @@ $break-large: 1025px;
       z-index: 2;
       transition: color 200ms ease-in;
       overflow: hidden;
-
+      
       &:before {
         width: 10px;
         height: 10px;
@@ -108,7 +151,7 @@ $break-large: 1025px;
         content: '';
         // background-color: #5562eb;
         position: absolute;
-        left: 50%;
+        left: 0px;
         top: 50%;
         transform: translate(-50%, -50%) scale3d(1, 1, 1);
         transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
@@ -117,18 +160,18 @@ $break-large: 1025px;
       }
 
       &:after {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         content: '';
         border: 2px solid #D1D7DC;
         background-color: #fff;
         background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
         background-repeat: no-repeat;
-        background-position: 2px 3px;
+        background-position: 0px 1px;
         border-radius: 50%;
         z-index: 2;
         position: absolute;
-        left: 30px;
+        left: 0px;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
@@ -151,8 +194,8 @@ $break-large: 1025px;
     }
 
     input {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       order: 1;
       z-index: 2;
       position: absolute;
@@ -181,22 +224,29 @@ $break-large: 1025px;
 
 .radio-buttons {
     display: flex;
+    margin: 6px 31% 0;
+    align-self: center;
     @media screen and (max-width: $break-large) {
       display: flex;
-      margin-top: 10px;
-  }
+      margin: 6px 0 0 105px;
+    }
+    @media screen and (max-width: $break-large) {
+      display: flex;
+      margin: 6px 0 0 80px;
+    }
 }
 
 .whoText {
-    font-family: Lato; 
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 24px;
+    font-family: catamaran; 
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 28px;
     padding-bottom: 20px;
+    padding-top: 28px;
     color: #404348;
     @media screen and (max-width: $break-large) {
       position: relative;
-      font-size: 20px;
+      font-size: 16px;
       top: 10px; 
   }
 }
