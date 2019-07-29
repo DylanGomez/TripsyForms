@@ -210,7 +210,7 @@ class SendForm extends Component {
                                     <br />
                                     <div className="radio-buttons">
                                         <div className="inputGroup">
-                                            <input  checked="checked" onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio"  />
+                                            <input onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio" defaultChecked="checked" />
                                             <label htmlFor="radio1" >Man</label>
                                         </div>
                                         <div className="inputGroup">
