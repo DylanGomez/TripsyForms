@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './Step5Activity.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
-import templeIcon from '../../../Icons/pagoda.svg'
-import scubaIcon from '../../../Icons/scuba.svg'
-import questionmark from '../../../Icons/information.svg'
+// import templeIcon from '../../../Icons/pagoda.svg'
+// import snorklingIcon from '../../../Icons/snorkeling.svg'
+import questionmark from '../../../Icons/question-mark-button.svg'
 
 
 class Step5Activity extends Component {
@@ -38,7 +38,7 @@ class Step5Activity extends Component {
                                     this.handleClick("step6", this.props.country.step5.two.value);
                                 }}>
                                 <Card.Body >
-                                    <img className="activityIcon" src={templeIcon} alt=""/>
+                                    <img className="activityIcon" src={this.props.country.step5.two.icon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                 {this.props.country.step5.two.text}
@@ -48,7 +48,7 @@ class Step5Activity extends Component {
                                     this.handleClick("step6", this.props.country.step5.three.value);
                                 }}>
                                 <Card.Body >
-                                    <img className="activityIcon" src={scubaIcon} alt=""/>
+                                    <img className="activityIcon" src={this.props.country.step5.three.icon} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
                                 {this.props.country.step5.three.text}

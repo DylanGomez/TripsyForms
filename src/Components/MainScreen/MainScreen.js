@@ -17,7 +17,9 @@ import Step6Accomodation from '../form/Step6/Step6Accomodation';
 import Step6AStars from '../form/Step6A/Step6AStars';
 import LoadScreen from '../form/LoadScreen/LoadScreen';
 import ProgressBar from 'react-bootstrap/ProgressBar'
-import elephantIcon from '../../Icons/elephant.svg';
+import elephantIcon from '../../Icons/olifant.svg';
+import templeIcon from '../../Icons/temple.svg';
+import snorklingIcon from '../../Icons/snorkeling.svg';
 
 import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg';
@@ -68,12 +70,12 @@ class MainScreen extends Component {
                     value: "elephantPark"
                 },
                 two: {
-                    icon: "../../Icons/icons_forms.svg",
+                    icon: templeIcon,
                     text: "Tempel bezoeken",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: "../../Icons/icons_forms.svg",
+                    icon: snorklingIcon,
                     text: "Snorkelen",
                     value: "Diving"
                 },
@@ -224,12 +226,13 @@ class MainScreen extends Component {
 
         const progress = {
             startForm: 10,
-            step1A: 30,
-            step1B: 20,
-            step2: 40,
-            step3: 50,
+            step1A: 10,
+            step1B: 10,
+            step2: 20,
+            step2A: 20,
+            step3: 40,
             step4: 60,
-            step5: 70,
+            step5: 80,
             step6: 80,
             step6A: 90,
             loading: 100,

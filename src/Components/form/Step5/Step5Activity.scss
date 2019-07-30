@@ -2,9 +2,13 @@ $break-small: 400px;
 $break-large: 1025px;
 
 .activityIcon {
+    height: 44px;
     margin: auto; 
     fill: none;
-    height: 64px;
+    @media screen and (max-width: $break-small) {
+        height: 34px;
+        margin: auto; 
+    }
 }
 
 .card:hover {
@@ -12,7 +16,6 @@ $break-large: 1025px;
     .activityIcon {
         margin: auto; 
         fill: none;
-        height: 64px;
         filter: invert(36%) sepia(49%) saturate(7105%) hue-rotate(141deg) brightness(94%) contrast(102%);
     }
 }
