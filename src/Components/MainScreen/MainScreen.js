@@ -9,6 +9,7 @@ import Step1Who from '../form/Step1/Step1Who';
 import Step1ACounter from '../form/Step1A/Step1ACounter';
 import Step1BGroup from '../form/Step1B/Step1BGroup';
 import Step2Weeks from '../form/Step2/Step2Weeks';
+import Step2days from '../form/Step2A/Step2days';
 import Step3When from '../form/Step3/Step3When';
 import Step4Speed from '../form/Step4/Step4Speed';
 import Step5Activity from '../form/Step5/Step5Activity';
@@ -145,6 +146,7 @@ class MainScreen extends Component {
             step1A: <Step1ACounter toggleForm={this.toggleForm} addState={this.addState} />,
             step1B: <Step1BGroup toggleForm={this.toggleForm} addState={this.addState} />,
             step2: <Step2Weeks toggleForm={this.toggleForm} addState={this.addState} />,
+            step2A: <Step2days toggleForm={this.toggleForm} addState={this.addState} />,
             step3: <Step3When toggleForm={this.toggleForm} addState={this.addState} />,
             step4: <Step4Speed toggleForm={this.toggleForm} addState={this.addState} />,
             step5: <Step5Activity country={this.state.currentCountry} toggleForm={this.toggleForm} addState={this.addState} />,

@@ -45,7 +45,7 @@ $break-large: 1025px;
        padding-top: 11vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 6vh;
+        padding-top: 11vh;
      }
 
 }
@@ -58,7 +58,7 @@ $break-large: 1025px;
         padding-top: 3vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 1vh;
+        padding-top: 5vh;
     }
 }
 
@@ -288,7 +288,7 @@ $break-large: 1025px;
         top: 569px;
     }
     @media screen and (max-width: $break-small) {
-        top: 460px;
+        top: 400px;
     }
 }  
 .linksRight {
