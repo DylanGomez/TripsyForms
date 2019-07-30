@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f7629d04aae58719c0946f63cb1adbe3",
+    "revision": "ce5853b18c05a22a92327b3ba50c9c2b",
     "url": "/index.html"
   },
   {
-    "revision": "b5c460759548bc32281f",
-    "url": "/static/css/2.da91a66d.chunk.css"
+    "revision": "3452931f1f488748197f",
+    "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "c79fce1e67c3943c7d79",
-    "url": "/static/css/main.aabb7c3f.chunk.css"
+    "revision": "29295fbac45bb39b6248",
+    "url": "/static/css/main.f480430c.chunk.css"
   },
   {
-    "revision": "b5c460759548bc32281f",
-    "url": "/static/js/2.2499ba87.chunk.js"
+    "revision": "3452931f1f488748197f",
+    "url": "/static/js/2.f830ce2d.chunk.js"
   },
   {
-    "revision": "c79fce1e67c3943c7d79",
-    "url": "/static/js/main.1961d1af.chunk.js"
+    "revision": "29295fbac45bb39b6248",
+    "url": "/static/js/main.9b63e39c.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -80,16 +80,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/VietnamBackground.1046225f.jpg"
   },
   {
+    "revision": "7562e37a820e6dd27944b694f156e94d",
+    "url": "/static/media/active1.7562e37a.svg"
+  },
+  {
     "revision": "cd14aff02900494884754f64c33d88f9",
     "url": "/static/media/bellen.cd14aff0.svg"
-  },
-  {
-    "revision": "6997c936f49dae7b49791ba5e66d7b4d",
-    "url": "/static/media/bunny.6997c936.svg"
-  },
-  {
-    "revision": "5041c012d9934b1ccdea01df02ede6ba",
-    "url": "/static/media/elephant.5041c012.svg"
   },
   {
     "revision": "b9b441f3fe545ad5529b7fd1452ed50b",
@@ -116,6 +112,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/ho-chi-minh-mausoleum.7803e072.svg"
   },
   {
+    "revision": "1ccc709b45a12da44f7d644ad56e4d8f",
+    "url": "/static/media/in-balans.1ccc709b.svg"
+  },
+  {
     "revision": "2508df2055ae3e150ddc505e107f95e7",
     "url": "/static/media/information.2508df20.svg"
   },
@@ -124,20 +124,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mailIcon.7c42175c.svg"
   },
   {
-    "revision": "e8143ea665ae8ff555ccea83d3c3d5c2",
-    "url": "/static/media/padmasana.e8143ea6.svg"
+    "revision": "467e7b22959d51888a25052f09c9e5f5",
+    "url": "/static/media/olifant.467e7b22.svg"
   },
   {
-    "revision": "86566df55e40f661a12ebac47aa6dc53",
-    "url": "/static/media/pagoda.86566df5.svg"
+    "revision": "257b4852f09c00763543603dd8961bf7",
+    "url": "/static/media/questionmarks.257b4852.svg"
   },
   {
     "revision": "ad9ddfe86aa043d2150eaaed34d233a1",
     "url": "/static/media/resort.ad9ddfe8.svg"
   },
   {
-    "revision": "e331c6ad454349096eb070326b89543e",
-    "url": "/static/media/scuba.e331c6ad.svg"
+    "revision": "282d50bf23c023f51c229fd7f77d6138",
+    "url": "/static/media/slow2.282d50bf.svg"
+  },
+  {
+    "revision": "182dee40cbe54ab2bdfcea69b0bad4a2",
+    "url": "/static/media/snorkeling.182dee40.svg"
   },
   {
     "revision": "61f68b66b4addf375337200d24ee2664",
@@ -148,8 +152,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sun-bath.2ced4083.svg"
   },
   {
-    "revision": "33e008446a7c7a40200dc49a646ae8ce",
-    "url": "/static/media/turtle.33e00844.svg"
+    "revision": "b46f141224d3bb46102807d302129fef",
+    "url": "/static/media/temple3.b46f1412.svg"
   },
   {
     "revision": "c1fc845bcbab9873f4993989c8583799",
