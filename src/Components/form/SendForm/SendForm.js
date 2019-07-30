@@ -199,7 +199,7 @@ class SendForm extends Component {
                         <a href="https://www.tripsy.nl/" target="_blank" rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
                         <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
                             {this.state.helpOpen &&
-                                <HelpModal toggleHelp={this.toggleHelp} />
+                            <HelpModal toggleHelp={this.toggleHelp} />
                             }
                         </div>
                     </div>
@@ -208,15 +208,15 @@ class SendForm extends Component {
                             <span className="tripSendText">Jouw rondreis Thailand</span>
                             <br />
                             <MediaQuery query='(min-device-width: 1224px)'>
-                                <span className="subSendTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
+                                <span className="subSendTripText">Wij maken graag gratis en vrijblijvend een reisplan op maat voor je. Daarvoor hebben nog een paar gegevens van je nodig. Je bent er bijna</span>
                             </MediaQuery>
                             <MediaQuery query='(max-device-width: 1224px)'>
-                                <span className="subSendTripText">Wij maken je reis - gratis en vrijblijvend</span>
+                                <span className="subSendTripText">Wij maken je reis volledig op maat</span>
                             </MediaQuery>
                             <Form noValidate validated={this.state.validated} onSubmit={this.mailService}>
                                 <div className="formArea">
                                     <div className="formAreaRight">
-                                        <span className="whoText">Wie mag het reisaanbod ontvangen?</span>
+                                        <span className="whoText">Wie mag het reisplan ontvangen?</span>
                                         <br />
                                         <div className="radio-buttons">
                                             <div className="inputGroup">
@@ -252,7 +252,7 @@ class SendForm extends Component {
                                             required
                                         />
                                         {!this.state.buttonPressed &&
-                                            <Button variant="success" size="lg" type="submit">Ja, verstuur het reisaanbod</Button>
+                                            <Button variant="success" size="lg" type="submit">Ja, ik wil graag een reisplan *</Button>
                                         }
                                         {this.state.buttonPressed &&
                                             <Button variant="success" size="lg" disabled>
@@ -260,33 +260,20 @@ class SendForm extends Component {
                                             </Button>
                                         }
                                         <br />
-                                        <span><i>Gratis en vrijblijvend </i></span>
+                                        <span class="gratisvrijblijvend"><i>*Altijd gratis en vrijblijvend</i></span>
                                     </div>
                                 </div>
                             </Form>
                         </div>
                     </div>
                     <div className="bottomDiv">
-                        {/* <span className="garantyTitle">Garantiefonds</span>
-                    <br />
-                    <span className="garantyText"> Al onze reizen vallen onder het garantiefonds van de GGTO.
-                    Hierdoor heb je de garantie dat wanneer de organisator van de reis,
-                    zoals de lokale touroperator of de luchtvaartmaatschappij, failliet gaat je het betaalde bedrag vergoedt krijgt.
-                    Voor andere onvoorziene gebeurtenissen raden wij een goede reisverzekering aan.
-                    Wij kunnen je hierbij helpen.</span>
-                    <br />
-                    <img className="ggtoLogo" src={GGTOLogo} alt="" />
-                    <br />
-                    <div className="line"></div>
-                    <br /> */}
-                        <div className="links1">
-                            <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
-                            <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
-                            <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
-                        </div>
-                        <div className="links2">
-                            <span className="linksRight"> © Tripsy B.V. 2019</span>
-                        </div>
+                    <div className="links1">
+                        <span className="linksRight"> © Tripsy B.V. 2019</span>
+                    </div>
+                    <div className="links2">
+                        <a href="https://www.tripsy.nl/algemene-voorwaarden"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://www.tripsy.nl/privacy-cookies"><span className="linksLeft">Privacy & Cookies</span></a>
+                    </div>
                     </div>
                 </div>
             )
