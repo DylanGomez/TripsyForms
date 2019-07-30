@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 // import templeIcon from '../../../Icons/pagoda.svg'
 // import snorklingIcon from '../../../Icons/snorkeling.svg'
-import questionmark from '../../../Icons/question-mark-button.svg'
+import questionmark from '../../../Icons/questionmarks.svg'
 
 
 class Step5Activity extends Component {
@@ -21,11 +21,11 @@ class Step5Activity extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <h3 className="title">Welke activiteit spreekt je het meeste aan?</h3>
+                    <h3 className="title">Wat past het beste bij jou?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
-                                    this.handleClick("step6", this.props.country.step5.one.value);
+                                    this.handleClick("loading", this.props.country.step5.one.value);
                                 }}>
                                 <Card.Body >
                                     <img className="activityIcon" src={this.props.country.step5.one.icon} alt=""/>
@@ -35,7 +35,7 @@ class Step5Activity extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step6", this.props.country.step5.two.value);
+                                    this.handleClick("loading", this.props.country.step5.two.value);
                                 }}>
                                 <Card.Body >
                                     <img className="activityIcon" src={this.props.country.step5.two.icon} alt=""/>
@@ -45,7 +45,7 @@ class Step5Activity extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step6", this.props.country.step5.three.value);
+                                    this.handleClick("loading", this.props.country.step5.three.value);
                                 }}>
                                 <Card.Body >
                                     <img className="activityIcon" src={this.props.country.step5.three.icon} alt=""/>
@@ -55,7 +55,7 @@ class Step5Activity extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step6", "dontknow");
+                                    this.handleClick("loading", "dontknow");
                                 }}>
                                 <Card.Body >
                                     <img className="activityIcon" src={questionmark} alt=""/>

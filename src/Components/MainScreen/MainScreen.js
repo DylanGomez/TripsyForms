@@ -18,7 +18,7 @@ import Step6AStars from '../form/Step6A/Step6AStars';
 import LoadScreen from '../form/LoadScreen/LoadScreen';
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import elephantIcon from '../../Icons/olifant.svg';
-import templeIcon from '../../Icons/temple.svg';
+import templeIcon from '../../Icons/temple3.svg';
 import snorklingIcon from '../../Icons/snorkeling.svg';
 
 import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';

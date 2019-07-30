@@ -1,8 +1,8 @@
-$break-small: 400px;
+$break-small: 575px;
 $break-large: 1025px;
 
 .speedIcon {
-    height: 44px;
+    height: 40px;
     margin: auto; 
     fill: none;
     @media screen and (max-width: $break-small) {

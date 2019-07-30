@@ -3,10 +3,10 @@ import './Step4Speed.scss'
 import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 
-import bunnyIcon from '../../../Icons/active.svg'
-import meditateIcon from '../../../Icons/balans.svg'
-import turtleIcon from '../../../Icons/slow4.svg'
-import questionmark from '../../../Icons/question-mark-button.svg'
+import bunnyIcon from '../../../Icons/active1.svg'
+import meditateIcon from '../../../Icons/in-balans.svg'
+import turtleIcon from '../../../Icons/slow2.svg'
+import questionmark from '../../../Icons/questionmarks.svg'
 
 class Step4Speed extends Component {
 
