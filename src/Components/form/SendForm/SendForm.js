@@ -197,7 +197,7 @@ class SendForm extends Component {
                 <div className="pageDiv">
                     <div className="headerDiv">
                         <a href="https://www.tripsy.nl/" target="_blank" rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
-                        <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={() => this.toggleHelp()}> <span className="helpword">Help</span>
+                        <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <span className="helpword">Help</span>
                             {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                             }
@@ -205,7 +205,7 @@ class SendForm extends Component {
                     </div>
                     <div className="backgroundNew">
                         <div className="textDivSend">
-                            <span className="tripSendText">Jouw perfecte rondreis Thailand</span>
+                            <span className="tripSendText">Wij hebben de perfecte reis voor jou</span>
                             <br />
                             <MediaQuery query='(min-device-width: 1224px)'>
                                 <span className="subSendTripText">Wij maken graag een reisplan op maat voor je.</span>
@@ -221,7 +221,7 @@ class SendForm extends Component {
                                         <div className="radio-buttons">
                                             <div className="inputGroup">
                                                 <input onChange={this.changeHandler} value="Man" id="radio1" name="gender" type="radio" defaultChecked="checked" />
-                                                <label htmlFor="radio1" >Man</label>
+                                                <label htmlFor="radio1" >Dhr.</label>
                                             </div>
                                             <div className="inputGroup">
                                                 <input onChange={this.changeHandler} value="Woman" id="radio2" name="gender" type="radio" />
@@ -252,7 +252,7 @@ class SendForm extends Component {
                                             required
                                         />
                                         {!this.state.buttonPressed &&
-                                            <Button variant="success" size="lg" type="submit">Ja, ik wil graag een reisplan *</Button>
+                                            <Button variant="success" size="lg" type="submit">Ja, ik wil graag een reisplan*</Button>
                                         }
                                         {this.state.buttonPressed &&
                                             <Button variant="success" size="lg" disabled>

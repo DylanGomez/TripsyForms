@@ -4,7 +4,7 @@ $break-large: 1025px;
 
 .backgroundNew {
     -webkit-filter: grayscale(40%);
-    height: 800px;
+    height: 780px;
     margin-top: -6px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -15,7 +15,7 @@ $break-large: 1025px;
       width: 100vw;
     }
     @media screen and (max-width: $break-small) {
-      height: 700px;
+      height: 680px;
     }
 }
 
@@ -50,7 +50,7 @@ $break-large: 1025px;
   line-height: 0px;
   color: #404348;
   font-weight: 500;
-  margin-top: -24px;
+  padding-top:16px;
   @media screen and (max-width: $break-large) {
     font-size: 15px;
     position: relative;
@@ -108,11 +108,11 @@ $break-large: 1025px;
 
 .textDivSend {
   position: relative;
-  padding-top: 56px;
+  padding-top: 72px;
   text-align: center;
 
   @media screen and (max-width: $break-large) {
-    padding-top: 46px;
+    padding-top: 72px;
  }
  @media screen and (max-width: $break-small) {
      padding-top: 24px;
@@ -169,14 +169,14 @@ $break-large: 1025px;
       }
 
       &:after {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
         content: '';
-        border: 2px solid #D1D7DC;
+        border: 1px solid #D1D7DC;
         background-color: #fff;
         background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
         background-repeat: no-repeat;
-        background-position: 0px 1px;
+        background-position: -1px 0px;
         border-radius: 50%;
         z-index: 2;
         position: absolute;
@@ -203,8 +203,8 @@ $break-large: 1025px;
     }
 
     input {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       order: 1;
       z-index: 2;
       position: absolute;
@@ -248,7 +248,7 @@ $break-large: 1025px;
 .whoText {
     font-family: catamaran; 
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
     padding-bottom: 20px;
     color: #404348;
@@ -404,4 +404,10 @@ button.btn.btn-success.btn-lg {
   font-size: 15px;
   font-family: lato;
   line-height: 18px;
+}
+
+.bottomDiv {
+  @media screen and (max-width: $break-small) {
+      border-top: 1px solid #e9e9eb !important;
+  }
 }
