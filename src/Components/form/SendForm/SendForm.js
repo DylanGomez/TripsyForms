@@ -205,10 +205,10 @@ class SendForm extends Component {
                     </div>
                     <div className="backgroundNew">
                         <div className="textDivSend">
-                            <span className="tripSendText">Jouw rondreis Thailand</span>
+                            <span className="tripSendText">Jouw perfecte rondreis Thailand</span>
                             <br />
                             <MediaQuery query='(min-device-width: 1224px)'>
-                                <span className="subSendTripText">Wij maken graag gratis en vrijblijvend een reisplan op maat voor je. Daarvoor hebben nog een paar gegevens van je nodig. Je bent er bijna</span>
+                                <span className="subSendTripText">Wij maken graag een reisplan op maat voor je.</span>
                             </MediaQuery>
                             <MediaQuery query='(max-device-width: 1224px)'>
                                 <span className="subSendTripText">Wij maken je reis volledig op maat</span>
