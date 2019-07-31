@@ -1,6 +1,7 @@
 $break-small: 575px;
 $break-tablet: 769px;
 $break-large: 1025px;
+$break-extralarge: 1200px;
 
 .backgroundNew {
     -webkit-filter: grayscale(40%);
@@ -11,12 +12,37 @@ $break-large: 1025px;
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+    padding: 0 32px;
     @media screen and (max-width: $break-large) {
       width: 100vw;
     }
-    @media screen and (max-width: $break-small) {
-      height: 680px;
+    @media screen and (max-width: $break-tablet) {
+      height: 820px;
     }
+    @media screen and (max-width: $break-small) {
+      height: 700px;
+      padding: 0;
+    }
+}
+
+.backgroundNew2 {
+  -webkit-filter: grayscale(40%);
+  height: 780px;
+  margin-top: -6px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  padding: 0 32px;
+  @media screen and (max-width: $break-extralarge) {
+    width: 100vw;
+    height: 1120px;
+  }
+  @media screen and (max-width: $break-small) {
+    height: 1320px;
+    padding: 0 24px;
+  }
 }
 
 .tripSendText {
@@ -25,7 +51,6 @@ $break-large: 1025px;
     line-height: 64px;
     color: #404348;
     font-weight: 800;
-    margin: 0 24px !important;
     display: inline-block;  
     // text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
     /*@media screen and (max-width: $break-large) {
@@ -47,19 +72,18 @@ $break-large: 1025px;
 .subSendTripText {
   font-family: lato;
   font-size: 16px;
-  line-height: 0px;
+  line-height: 24px;
   color: #404348;
   font-weight: 500;
-  padding-top:16px;
   @media screen and (max-width: $break-large) {
     font-size: 15px;
     position: relative;
-    top: 0px;
+    top: 2px;
   }
   @media screen and (max-width: $break-small) {
     font-size: 15px;
     position: relative;
-    top: 3px;
+    top: 2px;
     width: 80%;
   }
 
@@ -76,8 +100,21 @@ $break-large: 1025px;
   }
 }
 
+.bottomDiv {
+  display: inline-block;
+  padding: 24px 32px 24px;
+  width: 100vw;
+  text-align: left;
+  border-top: 1px solid #e9e9eb;
+  @media screen and (max-width: $break-small) {
+      border-top: none;
+      padding: 24px;
+      margin-top: -10px;
+  }
+}
+
 .formArea {
-    padding: 48px;
+    padding: 48px 48px 24px;
     width: 40%;
     height: 50%;
     text-align: center;
@@ -115,7 +152,7 @@ $break-large: 1025px;
     padding-top: 72px;
  }
  @media screen and (max-width: $break-small) {
-     padding-top: 24px;
+     padding-top: 32px;
   }
 
 }
@@ -135,18 +172,17 @@ $break-large: 1025px;
 .inputGroup {
     background-color: #fff;
     display: inline-block;
-    margin: 6px 0;
-    @media screen and (max-width: $break-large) {
-      width: 40%;
-      margin: 10px 0;
-    }
+    text-align: center;
 
     label {
-      padding: 12px 24px 12px 40px;
+      padding: 4px 0 4px 32px;
+      margin: 0 8px;
       width: 100%;
       display: block;
       text-align: left;
-      color: #3C454C;
+      color: #404348;
+      font-size: 15px;
+      font-family: lato;  
       cursor: pointer;
       position: relative;
       z-index: 2;
@@ -232,16 +268,16 @@ $break-large: 1025px;
 }
 
 .radio-buttons {
-    display: flex;
-    margin: 6px 31% 0;
-    align-self: center;
+    display: inline-block;
+    margin: auto;
+    padding: 16px 0 10px;
     @media screen and (max-width: $break-large) {
-      display: flex;
-      margin: 6px 0 0 105px;
+      display: inline-block;
+      margin: auto;
     }
     @media screen and (max-width: $break-large) {
-      display: flex;
-      margin: 6px 0 0 80px;
+      display: inline-block;
+      margin: auto;
     }
 }
 
@@ -254,8 +290,8 @@ $break-large: 1025px;
     color: #404348;
     @media screen and (max-width: $break-large) {
       position: relative;
-      font-size: 16px;
-      top: 10px; 
+      font-size: 18px;
+      top: 8px; 
   }
 }
 
@@ -410,4 +446,39 @@ button.btn.btn-success.btn-lg {
   @media screen and (max-width: $break-small) {
       border-top: 1px solid #e9e9eb !important;
   }
+}
+
+.countryNames {
+  padding: 24px 0;
+}
+
+.continent {
+  width: 16,666667%;
+  display: inline-block;
+  text-align: left;
+  padding: 24px 16px;
+  margin: 0 32px;
+  vertical-align: top;
+  @media screen and (max-width: $break-extralarge) {
+    width: 25%;
+  }
+  @media screen and (max-width: $break-small) {
+    width: 50%;
+    margin: 0;
+  }
+}
+
+.continentTitle {
+  font-family: catamaran;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 0 8px;
+}
+
+.countryLink {
+  padding: 4px 0;
+  font-family: lato;
+  font-weight: 500;
+  font-size: 16px;
+  color: #009249 !important;
 }

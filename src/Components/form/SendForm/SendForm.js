@@ -158,7 +158,7 @@ class SendForm extends Component {
         //HET IS NIET MOGELIJK OM TE NAVIGEREN DAN 1 BEPAALD LAND OMDAT DIT NERGENS STAAT OPGESLAGEN,
         // HET IS HANDIG DAT DIT NAVIGEERT NAAR EEN WORDPRESS PAGINA WAAR
         // DE KLANT HET LAND KAN KIEZEN IPV DIRECT NAAR HET FORMULIER NAVIGEREN, OP DEZE MANIER VERLIEST JE CONTEXT. 
-        window.location.assign('https://www.tripsy.nl/bestemmingen');
+        window.location.assign('https://www.tripsy.nl/');
     }
 
     onChange(value) {
@@ -208,7 +208,7 @@ class SendForm extends Component {
                             <span className="tripSendText">Wij hebben de perfecte reis voor jou</span>
                             <br />
                             <MediaQuery query='(min-device-width: 1224px)'>
-                                <span className="subSendTripText">Wij maken graag een reisplan op maat voor je.</span>
+                                <span className="subSendTripText">Wij maken je reis volledig op maat</span>
                             </MediaQuery>
                             <MediaQuery query='(max-device-width: 1224px)'>
                                 <span className="subSendTripText">Wij maken je reis volledig op maat</span>
@@ -280,40 +280,94 @@ class SendForm extends Component {
         } else {
             return (
                 <div className="pageDiv">
-                    <div className="backgroundNew">
-                        <div className="logoSuccess">  </div>
-                        <div className="helpIconSuccess" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
-                        {this.state.helpOpen &&
+                    <div className="headerDiv">
+                        <a href="https://www.tripsy.nl/" target="_blank" rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
+                        <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <span className="helpword">Help</span>
+                            {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
-                        }
+                            }
+                        </div>
+                    </div>
+                    <div className="backgroundNew2">
                         <div className="textDivSend">
-                            <span className="whoText">Wij hebben nog geen informatie van je!</span>
+                            <span className="tripSendText">Oeps er gaat iets mis</span>
                             <br />
-                            <Button variant="success" size="lg" onClick={this.goToStart}>Start de aanvraag!</Button>
-
+                            <MediaQuery query='(min-device-width: 1224px)'>
+                                <span className="subSendTripText">Begin je aanvraag opnieuw en klik op het land naar keuze.</span>
+                            </MediaQuery>
+                            <MediaQuery query='(max-device-width: 1224px)'>
+                                <span className="subSendTripText">Begin je aanvraag opnieuw en klik op het land naar keuze.</span>
+                            </MediaQuery>
+                            <div className="countryNames">
+                                    <div className="continent">
+                                            <div className="continentTitle">Afrika</div>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Botswana</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Kenia</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Mozambique</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Namibië</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Oeganda</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Tanzania</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Zuid-Afrika</div></a>
+                                    </div>
+                                    <div className="continent">
+                                            <div className="continentTitle">Azië</div>
+                                            <a href="www.tripsy.nl"><div className="countryLink">China</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">India</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Indonesië</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Japan</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Maleisië</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Sri Lanka</div></a>
+                                            <a href="https://forms.tripsy.nl/#/des/thailand"><div className="countryLink">Thailand</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Vietnam</div></a>
+                                    </div>
+                                    <div className="continent">
+                                            <div className="continentTitle">Europa</div>
+                                            <a href="www.tripsy.nl"><div className="countryLink">IJsland</div></a>
+                                    </div>
+                                    <div className="continent">
+                                            <div className="continentTitle">Noord-Amerika</div>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Canada</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Costa Rica</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Cuba</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Mexico</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Usa</div></a>
+                                    </div>
+                                    <div className="continent">
+                                            <div className="continentTitle">Oceanië</div>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Australië</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Nieuw-Zeeland</div></a>
+                                    </div>
+                                    <div className="continent">
+                                            <div className="continentTitle">Zuid-Amerika</div>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Argentinië</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Bolivia</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Brazilië</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Chili</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Colombia</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Equador</div></a>
+                                            <a href="www.tripsy.nl"><div className="countryLink">Peru</div></a>
+                                    </div>
+                            </div>
+                            <MediaQuery query='(min-device-width: 1224px)'>
+                                <span className="subSendTripText">Of ga terug naar de homepage</span>
+                            </MediaQuery>
+                            <MediaQuery query='(max-device-width: 1224px)'>
+                                <span className="subSendTripText">Of ga terug naar de homepage</span>
+                            </MediaQuery>
+                            <br />
+                            <div className="formAreaRight">
+                                <Button variant="success" size="lg" onClick={this.goToStart}>Naar Home</Button>
+                            </div>
                         </div>
                     </div>
                     <div className="bottomDiv">
-                        {/* <span className="garantyTitle">Garantiefonds</span>
-                    <br />
-                    <span className="garantyText"> Al onze reizen vallen onder het garantiefonds van de GGTO.
-                    Hierdoor heb je de garantie dat wanneer de organisator van de reis,
-                    zoals de lokale touroperator of de luchtvaartmaatschappij, failliet gaat je het betaalde bedrag vergoedt krijgt.
-                    Voor andere onvoorziene gebeurtenissen raden wij een goede reisverzekering aan.
-                    Wij kunnen je hierbij helpen.</span>
-                    <br />
-                    <img className="ggtoLogo" src={GGTOLogo} alt="" />
-                    <br />
-                    <div className="line"></div>
-                    <br /> */}
-                        <div className="links1">
-                            <a href="https://tripsy.nl/"><span className="linksLeft"> Disclaimer </span></a>
-                            <a href="https://tripsy.nl/"><span className="linksLeft"> Reisvoorwaarden </span></a>
-                            <a href="https://tripsy.nl/"><span className="linksLeft"> Privacybeleid</span></a>
-                        </div>
-                        <div className="links2">
-                            <span className="linksRight"> © Tripsy B.V. 2019</span>
-                        </div>
+                    <div className="links1">
+                        <span className="linksRight"> © Tripsy B.V. 2019</span>
+                    </div>
+                    <div className="links2">
+                        <a href="https://www.tripsy.nl/algemene-voorwaarden"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://www.tripsy.nl/privacy-cookies"><span className="linksLeft">Privacy & Cookies</span></a>
+                    </div>
                     </div>
                 </div>
             )

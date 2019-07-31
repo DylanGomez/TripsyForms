@@ -41,7 +41,7 @@ class HelpModal extends Component {
             <div ref={this.setWrapperRef} className="helpDiv">
                 <h3 className="helpTitle">Hulp nodig?</h3>
                 <br />
-                <span className="helpText">Wij helpen je graag via <br /> de telefoon of e-mail met het <br /> boeken van je rondreis</span>
+                <span className="helpText">Wij helpen je graag via <br /> de telefoon of e-mail met het <br /> aanvragen van je rondreis</span>
                 <br />
                 <img alt="" className="helpPhoto" src={helpPhoto}></img>
                 <br />

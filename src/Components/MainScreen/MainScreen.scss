@@ -45,7 +45,7 @@ $break-large: 1025px;
        padding-top: 11vh;
     }
     @media screen and (max-width: $break-small) {
-        padding-top: 11vh;
+        padding-top: 9vh;
      }
 
 }
@@ -81,6 +81,7 @@ $break-large: 1025px;
     @media screen and (max-width: $break-small) {
         border-top: none;
         padding: 24px;
+        margin-top: -10px;
     }
 }
 
