@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './SendForm.scss'
 import { Form, Button, Spinner } from 'react-bootstrap';
 import IntlTelInput from 'react-intl-tel-input';
-import HelpIcon from '@material-ui/icons/Help';
+// import HelpIcon from '@material-ui/icons/Help';
 import HelpModal from '../../MainScreen/helpModal/HelpModal';
 import MediaQuery from 'react-responsive';
 import * as emailjs from 'emailjs-com';
