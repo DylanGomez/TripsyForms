@@ -225,7 +225,7 @@ class SendForm extends Component {
                                             </div>
                                             <div className="inputGroup">
                                                 <input onChange={this.changeHandler} value="Woman" id="radio2" name="gender" type="radio" />
-                                                <label htmlFor="radio2">mevr.</label>
+                                                <label htmlFor="radio2">Mevr.</label>
                                             </div>
                                         </div>
                                         <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} required />
