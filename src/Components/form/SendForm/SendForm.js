@@ -86,7 +86,7 @@ class SendForm extends Component {
 
         if (check) {
             var customerTemplate = {
-                from_name: 'hallo@tripsy.nl',
+                from_name: 'hallo@tripsy.nl' + '- Bij ons kom je terug om weg te gaan',
                 to_name: this.state.email,
                 subject: this.state.name,
                 message_html: 'Beste ' + this.state.name + ', <br> ' +
