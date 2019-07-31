@@ -285,8 +285,8 @@ class MainScreen extends Component {
                         <span className="linksRight"> © Tripsy B.V. 2019</span>
                     </div>
                     <div className="links2">
-                        <a href="https://www.tripsy.nl/algemene-voorwaarden"><span className="linksLeft"> Reisvoorwaarden </span></a>
-                        <a href="https://www.tripsy.nl/privacy-cookies"><span className="linksLeft">Privacy & Cookies</span></a>
+                        <a href="https://www.tripsy.nl/algemene-voorwaarden" target="_blank" without rel="noopener noreferrer"><span className="linksLeft"> Reisvoorwaarden </span></a>
+                        <a href="https://www.tripsy.nl/privacy-cookies" target="_blank" without rel="noopener noreferrer"><span className="linksLeft">Privacy & Cookies</span></a>
                     </div>
                 </div>
             </div>
