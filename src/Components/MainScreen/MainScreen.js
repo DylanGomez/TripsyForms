@@ -155,10 +155,8 @@ class MainScreen extends Component {
             step6: <Step6Accomodation country={this.getObject} toggleForm={this.toggleForm} addState={this.addState} />,
             step6A: <Step6AStars toggleForm={this.toggleForm} addState={this.addState} />,
             loading: <LoadScreen goToSuccess={this.goToSuccess} />,
-
             // finalPage: this.goToSuccess()
         }
-
         return forms[currentForm];
     }
 
@@ -209,6 +207,7 @@ class MainScreen extends Component {
 
     onBackButtonEvent(e) {
         e.preventDefault();
+
         this.previousForm(e.state);
     }
 

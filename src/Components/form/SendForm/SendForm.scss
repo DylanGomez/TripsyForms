@@ -417,11 +417,22 @@ input {
   font-weight: 500;
   font-family: lato;
   color: #404348;
+  
 }
 
 .intl-tel-input.allow-dropdown .selected-flag {
   width: 56px !important;
   padding: 0 16px;
+}
+
+.iti-mobile .intl-tel-input.iti-container{
+  @media screen and (max-width: $break-small) {
+    top: 575px !important;
+    left: 20px !important;
+    height: 400px !important;
+    width: 90%;
+    position: absolute !important;
+  }
 }
 
 button.btn.btn-success.btn-lg {
@@ -481,4 +492,26 @@ button.btn.btn-success.btn-lg {
   font-weight: 500;
   font-size: 16px;
   color: #009249 !important;
+}
+
+.helpWidgetEmail {
+  position: absolute;
+  right: 200px;
+  top: 265px;
+  color: grey;
+}
+
+.helpWidgetEmail:hover {
+  color: black;
+}
+
+.helpWidgetPhone {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 15px;
+  color: grey;
+}
+
+.helpWidgetPhone:hover {
+  color: black;
 }

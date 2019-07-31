@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
 import './SuccessPage.scss'
-import { Button } from 'react-bootstrap';
-import HelpIcon from '@material-ui/icons/Help';
-import { Redirect } from 'react-router-dom';
+// import { Button } from 'react-bootstrap';
+// import HelpIcon from '@material-ui/icons/Help';
+import { Redirect, Route} from 'react-router-dom';
 
 
-import HelpModal from '../../MainScreen/helpModal/HelpModal';
+// import HelpModal from '../../MainScreen/helpModal/HelpModal';
 
 class SuccessPage extends Component {
     constructor() {
@@ -18,6 +18,10 @@ class SuccessPage extends Component {
         this.goToWebsite = this.goToWebsite.bind(this);
     }
 
+    componentWillMount() {
+        return <Redirect to={{ pathname: 'www.tripsy.nl/gelukt' }} />;
+
+    }
     goToWebsite() {
         return <Redirect to={{ pathname: 'www.tripsy.nl' }} />;
     }
@@ -29,12 +33,16 @@ class SuccessPage extends Component {
     render() {
         return (
             <div className="pageDiv">
-                <div className="textArea">
-                    {/* <div className="textBlock">
+                <Route path='/success' component={() => {
+                    window.location.href = 'https://www.tripsy.nl/gelukt';
+                    return null;
+                }} />                
+                {/* <div className="textArea">
+                    <div className="textBlock">
                         <span className="successText">Yes!</span>
                         <br />
                         <span className="subtitleSuccess">We hebben een passend reisaanbod voor je gevonden</span>
-                    </div> */}
+                    </div>
                 </div>
                 <div className="logoSuccess">  </div>
                 <div className="helpIconSuccess" onClick={() => { this.toggleHelp() }}> <HelpIcon /><span className="helpwordSuccess">Help</span></div>
@@ -59,7 +67,7 @@ class SuccessPage extends Component {
                     <div className="links2">
                         <span className="linksRight"> © Tripsy B.V. 2019</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }
