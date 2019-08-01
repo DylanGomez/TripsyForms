@@ -24,7 +24,7 @@ import snorklingIcon from '../../Icons/snorkeling.svg';
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg';
 import BackgroundBotswana from '../../images/reis_botswana_afrika.jpg';
-import BackgroundKenia from '../../images/reis_kenia_afrika.jpg';
+import BackgroundKenia from '../../images/reis_kenia_afrika1.jpg';
 import BackgroundMozambique from '../../images/mozambique_reizen.jpg';
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
 
@@ -101,7 +101,7 @@ class MainScreen extends Component {
                 },
             }
         }
-    } //EINDE LAND
+    } //EINDE LAND //BEGIN AFRIKA
         , {
         vietnam: {
             countryName: "Vietnam",
@@ -225,6 +225,1046 @@ class MainScreen extends Component {
     {
         mozambique: {
             countryName: "Mozambique",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        namibie: {
+            countryName: "Namibië",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        oeganda: {
+            countryName: "Oeganda",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        tanzania: {
+            countryName: "Tanzania",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        zuidafrika: {
+            countryName: "Zuid-Afrika",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND //EINDE AFRIKA //BEGIN AZIE
+    , {
+        china: {
+            countryName: "China",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        india: {
+            countryName: "India",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        indonesie: {
+            countryName: "Indonesië",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        japan: {
+            countryName: "Japan",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        maleisie: {
+            countryName: "Maleisië",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        srilanka: {
+            countryName: "Sri Lanka",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        vietnam: {
+            countryName: "Vietnam",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND //EINDE AZIE //BEGIN EUROPA
+    {
+        ijsland: {
+            countryName: "IJsland",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND //EINDE EUROPA //BEGIN NOORD-AMERIKA
+    , {
+        canada: {
+            countryName: "Canada",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        costarica: {
+            countryName: "Costa Rica",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        cuba: {
+            countryName: "Cuba",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        mexico: {
+            countryName: "Mexico",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        usa: {
+            countryName: "USA",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND //EINDE NOORD-AMERIKA //BEGIN OCEANIE
+    {
+        australie: {
+            countryName: "Australië",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        nieuwzeeland: {
+            countryName: "Nieuw-Zeeland",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND //EINDE OCEANIE //BEGIN ZUID-AMERIKA
+    {
+        argentinie: {
+            countryName: "Argentinië",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        bolivia: {
+            countryName: "Bolivia",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        brazilie: {
+            countryName: "Brazilië",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        chili: {
+            countryName: "Chili",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        colombia: {
+            countryName: "Colombia",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        ecuador: {
+            countryName: "Ecuador",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        peru: {
+            countryName: "Peru",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
             step5: {
                 one: {
