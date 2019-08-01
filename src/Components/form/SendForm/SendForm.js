@@ -71,6 +71,7 @@ class SendForm extends Component {
     mailService(event) {
         const form = event.currentTarget;
         var check = false;
+        event.preventDefault();
         if (form.checkValidity() === false) {
             event.preventDefault();
         } else {
@@ -141,12 +142,16 @@ class SendForm extends Component {
 
             emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 .then(function (response) {
+                    console.log("done")
                     emailjs.send('gmail', 'tripsytemplate', tripsyTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
+                        .then(function (response) {
+                            _this.props.history.push("/success")
+
+                        })
                 }, function (err) {
                     console.log(err)
                 });
 
-            _this.props.history.push("/success")
 
         }
     }
@@ -232,11 +237,11 @@ class SendForm extends Component {
                                                 <label htmlFor="radio2">Mevr.</label>
                                             </div>
                                         </div>
-                                        <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} required isValid={this.state.name}/>
+                                        <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} required isValid={this.state.name} />
                                         <Form.Control.Feedback type="invalid">
                                             Voer een naam in.
                                         </Form.Control.Feedback>
-                                        <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} required isValid={this.state.lastname}/>
+                                        <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} required isValid={this.state.lastname} />
                                         <Form.Control.Feedback type="invalid">
                                             Voer een achternaam in.
                                         </Form.Control.Feedback>
@@ -244,7 +249,7 @@ class SendForm extends Component {
                                         <Form.Control.Feedback type="invalid">
                                             Voer een geldig e-mail adres in.
                                         </Form.Control.Feedback>
-                                        
+
                                         <IntlTelInput
                                             className="telephoneInput"
                                             name="phoneNumber"
@@ -255,10 +260,10 @@ class SendForm extends Component {
                                             onlyCountries={['nl', 'be']}
                                             required
                                         />
-                                        <OverlayTrigger trigger={['hover','click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
+                                        <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
                                             <HelpIcon className="helpWidgetPhone" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger trigger={['hover','click']} overlay={<Tooltip id="tooltip-disabled">We hebben je e-mailadres nodig om een reisplan op maat naar je te kunnen sturen</Tooltip>}>
+                                        <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">We hebben je e-mailadres nodig om een reisplan op maat naar je te kunnen sturen</Tooltip>}>
                                             <HelpIcon className="helpWidgetEmail" />
                                         </OverlayTrigger>
 
