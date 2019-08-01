@@ -21,8 +21,11 @@ import elephantIcon from '../../Icons/olifant.svg';
 import templeIcon from '../../Icons/temple3.svg';
 import snorklingIcon from '../../Icons/snorkeling.svg';
 
-import BackgroundThailand from '../../images/Rondreis-Thailand-Phuket.jpg';
+import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg';
+import BackgroundBotswana from '../../images/reis_botswana_afrika.jpg';
+import BackgroundKenia from '../../images/reis_kenia_afrika.jpg';
+import BackgroundMozambique from '../../images/mozambique_reizen.jpg';
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
 
 import HelpModal from './helpModal/HelpModal';
@@ -62,7 +65,7 @@ class MainScreen extends Component {
     destinations = [{
         thailand: {
             countryName: "Thailand",
-            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1)),url(${BackgroundThailand})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundThailand})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -102,7 +105,7 @@ class MainScreen extends Component {
         , {
         vietnam: {
             countryName: "Vietnam",
-            backgroundImage: `linear-gradient(to bottom, rgba(20, 55, 106, 0.5), rgba(0, 0, 0, 0.1)),url(${BackgroundVietnam})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -110,13 +113,13 @@ class MainScreen extends Component {
                     value: "elephantPark"
                 },
                 two: {
-                    icon: elephantIcon,
+                    icon: templeIcon,
                     text: "Tempel bezoeken",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: "../../Icons/icons_forms.svg",
-                    text: "Duiken",
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
                     value: "Diving"
                 },
             },
@@ -139,6 +142,127 @@ class MainScreen extends Component {
             }
         }
     }, // EINDE LAND
+     {
+        botswana: {
+            countryName: "Botswana",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundBotswana})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    , {
+        kenia: {
+            countryName: "Kenia",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    }, // EINDE LAND
+    {
+        mozambique: {
+            countryName: "Mozambique",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            step5: {
+                one: {
+                    icon: elephantIcon,
+                    text: "Olifantenpark bezoeken",
+                    value: "elephantPark"
+                },
+                two: {
+                    icon: templeIcon,
+                    text: "Tempel bezoeken",
+                    value: "templeVisit"
+                },
+                three: {
+                    icon: snorklingIcon,
+                    text: "Snorkelen",
+                    value: "Diving"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+
     ]
 
     getForm(currentForm) {

@@ -139,14 +139,15 @@ class SendForm extends Component {
             }
             var _this = this;
 
-            _this.props.history.push("/success")
-
             emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 .then(function (response) {
                     emailjs.send('gmail', 'tripsytemplate', tripsyTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 }, function (err) {
                     console.log(err)
                 });
+
+            _this.props.history.push("/success")
+
         }
     }
 
