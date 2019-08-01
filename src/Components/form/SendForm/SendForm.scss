@@ -130,7 +130,7 @@ $break-extralarge: 1200px;
       top: 20px !important
   }
     @media screen and (max-width: $break-large) {
-    padding: 20px;
+    padding: 20px 32px;
     margin: 0;
     height: 50vh;
     width: 100vw;
@@ -499,22 +499,22 @@ button.btn.btn-success.btn-lg {
 
 .helpWidgetEmail {
   position: absolute;
-  margin-left: 12px;
+  margin-left: 2px;
   margin-top: -53px;
-  color: grey;
+  color: #e9e9eb;
 }
 
 .helpWidgetEmail:hover {
-  color: black;
+  color: #404348;
 }
 
 .helpWidgetPhone {
   position: absolute;
-  margin-left: 12px;
-  margin-top: 15px;
-  color: grey;
+  margin-left: 2px;
+  margin-top: 16px;
+  color: #e9e9eb;
 }
 
 .helpWidgetPhone:hover {
-  color: black;
+  color: #404348;
 }
