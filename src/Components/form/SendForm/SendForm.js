@@ -254,7 +254,7 @@ class SendForm extends Component {
                                             onlyCountries={['nl', 'be']}
                                             required
                                         />
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
+                                        <OverlayTrigger trigger={['hover','click']} overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
                                             <HelpIcon className="helpWidgetPhone" />
                                         </OverlayTrigger>
                                         <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
