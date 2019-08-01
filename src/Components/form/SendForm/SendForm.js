@@ -80,6 +80,10 @@ class SendForm extends Component {
             check = true;
         }
 
+        this.setState({
+            validated: true
+        });
+
         if (check) {
             var customerTemplate = {
                 from_name: 'hallo@tripsy.nl',
@@ -173,9 +177,6 @@ class SendForm extends Component {
             [name]: value
         });
 
-        this.setState({
-            validated: true
-        });
     }
 
     componentDidMount() {
@@ -230,22 +231,19 @@ class SendForm extends Component {
                                                 <label htmlFor="radio2">Mevr.</label>
                                             </div>
                                         </div>
-                                        <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} required />
+                                        <Form.Control className="formField" name="name" size="lg" type="text" placeholder="Voornaam" onChange={this.changeHandler} required isValid={this.state.name}/>
                                         <Form.Control.Feedback type="invalid">
                                             Voer een naam in.
                                         </Form.Control.Feedback>
-                                        <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} required />
+                                        <Form.Control className="formField" name="lastname" size="lg" type="text" placeholder="Achternaam" onChange={this.changeHandler} required isValid={this.state.lastname}/>
                                         <Form.Control.Feedback type="invalid">
                                             Voer een achternaam in.
                                         </Form.Control.Feedback>
-                                        <Form.Control className="formField" name="email" size="lg" type="text" placeholder="E-mailadres" onChange={this.changeHandler} required />
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
-                                            <HelpIcon className="helpWidgetEmail" />
-                                        </OverlayTrigger>                                        
+                                        <Form.Control className="formField" name="email" size="lg" type="text" placeholder="E-mailadres" onChange={this.changeHandler} required isValid={this.state.email} />
                                         <Form.Control.Feedback type="invalid">
                                             Voer een geldig e-mail adres in.
                                         </Form.Control.Feedback>
-
+                                        
                                         <IntlTelInput
                                             className="telephoneInput"
                                             name="phoneNumber"
@@ -258,6 +256,9 @@ class SendForm extends Component {
                                         />
                                         <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
                                             <HelpIcon className="helpWidgetPhone" />
+                                        </OverlayTrigger>
+                                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
+                                            <HelpIcon className="helpWidgetEmail" />
                                         </OverlayTrigger>
 
                                         {!this.state.buttonPressed &&

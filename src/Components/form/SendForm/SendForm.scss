@@ -141,6 +141,9 @@ $break-extralarge: 1200px;
 .formAreaRight {
     max-width: 396px;
     margin: auto;
+    @media screen and (max-width: $break-small) {
+      max-width: 396px;
+    }
 }
 
 .textDivSend {
@@ -496,8 +499,8 @@ button.btn.btn-success.btn-lg {
 
 .helpWidgetEmail {
   position: absolute;
-  right: 200px;
-  top: 265px;
+  margin-left: 12px;
+  margin-top: -53px;
   color: grey;
 }
 

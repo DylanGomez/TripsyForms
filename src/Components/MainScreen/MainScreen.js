@@ -161,6 +161,7 @@ class MainScreen extends Component {
     }
 
     componentDidMount() {
+        this.toggleForm("startForm");
         window.onpopstate = this.onBackButtonEvent;
         this.getObject();
     }
@@ -181,7 +182,7 @@ class MainScreen extends Component {
     }
 
     toggleForm = (currentForm) => {
-        window.history.pushState(currentForm, null, "")
+        window.history.pushState(currentForm, null, document.URL)
         this.setState({
             currentForm,
         });
@@ -207,8 +208,8 @@ class MainScreen extends Component {
 
     onBackButtonEvent(e) {
         e.preventDefault();
-
         this.previousForm(e.state);
+        
     }
 
     previousForm(currentForm) {
@@ -248,7 +249,7 @@ class MainScreen extends Component {
             <div>
                 <div className="headerDiv">
                     <a href="https://www.tripsy.nl/" target="_blank" without rel="noopener noreferrer"><div className="logo"> Tripsy </div></a>
-                    <div className="helpIcon"  style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <span className="helpword">Help</span>
+                    <div className="helpIcon" style={{ pointerEvents: this.state.helpOpen ? 'none' : 'fill' }} onClick={this.toggleHelp.bind(this)}> <span className="helpword">Help</span>
                         {this.state.helpOpen &&
                             <HelpModal toggleHelp={this.toggleHelp} />
                         }
