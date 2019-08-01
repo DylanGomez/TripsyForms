@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e2144cb29c4658e2ccc96893de2818a",
+    "revision": "93d1990f8c591c3ad38527113eab1d49",
     "url": "/index.html"
   },
   {
-    "revision": "fe501ade205096f7cdc1",
+    "revision": "1c787e3618f5d0501ac3",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "f1f3d722defcd1dcb8fc",
+    "revision": "0168d5328ede07ba3c3f",
     "url": "/static/css/main.7fa52c2d.chunk.css"
   },
   {
-    "revision": "fe501ade205096f7cdc1",
-    "url": "/static/js/2.8a3b583c.chunk.js"
+    "revision": "1c787e3618f5d0501ac3",
+    "url": "/static/js/2.f768a05e.chunk.js"
   },
   {
-    "revision": "f1f3d722defcd1dcb8fc",
-    "url": "/static/js/main.1a3786bb.chunk.js"
+    "revision": "0168d5328ede07ba3c3f",
+    "url": "/static/js/main.a3a81496.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -136,8 +136,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/reis_botswana_afrika.0702df17.jpg"
   },
   {
-    "revision": "21989c3b08ee1ba4f1967ee20628daa0",
-    "url": "/static/media/reis_kenia_afrika.21989c3b.jpg"
+    "revision": "e002467923954a6afe08adee57696eb8",
+    "url": "/static/media/reis_kenia_afrika1.e0024679.jpg"
   },
   {
     "revision": "ad9ddfe86aa043d2150eaaed34d233a1",
