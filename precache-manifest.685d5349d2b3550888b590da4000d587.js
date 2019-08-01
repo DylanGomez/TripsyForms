@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d6f88add6207509dfd82bdd718191c49",
+    "revision": "2e2144cb29c4658e2ccc96893de2818a",
     "url": "/index.html"
   },
   {
-    "revision": "b7a9769b900392c8d9cb",
+    "revision": "fe501ade205096f7cdc1",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "a70cf32b5ce3dd35ab94",
-    "url": "/static/css/main.7c82de1b.chunk.css"
+    "revision": "f1f3d722defcd1dcb8fc",
+    "url": "/static/css/main.7fa52c2d.chunk.css"
   },
   {
-    "revision": "b7a9769b900392c8d9cb",
-    "url": "/static/js/2.00ad8167.chunk.js"
+    "revision": "fe501ade205096f7cdc1",
+    "url": "/static/js/2.8a3b583c.chunk.js"
   },
   {
-    "revision": "a70cf32b5ce3dd35ab94",
-    "url": "/static/js/main.495c24a7.chunk.js"
+    "revision": "f1f3d722defcd1dcb8fc",
+    "url": "/static/js/main.1a3786bb.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -66,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "72cfbc0ae5a0aae7447738dab9be9885",
     "url": "/static/media/Phuket_thailand_mood.72cfbc0a.jpg"
-  },
-  {
-    "revision": "786081465354796c198d930a078e4c87",
-    "url": "/static/media/Rondreis-Thailand-Phuket.78608146.jpg"
   },
   {
     "revision": "b1342f65e796184ece73c82c283762c3",
@@ -124,12 +120,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mailIcon.7c42175c.svg"
   },
   {
+    "revision": "32e9aaf1f1f8e3192e8cabe503b8b2bc",
+    "url": "/static/media/mozambique_reizen.32e9aaf1.jpg"
+  },
+  {
     "revision": "467e7b22959d51888a25052f09c9e5f5",
     "url": "/static/media/olifant.467e7b22.svg"
   },
   {
     "revision": "257b4852f09c00763543603dd8961bf7",
     "url": "/static/media/questionmarks.257b4852.svg"
+  },
+  {
+    "revision": "0702df17b4fbd7ab025df4612d675c85",
+    "url": "/static/media/reis_botswana_afrika.0702df17.jpg"
+  },
+  {
+    "revision": "21989c3b08ee1ba4f1967ee20628daa0",
+    "url": "/static/media/reis_kenia_afrika.21989c3b.jpg"
   },
   {
     "revision": "ad9ddfe86aa043d2150eaaed34d233a1",
