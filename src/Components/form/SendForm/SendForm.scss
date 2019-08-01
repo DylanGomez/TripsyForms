@@ -61,6 +61,7 @@ $break-extralarge: 1200px;
     @media screen and (max-width: $break-small) {
       font-size: 28px;
       line-height: 36px;
+      padding: 0 24px;
   }
 }
 .invalid-feedback {
@@ -499,7 +500,7 @@ button.btn.btn-success.btn-lg {
 
 .helpWidgetEmail {
   position: absolute;
-  margin-left: 2px;
+  margin-left: 4px;
   margin-top: -53px;
   color: #e9e9eb;
 }
@@ -510,11 +511,19 @@ button.btn.btn-success.btn-lg {
 
 .helpWidgetPhone {
   position: absolute;
-  margin-left: 2px;
+  margin-left: 4px;
   margin-top: 16px;
   color: #e9e9eb;
 }
 
 .helpWidgetPhone:hover {
   color: #404348;
+}
+
+.tooltip-inner {
+  font-size: 12px;
+  font-family: lato;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
 }

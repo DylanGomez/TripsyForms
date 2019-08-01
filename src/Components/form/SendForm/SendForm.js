@@ -254,10 +254,10 @@ class SendForm extends Component {
                                             onlyCountries={['nl', 'be']}
                                             required
                                         />
-                                        <OverlayTrigger trigger={['hover','click']} overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
+                                        <OverlayTrigger trigger={['hover','click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
                                             <HelpIcon className="helpWidgetPhone" />
                                         </OverlayTrigger>
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">tekst!</Tooltip>}>
+                                        <OverlayTrigger trigger={['hover','click']} overlay={<Tooltip id="tooltip-disabled">We hebben je e-mailadres nodig om een reisplan op maat naar je te kunnen sturen</Tooltip>}>
                                             <HelpIcon className="helpWidgetEmail" />
                                         </OverlayTrigger>
 
