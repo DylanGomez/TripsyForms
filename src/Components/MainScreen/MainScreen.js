@@ -73,7 +73,7 @@ class MainScreen extends Component {
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
+                    icon: templeIcon, 
                     text: "Tempel bezoeken",
                     value: "templeVisit"
                 },

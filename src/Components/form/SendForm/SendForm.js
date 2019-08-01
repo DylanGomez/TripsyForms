@@ -317,51 +317,51 @@ class SendForm extends Component {
                             <div className="countryNames">
                                 <div className="continent">
                                     <div className="continentTitle">Afrika</div>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Botswana</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Kenia</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Mozambique</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Namibië</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Oeganda</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Tanzania</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Zuid-Afrika</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/botswana"><div className="countryLink">Botswana</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/kenia"><div className="countryLink">Kenia</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/mozambique"><div className="countryLink">Mozambique</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/namibie"><div className="countryLink">Namibië</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/oeganda"><div className="countryLink">Oeganda</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/tanzania"><div className="countryLink">Tanzania</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/zuidafrika"><div className="countryLink">Zuid-Afrika</div></a>
                                 </div>
                                 <div className="continent">
                                     <div className="continentTitle">Azië</div>
-                                    <a href="www.tripsy.nl"><div className="countryLink">China</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">India</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Indonesië</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Japan</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Maleisië</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Sri Lanka</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/china"><div className="countryLink">China</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/india"><div className="countryLink">India</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/indonesie"><div className="countryLink">Indonesië</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/japan"><div className="countryLink">Japan</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/maleisie"><div className="countryLink">Maleisië</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/srilanka"><div className="countryLink">Sri Lanka</div></a>
                                     <a href="https://forms.tripsy.nl/#/des/thailand"><div className="countryLink">Thailand</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Vietnam</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/vietnam"><div className="countryLink">Vietnam</div></a>
                                 </div>
                                 <div className="continent">
                                     <div className="continentTitle">Europa</div>
-                                    <a href="www.tripsy.nl"><div className="countryLink">IJsland</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/ijsland"><div className="countryLink">IJsland</div></a>
                                 </div>
                                 <div className="continent">
                                     <div className="continentTitle">Noord-Amerika</div>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Canada</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Costa Rica</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Cuba</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Mexico</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Usa</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/canada"><div className="countryLink">Canada</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/costarica"><div className="countryLink">Costa Rica</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/cuba"><div className="countryLink">Cuba</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/mexico"><div className="countryLink">Mexico</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/usa"><div className="countryLink">Usa</div></a>
                                 </div>
                                 <div className="continent">
                                     <div className="continentTitle">Oceanië</div>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Australië</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Nieuw-Zeeland</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/australie"><div className="countryLink">Australië</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/nieuwzeeland"><div className="countryLink">Nieuw-Zeeland</div></a>
                                 </div>
                                 <div className="continent">
                                     <div className="continentTitle">Zuid-Amerika</div>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Argentinië</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Bolivia</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Brazilië</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Chili</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Colombia</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Equador</div></a>
-                                    <a href="www.tripsy.nl"><div className="countryLink">Peru</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/argentinie"><div className="countryLink">Argentinië</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/bolivia"><div className="countryLink">Bolivia</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/brazilie"><div className="countryLink">Brazilië</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/chili"><div className="countryLink">Chili</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/colombia"><div className="countryLink">Colombia</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/ecuador"><div className="countryLink">Ecuador</div></a>
+                                    <a href="https://forms.tripsy.nl/#/des/peru"><div className="countryLink">Peru</div></a>
                                 </div>
                             </div>
                             <MediaQuery query='(min-device-width: 1224px)'>
