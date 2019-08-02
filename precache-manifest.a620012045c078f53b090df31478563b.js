@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c478bae675b1d181f725c29b6c9a6fbf",
+    "revision": "8d1bd88d9ba470ff7b49b4c97f6aace2",
     "url": "/index.html"
   },
   {
-    "revision": "5cdf6b9d6d2cc2c5cc03",
+    "revision": "8b2865f9d05772040410",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "8308adbaa99e45a5c2dd",
+    "revision": "0cf2aa9dafe2251aac23",
     "url": "/static/css/main.7fa52c2d.chunk.css"
   },
   {
-    "revision": "5cdf6b9d6d2cc2c5cc03",
-    "url": "/static/js/2.21732739.chunk.js"
+    "revision": "8b2865f9d05772040410",
+    "url": "/static/js/2.706e1c26.chunk.js"
   },
   {
-    "revision": "8308adbaa99e45a5c2dd",
-    "url": "/static/js/main.bbeb6b3f.chunk.js"
+    "revision": "0cf2aa9dafe2251aac23",
+    "url": "/static/js/main.2d3167c8.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -72,10 +72,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Tripsy_black.b1342f65.svg"
   },
   {
-    "revision": "1046225fc1f7c94a973c20b6bcf5bbe9",
-    "url": "/static/media/VietnamBackground.1046225f.jpg"
-  },
-  {
     "revision": "f1a1dbbf121e4c26ce6adcff16cca650",
     "url": "/static/media/balansbalans.f1a1dbbf.svg"
   },
@@ -86,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d51396873113d50ecf9dbc52a82fcfd0",
     "url": "/static/media/bezoek-een-stam.d5139687.svg"
+  },
+  {
+    "revision": "90b8e07147f5503bb318227effdce002",
+    "url": "/static/media/cruise.90b8e071.svg"
   },
   {
     "revision": "b9b441f3fe545ad5529b7fd1452ed50b",
@@ -128,6 +128,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mailIcon.7c42175c.svg"
   },
   {
+    "revision": "d5feb4ff70f399bb10bc4344850c853f",
+    "url": "/static/media/monkey.d5feb4ff.svg"
+  },
+  {
     "revision": "32e9aaf1f1f8e3192e8cabe503b8b2bc",
     "url": "/static/media/mozambique_reizen.32e9aaf1.jpg"
   },
@@ -152,6 +156,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/resort.ad9ddfe8.svg"
   },
   {
+    "revision": "aac09d1020fdb8cf3eb5694a0dea1304",
+    "url": "/static/media/rijstvelden.aac09d10.svg"
+  },
+  {
     "revision": "b45079e40235c6141bd58e7d0105b546",
     "url": "/static/media/safari.b45079e4.svg"
   },
@@ -174,6 +182,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b46f141224d3bb46102807d302129fef",
     "url": "/static/media/temple3.b46f1412.svg"
+  },
+  {
+    "revision": "33cc0668e396a8db2f3221eae88bf889",
+    "url": "/static/media/vietnam_reizen.33cc0668.jpg"
   },
   {
     "revision": "c1fc845bcbab9873f4993989c8583799",
