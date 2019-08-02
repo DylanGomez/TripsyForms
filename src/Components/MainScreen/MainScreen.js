@@ -23,9 +23,12 @@ import snorklingIcon from '../../Icons/snorkeling.svg';
 import lionIcon from '../../Icons/safari.svg';
 import maskIcon from '../../Icons/bezoek-een-stam.svg';
 import surfingIcon from '../../Icons/golfsurfen.svg';
+import riceIcon from '../../Icons/rijstvelden.svg';
+import cruiseIcon from '../../Icons/cruise.svg';
+import monkeyIcon from '../../Icons/monkey.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
-import BackgroundVietnam from '../../images/VietnamBackground.jpg';
+import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
 import BackgroundBotswana from '../../images/reis_botswana_afrika.jpg';
 import BackgroundKenia from '../../images/reis_kenia_afrika1.jpg';
 import BackgroundMozambique from '../../images/mozambique_reizen.jpg';
@@ -389,7 +392,7 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
                     icon: lionIcon,
@@ -669,21 +672,21 @@ class MainScreen extends Component {
     , {
         vietnam: {
             countryName: "Vietnam",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
+                    icon: riceIcon,
+                    text: "Rijstvelden bezoeken",
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
+                    icon: cruiseIcon,
+                    text: "Boottocht maken",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
+                    icon: monkeyIcon,
+                    text: "Aapjes in de natuur",
                     value: "Diving"
                 },
             },
