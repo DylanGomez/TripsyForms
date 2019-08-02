@@ -70,6 +70,7 @@ class MainScreen extends Component {
         this.onBackButtonEvent = this.onBackButtonEvent.bind(this);
         this.toggleHelp = this.toggleHelp.bind(this);
         this.goToSuccess = this.goToSuccess.bind(this);
+        this.detectMobile = this.detectMobile.bind(this);
     }
 
     destination = this.props.match.params.destination;
@@ -77,6 +78,7 @@ class MainScreen extends Component {
     destinations = [{
         thailand: {
             countryName: "Thailand",
+            backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundThailand})`,
             step5: {
                 one: {
@@ -1416,8 +1418,20 @@ class MainScreen extends Component {
         return progress[currentForm];
     }
 
+    detectMobile() {
+        if(window.innerWidth <= 575 && window.innerHeight <= 600) {
+          return true;
+        } else {
+          return false;
+        }
+     }
+
     render() {
-        this.backgroundStyle = {
+        this.backgroundStyleDesktop = {
+            backgroundImage: this.state.currentCountry.backgroundImage,
+        }
+        this.backgroundStylePhone = {
+            //DEZE AANPASSEN naar PHONE
             backgroundImage: this.state.currentCountry.backgroundImage,
         }
 
@@ -1431,7 +1445,7 @@ class MainScreen extends Component {
                         }
                     </div>
                 </div>
-                <div style={this.backgroundStyle} className="topDiv">
+                <div style={this.detectMobile() ? this.backgroundStylePhone : this.backgroundStyleDesktop } className="topDiv">
                     <div className="textDiv">
                         <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
                         <br />
