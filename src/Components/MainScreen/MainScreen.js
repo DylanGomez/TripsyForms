@@ -28,6 +28,9 @@ import cruiseIcon from '../../Icons/cruise.svg';
 import monkeyIcon from '../../Icons/monkey.svg';
 import helicopterIcon from '../../Icons/helicopter.svg';
 import raftingIcon from '../../Icons/rafting.svg';
+import keniasafariIcon from '../../Icons/keniasafari.svg';
+import maasaiIcon from '../../Icons/maasai.svg';
+import wildcampingIcon from '../../Icons/wildcamping.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -194,21 +197,21 @@ class MainScreen extends Component {
     , {
         kenia: {
             countryName: "Kenia",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
+                    icon: keniasafariIcon,
+                    text: "Op safari",
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
+                    icon: maasaiIcon,
+                    text: "Ontmoet de Maasai",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
+                    icon: wildcampingIcon,
+                    text: "Wild kamperen",
                     value: "Diving"
                 },
             },
@@ -394,7 +397,7 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
                     icon: lionIcon,
