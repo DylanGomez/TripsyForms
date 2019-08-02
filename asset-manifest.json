@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.7fa52c2d.chunk.css",
-    "main.js": "/static/js/main.29f3c452.chunk.js",
-    "main.js.map": "/static/js/main.29f3c452.chunk.js.map",
+    "main.js": "/static/js/main.dc0c11bc.chunk.js",
+    "main.js.map": "/static/js/main.dc0c11bc.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.4968cffb.chunk.css": "/static/css/2.4968cffb.chunk.css",
-    "static/js/2.89a6e88d.chunk.js": "/static/js/2.89a6e88d.chunk.js",
-    "static/js/2.89a6e88d.chunk.js.map": "/static/js/2.89a6e88d.chunk.js.map",
+    "static/js/2.44e387c1.chunk.js": "/static/js/2.44e387c1.chunk.js",
+    "static/js/2.44e387c1.chunk.js.map": "/static/js/2.44e387c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d8ca4db4b3d0daffc3f7014ffb118f62.js": "/precache-manifest.d8ca4db4b3d0daffc3f7014ffb118f62.js",
+    "precache-manifest.fb9d2fb3b6dd304a100f7e24f9192e5a.js": "/precache-manifest.fb9d2fb3b6dd304a100f7e24f9192e5a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4968cffb.chunk.css.map": "/static/css/2.4968cffb.chunk.css.map",
     "static/css/main.7fa52c2d.chunk.css.map": "/static/css/main.7fa52c2d.chunk.css.map",
@@ -38,6 +38,8 @@
     "static/media/helicopter.svg": "/static/media/helicopter.95caf3f7.svg",
     "static/media/ho-chi-minh-mausoleum.svg": "/static/media/ho-chi-minh-mausoleum.7803e072.svg",
     "static/media/information.svg": "/static/media/information.2508df20.svg",
+    "static/media/keniasafari.svg": "/static/media/keniasafari.c28f6077.svg",
+    "static/media/maasai.svg": "/static/media/maasai.1c87c2a0.svg",
     "static/media/mailIcon.svg": "/static/media/mailIcon.7c42175c.svg",
     "static/media/monkey.svg": "/static/media/monkey.d5feb4ff.svg",
     "static/media/mozambique_reizen.jpg": "/static/media/mozambique_reizen.32e9aaf1.jpg",
@@ -56,6 +58,7 @@
     "static/media/temple3.svg": "/static/media/temple3.b46f1412.svg",
     "static/media/vietnam_reizen.jpg": "/static/media/vietnam_reizen.33cc0668.jpg",
     "static/media/wanneer-wil-je-op-reis.svg": "/static/media/wanneer-wil-je-op-reis.c1fc845b.svg",
+    "static/media/wildcamping.svg": "/static/media/wildcamping.00f96460.svg",
     "static/media/zuidafrika-mood.jpg": "/static/media/zuidafrika-mood.b2c3eaaa.jpg"
   }
 }

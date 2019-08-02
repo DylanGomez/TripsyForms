@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d592d33ac33747a2509d1b11eb14fd2",
+    "revision": "27cf50b13c376c20baafd681be289b2e",
     "url": "/index.html"
   },
   {
-    "revision": "0d0c14e8eba39a2e863e",
+    "revision": "e63d840a77aae7e17850",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "1970a5c22538c06c982f",
+    "revision": "6e04729bbdd9b979f65a",
     "url": "/static/css/main.7fa52c2d.chunk.css"
   },
   {
-    "revision": "0d0c14e8eba39a2e863e",
-    "url": "/static/js/2.89a6e88d.chunk.js"
+    "revision": "e63d840a77aae7e17850",
+    "url": "/static/js/2.44e387c1.chunk.js"
   },
   {
-    "revision": "1970a5c22538c06c982f",
-    "url": "/static/js/main.29f3c452.chunk.js"
+    "revision": "6e04729bbdd9b979f65a",
+    "url": "/static/js/main.dc0c11bc.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -128,6 +128,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/information.2508df20.svg"
   },
   {
+    "revision": "c28f6077892cc91cbe2023b712f7906f",
+    "url": "/static/media/keniasafari.c28f6077.svg"
+  },
+  {
+    "revision": "1c87c2a0859da5d721552dea1975f64e",
+    "url": "/static/media/maasai.1c87c2a0.svg"
+  },
+  {
     "revision": "7c42175cd9603c83fd3d1839b5bb2251",
     "url": "/static/media/mailIcon.7c42175c.svg"
   },
@@ -198,6 +206,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c1fc845bcbab9873f4993989c8583799",
     "url": "/static/media/wanneer-wil-je-op-reis.c1fc845b.svg"
+  },
+  {
+    "revision": "00f96460b7e11b037edbc37718208769",
+    "url": "/static/media/wildcamping.00f96460.svg"
   },
   {
     "revision": "b2c3eaaae4c16f65b5424a0b7de56dc3",
