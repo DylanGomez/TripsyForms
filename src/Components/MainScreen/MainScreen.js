@@ -20,12 +20,16 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import elephantIcon from '../../Icons/olifant.svg';
 import templeIcon from '../../Icons/temple3.svg';
 import snorklingIcon from '../../Icons/snorkeling.svg';
+import lionIcon from '../../Icons/safari.svg';
+import maskIcon from '../../Icons/bezoek-een-stam.svg';
+import surfingIcon from '../../Icons/golfsurfen.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/VietnamBackground.jpg';
 import BackgroundBotswana from '../../images/reis_botswana_afrika.jpg';
 import BackgroundKenia from '../../images/reis_kenia_afrika1.jpg';
 import BackgroundMozambique from '../../images/mozambique_reizen.jpg';
+import BackgroundZuidafrika from '../../images/zuidafrika-mood.jpg';
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
 
 import HelpModal from './helpModal/HelpModal';
@@ -101,10 +105,10 @@ class MainScreen extends Component {
                 },
             }
         }
-    } //EINDE LAND //BEGIN AFRIKA
+    } //EINDE LAND
         , {
-        vietnam: {
-            countryName: "Vietnam",
+        vietnamtest: {
+            countryName: "Vietnamtest",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
@@ -141,7 +145,7 @@ class MainScreen extends Component {
                 },
             }
         }
-    }, // EINDE LAND
+    }, // EINDE LAND //BEGIN AFRIKA
      {
         botswana: {
             countryName: "Botswana",
@@ -385,21 +389,21 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
+                    icon: lionIcon,
+                    text: "Op safari",
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
+                    icon: maskIcon,
+                    text: "Bezoek een stam",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
+                    icon: surfingIcon,
+                    text: "Golfsurfen",
                     value: "Diving"
                 },
             },
