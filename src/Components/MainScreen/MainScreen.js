@@ -26,6 +26,8 @@ import surfingIcon from '../../Icons/golfsurfen.svg';
 import riceIcon from '../../Icons/rijstvelden.svg';
 import cruiseIcon from '../../Icons/cruise.svg';
 import monkeyIcon from '../../Icons/monkey.svg';
+import helicopterIcon from '../../Icons/helicopter.svg';
+import raftingIcon from '../../Icons/rafting.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -152,21 +154,21 @@ class MainScreen extends Component {
      {
         botswana: {
             countryName: "Botswana",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundBotswana})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundBotswana})`,
             step5: {
                 one: {
                     icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
+                    text: "Op safari",
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
+                    icon: helicopterIcon,
+                    text: "helikoptervlucht",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
+                    icon: raftingIcon,
+                    text: "Raften met gids",
                     value: "Diving"
                 },
             },
