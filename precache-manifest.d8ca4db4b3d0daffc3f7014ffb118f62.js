@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d1bd88d9ba470ff7b49b4c97f6aace2",
+    "revision": "1d592d33ac33747a2509d1b11eb14fd2",
     "url": "/index.html"
   },
   {
-    "revision": "8b2865f9d05772040410",
+    "revision": "0d0c14e8eba39a2e863e",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "0cf2aa9dafe2251aac23",
+    "revision": "1970a5c22538c06c982f",
     "url": "/static/css/main.7fa52c2d.chunk.css"
   },
   {
-    "revision": "8b2865f9d05772040410",
-    "url": "/static/js/2.706e1c26.chunk.js"
+    "revision": "0d0c14e8eba39a2e863e",
+    "url": "/static/js/2.89a6e88d.chunk.js"
   },
   {
-    "revision": "0cf2aa9dafe2251aac23",
-    "url": "/static/js/main.2d3167c8.chunk.js"
+    "revision": "1970a5c22538c06c982f",
+    "url": "/static/js/main.29f3c452.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -116,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/golfsurfen.44038270.svg"
   },
   {
+    "revision": "95caf3f7ec2398560d2d3f0322a1f0e5",
+    "url": "/static/media/helicopter.95caf3f7.svg"
+  },
+  {
     "revision": "7803e072a63161f495fd9ed4291f3162",
     "url": "/static/media/ho-chi-minh-mausoleum.7803e072.svg"
   },
@@ -142,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "257b4852f09c00763543603dd8961bf7",
     "url": "/static/media/questionmarks.257b4852.svg"
+  },
+  {
+    "revision": "f34e4fd7ff9ba6f05e30ff2f237626b0",
+    "url": "/static/media/rafting.f34e4fd7.svg"
   },
   {
     "revision": "0702df17b4fbd7ab025df4612d675c85",
