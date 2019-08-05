@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "19145ad0938b65ddf32525c1c08257cb",
+    "revision": "0cf74a8e9696fd0ad5d08deba07e15bd",
     "url": "/index.html"
   },
   {
-    "revision": "a92d4c93ccf3eb4ebfa4",
+    "revision": "780e5bbd6b64a1237789",
     "url": "/static/css/2.4968cffb.chunk.css"
   },
   {
-    "revision": "220593768be39ea8467f",
+    "revision": "a589b2361877bb3de2d8",
     "url": "/static/css/main.7fa52c2d.chunk.css"
   },
   {
-    "revision": "a92d4c93ccf3eb4ebfa4",
-    "url": "/static/js/2.09b0aeed.chunk.js"
+    "revision": "780e5bbd6b64a1237789",
+    "url": "/static/js/2.cf087228.chunk.js"
   },
   {
-    "revision": "220593768be39ea8467f",
-    "url": "/static/js/main.3ada9575.chunk.js"
+    "revision": "a589b2361877bb3de2d8",
+    "url": "/static/js/main.d7f57df6.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -116,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/golfsurfen.44038270.svg"
   },
   {
+    "revision": "1b9fa6fbb8581e454be02381839ffcf1",
+    "url": "/static/media/gorilla.1b9fa6fb.svg"
+  },
+  {
     "revision": "95caf3f7ec2398560d2d3f0322a1f0e5",
     "url": "/static/media/helicopter.95caf3f7.svg"
   },
@@ -148,6 +152,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mozambique_reizen.32e9aaf1.jpg"
   },
   {
+    "revision": "5ee2ecfa46e6dd8126265fe77b31fc87",
+    "url": "/static/media/namibie.5ee2ecfa.jpg"
+  },
+  {
+    "revision": "503a88b6bf8a4796ea57676e12806de8",
+    "url": "/static/media/oeganda.503a88b6.jpg"
+  },
+  {
     "revision": "467e7b22959d51888a25052f09c9e5f5",
     "url": "/static/media/olifant.467e7b22.svg"
   },
@@ -166,6 +178,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e002467923954a6afe08adee57696eb8",
     "url": "/static/media/reis_kenia_afrika1.e0024679.jpg"
+  },
+  {
+    "revision": "282d50bf23c023f51c229fd7f77d6138",
+    "url": "/static/media/relaxen.282d50bf.svg"
   },
   {
     "revision": "ad9ddfe86aa043d2150eaaed34d233a1",
@@ -196,6 +212,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/sun-bath.2ced4083.svg"
   },
   {
+    "revision": "f617293d5097705d5150a9215358954d",
+    "url": "/static/media/surfboard.f617293d.svg"
+  },
+  {
+    "revision": "0741e3e117d3bc7ee006ab2f46d78b1f",
+    "url": "/static/media/tanzania.0741e3e1.jpg"
+  },
+  {
     "revision": "b46f141224d3bb46102807d302129fef",
     "url": "/static/media/temple3.b46f1412.svg"
   },
@@ -210,6 +234,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "00f96460b7e11b037edbc37718208769",
     "url": "/static/media/wildcamping.00f96460.svg"
+  },
+  {
+    "revision": "b3367262d5274f5aebb8dcb646350466",
+    "url": "/static/media/woestijn.b3367262.svg"
   },
   {
     "revision": "b2c3eaaae4c16f65b5424a0b7de56dc3",
