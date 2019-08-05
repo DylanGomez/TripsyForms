@@ -21,7 +21,7 @@ class Step5Activity extends Component {
         return (
             <div className="background">
                 <div className="formBox">
-                    <h3 className="title">Wat activiteit past bij jou?</h3>
+                    <h3 className="title">Welke activiteit past bij jou?</h3>
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
