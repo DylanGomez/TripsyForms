@@ -6,6 +6,8 @@ import HelpIcon from '@material-ui/icons/Help';
 import HelpModal from '../../MainScreen/helpModal/HelpModal';
 import MediaQuery from 'react-responsive';
 import * as emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class SendForm extends Component {
     constructor() {
@@ -72,8 +74,9 @@ class SendForm extends Component {
         const form = event.currentTarget;
         var check = false;
         event.preventDefault();
-        if (form.checkValidity() === false) {
+        if (form.checkValidity() === false || this.state.phoneNumber === "") {
             event.preventDefault();
+            toast.error("Oops, volgens mij heb je nog niet alles ingevuld");
         } else {
             this.setState({
                 buttonPressed: true,
@@ -139,7 +142,7 @@ class SendForm extends Component {
                     'Website: www.tripsy.nl<br> <br>'
             }
             var _this = this;
-
+           
             emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 .then(function (response) {
                     console.log("done")
@@ -258,6 +261,7 @@ class SendForm extends Component {
                                             }}
                                             preferredCountries={['nl']}
                                             onlyCountries={['nl', 'be']}
+                                            nationalMode={true}
                                             required
                                         />
                                         <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
@@ -291,6 +295,7 @@ class SendForm extends Component {
                             <a href="https://www.tripsy.nl/privacy-cookies" target="_blank" without rel="noopener noreferrer"><span className="linksLeft">Privacy & Cookies</span></a>
                         </div>
                     </div>
+                    <ToastContainer />
                 </div>
             )
         } else {
