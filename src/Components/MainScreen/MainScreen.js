@@ -20,6 +20,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import elephantIcon from '../../Icons/olifant.svg';
 import templeIcon from '../../Icons/temple3.svg';
 import snorklingIcon from '../../Icons/snorkeling.svg';
+import diepzeeduikenIcon from '../../Icons/diepzeeduiken.svg';
 import lionIcon from '../../Icons/safari.svg';
 import maskIcon from '../../Icons/bezoek-een-stam.svg';
 import surfingIcon from '../../Icons/golfsurfen.svg';
@@ -36,6 +37,15 @@ import gorillaIcon from '../../Icons/gorilla.svg';
 import suppenIcon from '../../Icons/surfboard.svg';
 import relaxenIcon from '../../Icons/relaxen.svg';
 import chinesemuurIcon from '../../Icons/chinesemuur.svg';
+import tigerIcon from '../../Icons/tiger.svg';
+import tajmahalIcon from '../../Icons/tajmahal.svg';
+import borobudurIcon from '../../Icons/borobudur.svg';
+import mountfujiIcon from '../../Icons/mountfuji.svg';
+import tempeljapanIcon from '../../Icons/tempeljapan.svg';
+import geishaIcon from '../../Icons/geisha.svg';
+import orangoetanIcon from '../../Icons/orangoetan.svg';
+import adamspeakIcon from '../../Icons/adamspeak.svg';
+import tempelsrilankaIcon from '../../Icons/tempelsrilanka.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -266,8 +276,8 @@ class MainScreen extends Component {
                     value: "WildKamperen"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Duiken",
+                    icon: diepzeeduikenIcon,
+                    text: "Diepzeeduiken",
                     value: "Duiken"
                 },
             },
@@ -496,19 +506,19 @@ class MainScreen extends Component {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.01)),url(${BackgroundIndia})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: tigerIcon,
+                    text: "Tijgers spotten",
+                    value: "tijgerSpotten"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: tajmahalIcon,
+                    text: "Bezoek Taj Mahal",
+                    value: "bezoekTajMahal"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "Relaxen in Goa",
+                    value: "relaxenStrand"
                 },
             },
             step6: {
@@ -536,19 +546,19 @@ class MainScreen extends Component {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundIndonesie})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: surfingIcon,
+                    text: "Golfsurfen op Bali",
+                    value: "golfSurfenBali"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: borobudurIcon,
+                    text: "Bezoek de Borobudur",
+                    value: "borobudurTempelBezoeken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "Relaxen op het strand",
+                    value: "relaxenStrand"
                 },
             },
             step6: {
@@ -576,19 +586,19 @@ class MainScreen extends Component {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundJapan})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: mountfujiIcon,
+                    text: "Mount Fuji beklimmen",
+                    value: "MountFujiBeklimmen"
                 },
                 two: {
-                    icon: templeIcon,
+                    icon: tempeljapanIcon,
                     text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    value: "tempelBezoeken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: geishaIcon,
+                    text: "Ontmoet een Geisha",
+                    value: "ontmoetGeisha"
                 },
             },
             step6: {
@@ -616,19 +626,19 @@ class MainScreen extends Component {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMaleisie})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: orangoetanIcon,
+                    text: "Ontmoet Orang-oetans",
+                    value: "spotOrangOetan"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: diepzeeduikenIcon,
+                    text: "Diepzeeduiken",
+                    value: "duiken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "Relaxen op het strand",
+                    value: "relaxenStrand"
                 },
             },
             step6: {
@@ -653,22 +663,22 @@ class MainScreen extends Component {
     {
         srilanka: {
             countryName: "Sri Lanka",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundSrilanka})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundSrilanka})`,
             step5: {
                 one: {
                     icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
+                    text: "Olifanten wassen",
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: tempelsrilankaIcon,
+                    text: "Bezoek een tempel",
+                    value: "tempelBezoeken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: adamspeakIcon,
+                    text: "Beklim Adam's Peak",
+                    value: "AdamsPeakBeklimmen"
                 },
             },
             step6: {
