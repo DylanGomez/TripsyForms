@@ -31,6 +31,10 @@ import raftingIcon from '../../Icons/rafting.svg';
 import keniasafariIcon from '../../Icons/keniasafari.svg';
 import maasaiIcon from '../../Icons/maasai.svg';
 import wildcampingIcon from '../../Icons/wildcamping.svg';
+import woestijnIcon from '../../Icons/woestijn.svg';
+import gorillaIcon from '../../Icons/gorilla.svg';
+import suppenIcon from '../../Icons/surfboard.svg';
+import relaxenIcon from '../../Icons/relaxen.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -38,6 +42,9 @@ import BackgroundBotswana from '../../images/reis_botswana_afrika.jpg';
 import BackgroundKenia from '../../images/reis_kenia_afrika1.jpg';
 import BackgroundMozambique from '../../images/mozambique_reizen.jpg';
 import BackgroundZuidafrika from '../../images/zuidafrika-mood.jpg';
+import BackgroundNamibie from '../../images/namibie.jpg';
+import BackgroundOeganda from '../../images/oeganda.jpg';
+import BackgroundTanzania from '../../images/tanzania.jpg';
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
 
 import HelpModal from './helpModal/HelpModal';
@@ -279,22 +286,22 @@ class MainScreen extends Component {
     , {
         namibie: {
             countryName: "Namibië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundNamibie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    text: "Op safari",
+                    value: "opSafari"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: woestijnIcon,
+                    text: "Woestijn bezoeken",
+                    value: "woestijnBezoeken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: wildcampingIcon,
+                    text: "Kamperen",
+                    value: "Kamperen"
                 },
             },
             step6: {
@@ -319,22 +326,22 @@ class MainScreen extends Component {
     {
         oeganda: {
             countryName: "Oeganda",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundOeganda})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: gorillaIcon,
+                    text: "Berggorilla's bezoeken",
+                    value: "Gorilla's bezoeken"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: suppenIcon,
+                    text: "Suppen op de Nijl",
+                    value: "SuppenOpDeNijl"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: monkeyIcon,
+                    text: "Op safari",
+                    value: "opSafari"
                 },
             },
             step6: {
@@ -359,22 +366,22 @@ class MainScreen extends Component {
     , {
         tanzania: {
             countryName: "Tanzania",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundTanzania})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: lionIcon,
+                    text: "Op safari",
+                    value: "opSafari"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
-                },
-                three: {
                     icon: snorklingIcon,
                     text: "Snorkelen",
-                    value: "Diving"
+                    value: "Snorkelen"
+                },
+                three: {
+                    icon: relaxenIcon,
+                    text: "Relaxen op het strand",
+                    value: "RelaxenOpHetStrand"
                 },
             },
             step6: {
