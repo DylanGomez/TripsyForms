@@ -206,7 +206,7 @@ class MainScreen extends Component {
     , {
         kenia: {
             countryName: "Kenia",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
             step5: {
                 one: {
                     icon: keniasafariIcon,
@@ -246,7 +246,7 @@ class MainScreen extends Component {
     {
         mozambique: {
             countryName: "Mozambique",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
             step5: {
                 one: {
                     icon: lionIcon,
@@ -286,7 +286,7 @@ class MainScreen extends Component {
     , {
         namibie: {
             countryName: "Namibië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundNamibie})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundNamibie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -339,7 +339,7 @@ class MainScreen extends Component {
                     value: "SuppenOpDeNijl"
                 },
                 three: {
-                    icon: monkeyIcon,
+                    icon: keniasafariIcon,
                     text: "Op safari",
                     value: "opSafari"
                 },
@@ -406,7 +406,7 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
                     icon: lionIcon,
@@ -691,17 +691,17 @@ class MainScreen extends Component {
                 one: {
                     icon: riceIcon,
                     text: "Rijstvelden bezoeken",
-                    value: "elephantPark"
+                    value: "RijstveldenBezoeken"
                 },
                 two: {
                     icon: cruiseIcon,
                     text: "Boottocht maken",
-                    value: "templeVisit"
+                    value: "boottochtMaken"
                 },
                 three: {
                     icon: monkeyIcon,
-                    text: "Aapjes in de natuur",
-                    value: "Diving"
+                    text: "Apen kijken",
+                    value: "Apen kijken"
                 },
             },
             step6: {
