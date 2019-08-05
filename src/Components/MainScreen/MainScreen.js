@@ -30,11 +30,12 @@ import helicopterIcon from '../../Icons/helicopter.svg';
 import raftingIcon from '../../Icons/rafting.svg';
 import keniasafariIcon from '../../Icons/keniasafari.svg';
 import maasaiIcon from '../../Icons/maasai.svg';
-import wildcampingIcon from '../../Icons/wildcamping.svg';
+import wildcampingIcon from '../../Icons/kamperen.svg';
 import woestijnIcon from '../../Icons/woestijn.svg';
 import gorillaIcon from '../../Icons/gorilla.svg';
 import suppenIcon from '../../Icons/surfboard.svg';
 import relaxenIcon from '../../Icons/relaxen.svg';
+import chinesemuurIcon from '../../Icons/chinesemuur.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -45,6 +46,12 @@ import BackgroundZuidafrika from '../../images/zuidafrika-mood.jpg';
 import BackgroundNamibie from '../../images/namibie.jpg';
 import BackgroundOeganda from '../../images/oeganda.jpg';
 import BackgroundTanzania from '../../images/tanzania.jpg';
+import BackgroundChina from '../../images/china.jpg';
+import BackgroundIndia from '../../images/india.jpg';
+import BackgroundIndonesie from '../../images/indonesie.jpg';
+import BackgroundJapan from '../../images/japan.jpg';
+import BackgroundMaleisie from '../../images/maleisie.jpg';
+import BackgroundSrilanka from '../../images/srilanka.jpg';
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
 
 import HelpModal from './helpModal/HelpModal';
@@ -300,8 +307,8 @@ class MainScreen extends Component {
                 },
                 three: {
                     icon: wildcampingIcon,
-                    text: "Kamperen",
-                    value: "Kamperen"
+                    text: "Wild kamperen",
+                    value: "wildKamperen"
                 },
             },
             step6: {
@@ -446,22 +453,22 @@ class MainScreen extends Component {
     , {
         china: {
             countryName: "China",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundChina})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: chinesemuurIcon,
+                    text: "Chinese muur",
+                    value: "chineseMuur"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: riceIcon,
+                    text: "Rijstvelden bezoeken",
+                    value: "rijstveldenBezoeken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: cruiseIcon,
+                    text: "Yangtze Cruise",
+                    value: "yangtzeCruise"
                 },
             },
             step6: {
@@ -486,7 +493,7 @@ class MainScreen extends Component {
     {
         india: {
             countryName: "India",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.01)),url(${BackgroundIndia})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -526,7 +533,7 @@ class MainScreen extends Component {
     , {
         indonesie: {
             countryName: "Indonesië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundIndonesie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -566,7 +573,7 @@ class MainScreen extends Component {
     {
         japan: {
             countryName: "Japan",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundJapan})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -606,7 +613,7 @@ class MainScreen extends Component {
     , {
         maleisie: {
             countryName: "Maleisië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMaleisie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -646,7 +653,7 @@ class MainScreen extends Component {
     {
         srilanka: {
             countryName: "Sri Lanka",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundSrilanka})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -686,7 +693,7 @@ class MainScreen extends Component {
     , {
         vietnam: {
             countryName: "Vietnam",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
                     icon: riceIcon,
@@ -695,13 +702,13 @@ class MainScreen extends Component {
                 },
                 two: {
                     icon: cruiseIcon,
-                    text: "Boottocht maken",
-                    value: "boottochtMaken"
+                    text: "Cruise in Halong Bay",
+                    value: "CruisHalongBay"
                 },
                 three: {
                     icon: monkeyIcon,
-                    text: "Apen kijken",
-                    value: "Apen kijken"
+                    text: "Apen ontmoeten",
+                    value: "ApenOntmoeten"
                 },
             },
             step6: {
