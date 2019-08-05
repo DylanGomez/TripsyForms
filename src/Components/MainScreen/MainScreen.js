@@ -84,17 +84,17 @@ class MainScreen extends Component {
                 one: {
                     icon: elephantIcon,
                     text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    value: "OlifantenparkBezoeken"
                 },
                 two: {
                     icon: templeIcon, 
                     text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    value: "TempelBezoeken"
                 },
                 three: {
                     icon: snorklingIcon,
                     text: "Snorkelen",
-                    value: "Diving"
+                    value: "Snorkelen"
                 },
             },
             step6: {
@@ -164,17 +164,17 @@ class MainScreen extends Component {
                 one: {
                     icon: elephantIcon,
                     text: "Op safari",
-                    value: "elephantPark"
+                    value: "OpSafari"
                 },
                 two: {
                     icon: helicopterIcon,
                     text: "helikoptervlucht",
-                    value: "templeVisit"
+                    value: "HelikopterVlucht"
                 },
                 three: {
                     icon: raftingIcon,
                     text: "Raften met gids",
-                    value: "Diving"
+                    value: "RaftenMetGids"
                 },
             },
             step6: {
@@ -204,17 +204,17 @@ class MainScreen extends Component {
                 one: {
                     icon: keniasafariIcon,
                     text: "Op safari",
-                    value: "elephantPark"
+                    value: "OpSafari"
                 },
                 two: {
                     icon: maasaiIcon,
                     text: "Ontmoet de Maasai",
-                    value: "templeVisit"
+                    value: "OntmoetDeMaasai"
                 },
                 three: {
                     icon: wildcampingIcon,
                     text: "Wild kamperen",
-                    value: "Diving"
+                    value: "WildKamperen"
                 },
             },
             step6: {
@@ -239,22 +239,22 @@ class MainScreen extends Component {
     {
         mozambique: {
             countryName: "Mozambique",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: lionIcon,
+                    text: "Op safari",
+                    value: "OpSafari"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: wildcampingIcon,
+                    text: "Wild kamperen",
+                    value: "WildKamperen"
                 },
                 three: {
                     icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    text: "Duiken",
+                    value: "Duiken"
                 },
             },
             step6: {
