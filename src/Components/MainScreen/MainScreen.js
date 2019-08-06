@@ -52,6 +52,9 @@ import watervalIcon from '../../Icons/waterval.svg';
 import beerIcon from '../../Icons/beer.svg';
 import ijshotelIcon from '../../Icons/ijshotel.svg';
 import hikenIcon from '../../Icons/hiken.svg';
+import luiaardIcon from '../../Icons/luiaard.svg';
+import klassiekeautoIcon from '../../Icons/klassiekeauto.svg';
+import cigaarIcon from '../../Icons/cigaar.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -847,19 +850,19 @@ class MainScreen extends Component {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundCostarica})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: luiaardIcon,
+                    text: "Spot de luiaard",
+                    value: "SpotDeLuiaard"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: surfingIcon,
+                    text: "Golfsurfen",
+                    value: "golfsurfen"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "Relaxen op het strand",
+                    value: "RelaxenOpHetStrand"
                 },
             },
             step6: {
@@ -884,22 +887,22 @@ class MainScreen extends Component {
     , {
         cuba: {
             countryName: "Cuba",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundCuba})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundCuba})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: cigaarIcon,
+                    text: "Cigaren rollen",
+                    value: "CigarenRollen"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: klassiekeautoIcon,
+                    text: "Klassieke auto tour",
+                    value: "klassiekeAutoTour"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "Relaxen op het strand",
+                    value: "RelaxenOpHetStrand"
                 },
             },
             step6: {
