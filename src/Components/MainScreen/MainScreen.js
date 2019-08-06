@@ -55,6 +55,7 @@ import hikenIcon from '../../Icons/hiken.svg';
 import luiaardIcon from '../../Icons/luiaard.svg';
 import klassiekeautoIcon from '../../Icons/klassiekeauto.svg';
 import cigaarIcon from '../../Icons/cigaar.svg';
+import mayapiramideIcon from '../../Icons/mayapiramide.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -927,22 +928,22 @@ class MainScreen extends Component {
     {
         mexico: {
             countryName: "Mexico",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMexico})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMexico})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: mayapiramideIcon,
+                    text: "Bezoek een tempel",
+                    value: "TempelBezoeken"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: diepzeeduikenIcon,
+                    text: "Diepzeeduiken",
+                    value: "Diepzeeduiken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "Relaxen op het strand",
+                    value: "RelaxenOpHetStrand"
                 },
             },
             step6: {
