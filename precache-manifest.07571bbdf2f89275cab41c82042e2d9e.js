@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7fbc47ddbb5b8ba90f77178c583091ec",
+    "revision": "016032508b1bb508f389c1e92584f78b",
     "url": "/index.html"
   },
   {
-    "revision": "830e5f026e2a69e76226",
-    "url": "/static/css/2.9ff412a2.chunk.css"
+    "revision": "1b6a28895fc59a79f2fa",
+    "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "60649ad8a02ac216501b",
-    "url": "/static/css/main.03a34383.chunk.css"
+    "revision": "731960605f79f9768c21",
+    "url": "/static/css/main.6522368c.chunk.css"
   },
   {
-    "revision": "830e5f026e2a69e76226",
-    "url": "/static/js/2.fd2bc495.chunk.js"
+    "revision": "1b6a28895fc59a79f2fa",
+    "url": "/static/js/2.f49aaa3a.chunk.js"
   },
   {
-    "revision": "60649ad8a02ac216501b",
-    "url": "/static/js/main.5c586239.chunk.js"
+    "revision": "731960605f79f9768c21",
+    "url": "/static/js/main.e3a0ed9c.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -76,8 +76,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/adamspeak.c9b975ba.svg"
   },
   {
+    "revision": "8901c93882d27b94e8229bb2f2a985ef",
+    "url": "/static/media/argentinie.8901c938.jpg"
+  },
+  {
+    "revision": "cafb8e0782ff73898ca3014a988b9cce",
+    "url": "/static/media/australie.cafb8e07.jpg"
+  },
+  {
     "revision": "f1a1dbbf121e4c26ce6adcff16cca650",
     "url": "/static/media/balansbalans.f1a1dbbf.svg"
+  },
+  {
+    "revision": "ef0109e81cfea013d37da4e5ccbd73a4",
+    "url": "/static/media/beer.ef0109e8.svg"
   },
   {
     "revision": "cd14aff02900494884754f64c33d88f9",
@@ -88,8 +100,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bezoek-een-stam.d5139687.svg"
   },
   {
+    "revision": "969de2cdf813d15143fb6be704344bef",
+    "url": "/static/media/bolivia.969de2cd.jpg"
+  },
+  {
     "revision": "be049b5d88d416e3505f0c06b7e7b9b7",
     "url": "/static/media/borobudur.be049b5d.svg"
+  },
+  {
+    "revision": "7644721051e182cfb69bbccb444321e7",
+    "url": "/static/media/brazilie.76447210.jpg"
+  },
+  {
+    "revision": "292f568a0548a83045203e7ae5045235",
+    "url": "/static/media/canada.292f568a.jpg"
+  },
+  {
+    "revision": "f90b1ad95bdc8f943e4dfdfe88dd3b5a",
+    "url": "/static/media/chili.f90b1ad9.jpg"
   },
   {
     "revision": "e2eeb95367ca5611605996eb9f22e473",
@@ -100,12 +128,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/chinesemuur.731abba9.svg"
   },
   {
+    "revision": "5b9dd64b658d0a060751b61e52d7586b",
+    "url": "/static/media/colombia.5b9dd64b.jpg"
+  },
+  {
+    "revision": "a7083965dede906471ec470303a9d1fd",
+    "url": "/static/media/costa-rica.a7083965.jpg"
+  },
+  {
     "revision": "90b8e07147f5503bb318227effdce002",
     "url": "/static/media/cruise.90b8e071.svg"
   },
   {
+    "revision": "b218255e9034d95fc28b3b6e71278134",
+    "url": "/static/media/cuba.b218255e.jpg"
+  },
+  {
     "revision": "5622e345b4fcd9160b0f06cb83ee90e0",
     "url": "/static/media/diepzeeduiken.5622e345.svg"
+  },
+  {
+    "revision": "514b6ebd1875377e3144ff4a649e123c",
+    "url": "/static/media/ecuador.514b6ebd.jpg"
   },
   {
     "revision": "b9b441f3fe545ad5529b7fd1452ed50b",
@@ -148,8 +192,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/helicopter.95caf3f7.svg"
   },
   {
+    "revision": "04ee7be79cf66139dd13e8cc03f1eb24",
+    "url": "/static/media/hiken.04ee7be7.svg"
+  },
+  {
     "revision": "7803e072a63161f495fd9ed4291f3162",
     "url": "/static/media/ho-chi-minh-mausoleum.7803e072.svg"
+  },
+  {
+    "revision": "342f3b1f686d5e796b131c4683e2f40a",
+    "url": "/static/media/ijshotel.342f3b1f.svg"
+  },
+  {
+    "revision": "08bc33ed3e159227358bdc1ee6d1daff",
+    "url": "/static/media/ijsland.08bc33ed.jpg"
+  },
+  {
+    "revision": "e1083052b90d2367b0ecae2c99ffcf44",
+    "url": "/static/media/ijslandkerk.e1083052.svg"
   },
   {
     "revision": "b545c7353e283cb745d1cde5f91fa990",
@@ -188,6 +248,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/maleisie.32dc1418.jpg"
   },
   {
+    "revision": "99529ab34ccc937b1cbf2e0d51bc973d",
+    "url": "/static/media/mexico.99529ab3.jpg"
+  },
+  {
     "revision": "d5feb4ff70f399bb10bc4344850c853f",
     "url": "/static/media/monkey.d5feb4ff.svg"
   },
@@ -204,6 +268,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/namibie.5ee2ecfa.jpg"
   },
   {
+    "revision": "90deaa8488ee1de16099570da894810e",
+    "url": "/static/media/nieuwzeeland.90deaa84.jpg"
+  },
+  {
     "revision": "503a88b6bf8a4796ea57676e12806de8",
     "url": "/static/media/oeganda.503a88b6.jpg"
   },
@@ -214,6 +282,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e6b4ad57edf08db3f5827c50b943083e",
     "url": "/static/media/orangoetan.e6b4ad57.svg"
+  },
+  {
+    "revision": "45cdae087f68b06418325e5ca84cf39f",
+    "url": "/static/media/peru.45cdae08.jpg"
   },
   {
     "revision": "257b4852f09c00763543603dd8961bf7",
@@ -250,6 +322,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e840a33c6bb099464faae52ade41b349",
     "url": "/static/media/slowslow.e840a33c.svg"
+  },
+  {
+    "revision": "81968477981e18e275b944efc0069701",
+    "url": "/static/media/sneeuwscooter.81968477.svg"
   },
   {
     "revision": "182dee40cbe54ab2bdfcea69b0bad4a2",
@@ -296,12 +372,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tiger.585732dd.svg"
   },
   {
+    "revision": "fe237515271cc304c2ab730147056ef0",
+    "url": "/static/media/usa.fe237515.jpg"
+  },
+  {
     "revision": "33cc0668e396a8db2f3221eae88bf889",
     "url": "/static/media/vietnam_reizen.33cc0668.jpg"
   },
   {
     "revision": "c1fc845bcbab9873f4993989c8583799",
     "url": "/static/media/wanneer-wil-je-op-reis.c1fc845b.svg"
+  },
+  {
+    "revision": "2c648bf615ddfc886cfbaf0bd237e6dd",
+    "url": "/static/media/waterval.2c648bf6.svg"
   },
   {
     "revision": "b3367262d5274f5aebb8dcb646350466",
