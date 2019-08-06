@@ -76,7 +76,7 @@ class SendForm extends Component {
         event.preventDefault();
         if (form.checkValidity() === false || this.state.phoneNumber === "") {
             event.preventDefault();
-            toast.error("Oops, volgens mij heb je nog niet alles ingevuld");
+            toast.error("Oeps, volgens heb je nog geen telefoonnummer ingevuld");
         } else {
             this.setState({
                 buttonPressed: true,

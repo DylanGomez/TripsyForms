@@ -46,6 +46,12 @@ import geishaIcon from '../../Icons/geisha.svg';
 import orangoetanIcon from '../../Icons/orangoetan.svg';
 import adamspeakIcon from '../../Icons/adamspeak.svg';
 import tempelsrilankaIcon from '../../Icons/tempelsrilanka.svg';
+import ijslandIcon from '../../Icons/ijslandkerk.svg';
+import sneeuwscooterIcon from '../../Icons/sneeuwscooter.svg';
+import watervalIcon from '../../Icons/waterval.svg';
+import beerIcon from '../../Icons/beer.svg';
+import ijshotelIcon from '../../Icons/ijshotel.svg';
+import hikenIcon from '../../Icons/hiken.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -63,6 +69,21 @@ import BackgroundJapan from '../../images/japan.jpg';
 import BackgroundMaleisie from '../../images/maleisie.jpg';
 import BackgroundSrilanka from '../../images/srilanka.jpg';
 import ggtoSvg from '../../Icons/GGTO_logo_grijs_zonder ondertitel.svg';
+import BackgroundIJsland from '../../images/ijsland.jpg';
+import BackgroundCanada from '../../images/canada.jpg';
+import BackgroundCostarica from '../../images/costa-rica.jpg';
+import BackgroundCuba from '../../images/cuba.jpg';
+import BackgroundMexico from '../../images/mexico.jpg';
+import BackgroundUSA from '../../images/usa.jpg';
+import BackgroundAustralie from '../../images/australie.jpg';
+import BackgroundNieuwzeeland from '../../images/nieuwzeeland.jpg';
+import BackgroundArgentinie from '../../images/argentinie.jpg';
+import BackgroundBolivia from '../../images/bolivia.jpg';
+import BackgroundBrazilie from '../../images/brazilie.jpg';
+import BackgroundChili from '../../images/chili.jpg';
+import BackgroundColombia from '../../images/colombia.jpg';
+import BackgroundEcuador from '../../images/ecuador.jpg';
+import BackgroundPeru from '../../images/peru.jpg';
 
 import HelpModal from './helpModal/HelpModal';
 
@@ -743,22 +764,22 @@ class MainScreen extends Component {
     {
         ijsland: {
             countryName: "IJsland",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundIJsland})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: watervalIcon,
+                    text: "Waterval bekijken",
+                    value: "ErvaarEenWaterval"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: ijslandIcon,
+                    text: "Bezoek een kerk",
+                    value: "bezoekKerkReykjavik"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: sneeuwscooterIcon,
+                    text: "Sneeuwscooter tour",
+                    value: "sneeuwscooterTour"
                 },
             },
             step6: {
@@ -783,22 +804,22 @@ class MainScreen extends Component {
     , {
         canada: {
             countryName: "Canada",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundCanada})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: beerIcon,
+                    text: "Beren spotten",
+                    value: "BerenSpotten"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: ijshotelIcon,
+                    text: "Verblijf in ijshotel",
+                    value: "verblijfInIjshotel"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: hikenIcon,
+                    text: "Hiken in de natuur",
+                    value: "Hiken"
                 },
             },
             step6: {
@@ -823,7 +844,7 @@ class MainScreen extends Component {
     {
         costarica: {
             countryName: "Costa Rica",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundCostarica})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -863,7 +884,7 @@ class MainScreen extends Component {
     , {
         cuba: {
             countryName: "Cuba",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundCuba})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -903,7 +924,7 @@ class MainScreen extends Component {
     {
         mexico: {
             countryName: "Mexico",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMexico})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -943,7 +964,7 @@ class MainScreen extends Component {
     , {
         usa: {
             countryName: "USA",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundUSA})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -983,7 +1004,7 @@ class MainScreen extends Component {
     {
         australie: {
             countryName: "Australië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundAustralie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1023,7 +1044,7 @@ class MainScreen extends Component {
     , {
         nieuwzeeland: {
             countryName: "Nieuw-Zeeland",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundNieuwzeeland})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1063,7 +1084,7 @@ class MainScreen extends Component {
     {
         argentinie: {
             countryName: "Argentinië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundArgentinie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1103,7 +1124,7 @@ class MainScreen extends Component {
     , {
         bolivia: {
             countryName: "Bolivia",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundBolivia})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1143,7 +1164,7 @@ class MainScreen extends Component {
     {
         brazilie: {
             countryName: "Brazilië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundBrazilie})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1183,7 +1204,7 @@ class MainScreen extends Component {
     , {
         chili: {
             countryName: "Chili",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundChili})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1223,7 +1244,7 @@ class MainScreen extends Component {
     {
         colombia: {
             countryName: "Colombia",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundColombia})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1263,7 +1284,7 @@ class MainScreen extends Component {
     , {
         ecuador: {
             countryName: "Ecuador",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundEcuador})`,
             step5: {
                 one: {
                     icon: elephantIcon,
@@ -1303,7 +1324,7 @@ class MainScreen extends Component {
     {
         peru: {
             countryName: "Peru",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundPeru})`,
             step5: {
                 one: {
                     icon: elephantIcon,
