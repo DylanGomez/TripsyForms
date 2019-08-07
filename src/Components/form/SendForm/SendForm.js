@@ -8,6 +8,8 @@ import MediaQuery from 'react-responsive';
 import * as emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import validator from 'validator'
+
 
 class SendForm extends Component {
     constructor() {
@@ -70,11 +72,19 @@ class SendForm extends Component {
         })
     }
 
+    validatePhoneNumber = (number) => {
+        var numberNew = number.replace(/\s/g, '');
+
+        const isValidPhoneNumber = validator.isMobilePhone(numberNew, "any", { strictMode: true })
+        return (isValidPhoneNumber)
+    }
+
     mailService(event) {
         const form = event.currentTarget;
         var check = false;
+        const validNumber = this.validatePhoneNumber(this.state.phoneNumber);
         event.preventDefault();
-        if (form.checkValidity() === false || this.state.phoneNumber === "") {
+        if (form.checkValidity() === false || this.state.phoneNumber === "" || !validNumber) {
             event.preventDefault();
             toast.error("Oeps, volgens heb je nog geen telefoonnummer ingevuld");
         } else {
@@ -121,7 +131,7 @@ class SendForm extends Component {
                 from_name: 'hallo@tripsy.nl',
                 to_name: 'hallo@tripsy.nl',
                 subject: 'Bevestiging aanvraag',
-                message_html: '<b>AANVRAAG REISVOORSTEL: '+ this.state.formInfo.state.currentCountry.countryName + ' </b> ' +
+                message_html: '<b>AANVRAAG REISVOORSTEL: ' + this.state.formInfo.state.currentCountry.countryName + ' </b> ' +
                     '<br> <br> <b>Aanvrager voornaam:</b> ' + this.state.name + ' <br> ' +
                     '<b>Achternaam:</b> ' + this.state.lastname + '<br> ' +
                     '<b>E-mailadres:</b> ' + this.state.email + '<br>  ' +
@@ -142,10 +152,9 @@ class SendForm extends Component {
                     'Website: www.tripsy.nl<br> <br>'
             }
             var _this = this;
-           
+
             emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 .then(function (response) {
-                    console.log("done")
                     emailjs.send('gmail', 'tripsytemplate', tripsyTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                         .then(function (response) {
                             _this.props.history.push("/success")
@@ -248,7 +257,7 @@ class SendForm extends Component {
                                         <Form.Control.Feedback type="invalid">
                                             Voer een achternaam in.
                                         </Form.Control.Feedback>
-                                        <Form.Control className="formField" name="email" size="lg" type="text" placeholder="E-mailadres" onChange={this.changeHandler} required isValid={this.state.email} />
+                                        <Form.Control className="formField" name="email" size="lg" type="email" placeholder="E-mailadres" onChange={this.changeHandler} required isValid={this.state.email} />
                                         <Form.Control.Feedback type="invalid">
                                             Voer een geldig e-mail adres in.
                                         </Form.Control.Feedback>
@@ -261,7 +270,7 @@ class SendForm extends Component {
                                             }}
                                             preferredCountries={['nl']}
                                             onlyCountries={['nl', 'be']}
-                                            nationalMode={true}
+                                            autoHideDialCode={true}
                                             required
                                         />
                                         <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
