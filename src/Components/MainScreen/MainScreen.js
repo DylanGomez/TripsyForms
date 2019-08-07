@@ -63,6 +63,20 @@ import kangarooIcon from '../../Icons/kangaroo.svg';
 import walvisIcon from '../../Icons/walvis.svg';
 import kerknieuwzeelandIcon from '../../Icons/kerknieuwzeeland.svg';
 import kayakIcon from '../../Icons/kayak.svg';
+import alpacaIcon from '../../Icons/alpaca.svg';
+import meerIcon from '../../Icons/meer.svg';
+import zoutvlakteIcon from '../../Icons/zoutvlaktes.svg';
+import amazoneIcon from '../../Icons/amazone.svg';
+import jezusbeeldIcon from '../../Icons/jezusbeeld.svg';
+import paaseilandIcon from '../../Icons/paaseiland.svg';
+import zandboardenIcon from '../../Icons/zandboarden.svg';
+import kerkchiliIcon from '../../Icons/kerkchili.svg';
+import koffieplantageIcon from '../../Icons/koffieplantages.svg';
+import kerkcolombiaIcon from '../../Icons/kerkcolombia.svg';
+import turtleIcon from '../../Icons/turtle.svg';
+import middelpuntIcon from '../../Icons/middelpunt.svg';
+import machupicchuIcon from '../../Icons/machupicchu.svg';
+import kerkperuIcon from '../../Icons/kerkperu.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -784,8 +798,8 @@ class MainScreen extends Component {
                 },
                 two: {
                     icon: ijslandIcon,
-                    text: "Bezoek een kerk",
-                    value: "bezoekKerkReykjavik"
+                    text: "Historisch gebouw",
+                    value: "bezoek Historisch gebouw"
                 },
                 three: {
                     icon: sneeuwscooterIcon,
@@ -904,7 +918,7 @@ class MainScreen extends Component {
                 },
                 two: {
                     icon: klassiekeautoIcon,
-                    text: "Klassieke auto tour",
+                    text: "Klassieke autotour",
                     value: "klassiekeAutoTour"
                 },
                 three: {
@@ -1055,12 +1069,12 @@ class MainScreen extends Component {
     , {
         nieuwzeeland: {
             countryName: "Nieuw-Zeeland",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundNieuwzeeland})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundNieuwzeeland})`,
             step5: {
                 one: {
                     icon: kerknieuwzeelandIcon,
-                    text: "Bezoek een kerk",
-                    value: "BezoekEenKerk"
+                    text: "Historisch gebouw",
+                    value: "Historisch gebouw"
                 },
                 two: {
                     icon: kayakIcon,
@@ -1095,22 +1109,22 @@ class MainScreen extends Component {
     {
         argentinie: {
             countryName: "Argentinië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundArgentinie})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundArgentinie})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: hikenIcon,
+                    text: "Wandelen in Patagonië",
+                    value: "WandelenInPatagonie"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: watervalIcon,
+                    text: "Iguazu watervallen",
+                    value: "Watervallen"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: walvisIcon,
+                    text: "Walvis spotten",
+                    value: "WalvisSpotten"
                 },
             },
             step6: {
@@ -1135,22 +1149,22 @@ class MainScreen extends Component {
     , {
         bolivia: {
             countryName: "Bolivia",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundBolivia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundBolivia})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: alpacaIcon,
+                    text: "Alpaca's spotten",
+                    value: "AlpacasSpotten"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
+                    icon: meerIcon,
+                    text: "Het Titicaca meer",
                     value: "templeVisit"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: zoutvlakteIcon,
+                    text: "Zoutvlaktes",
+                    value: "Zoutvlaktes"
                 },
             },
             step6: {
@@ -1175,22 +1189,22 @@ class MainScreen extends Component {
     {
         brazilie: {
             countryName: "Brazilië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundBrazilie})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2), rgba(0,0,0,0.01)),url(${BackgroundBrazilie})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: jezusbeeldIcon,
+                    text: "Het Christusbeeld",
+                    value: "Christusbeeld"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: amazoneIcon,
+                    text: "Verken de Amazone",
+                    value: "VerkenDeAmazone"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: relaxenIcon,
+                    text: "De Copacabana",
+                    value: "DeCopacabana"
                 },
             },
             step6: {
@@ -1218,19 +1232,19 @@ class MainScreen extends Component {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundChili})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: paaseilandIcon,
+                    text: "Naar Paaseiland",
+                    value: "BezoekPaaseiland"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: kerkchiliIcon,
+                    text: "Historisch gebouw",
+                    value: "Historisch gebouw"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: zandboardenIcon,
+                    text: "Zandboarden",
+                    value: "Zandboarden"
                 },
             },
             step6: {
@@ -1255,22 +1269,22 @@ class MainScreen extends Component {
     {
         colombia: {
             countryName: "Colombia",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundColombia})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.01)),url(${BackgroundColombia})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: koffieplantageIcon,
+                    text: "Koffieplantage",
+                    value: "Koffieplantage"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: kerkcolombiaIcon,
+                    text: "Historisch gebouw",
+                    value: "Historisch gebouw"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: surfingIcon,
+                    text: "Golfsurfen",
+                    value: "Golfsurfen"
                 },
             },
             step6: {
@@ -1295,22 +1309,22 @@ class MainScreen extends Component {
     , {
         ecuador: {
             countryName: "Ecuador",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundEcuador})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2), rgba(0,0,0,0.01)),url(${BackgroundEcuador})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: turtleIcon,
+                    text: "Galapagos eilanden",
+                    value: "GalapagosEilanden"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: middelpuntIcon,
+                    text: "Middelpunt van de aarde",
+                    value: "middelPuntVanDeAarde"
                 },
                 three: {
                     icon: snorklingIcon,
                     text: "Snorkelen",
-                    value: "Diving"
+                    value: "Snorkelen"
                 },
             },
             step6: {
@@ -1335,22 +1349,22 @@ class MainScreen extends Component {
     {
         peru: {
             countryName: "Peru",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundPeru})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.20), rgba(0,0,0,0.01)),url(${BackgroundPeru})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: machupicchuIcon,
+                    text: "Machu Picchu",
+                    value: "MachuPicchu"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: amazoneIcon,
+                    text: "Verken de Amazone",
+                    value: "Verken de Amazone"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: kerkperuIcon,
+                    text: "Historisch gebouw",
+                    value: "Historisch gebouw"
                 },
             },
             step6: {

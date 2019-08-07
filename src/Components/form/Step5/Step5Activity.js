@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import CardDeck from 'react-bootstrap/CardDeck'
 // import templeIcon from '../../../Icons/pagoda.svg'
 // import snorklingIcon from '../../../Icons/snorkeling.svg'
-import questionmark from '../../../Icons/questionmarks.svg'
+import questionmark from '../../../Icons/question1.svg'
 
 
 class Step5Activity extends Component {
