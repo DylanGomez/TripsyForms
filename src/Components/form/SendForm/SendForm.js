@@ -121,7 +121,7 @@ class SendForm extends Component {
                 from_name: 'hallo@tripsy.nl',
                 to_name: 'hallo@tripsy.nl',
                 subject: 'Bevestiging aanvraag',
-                message_html: '<b>AANVRAAG REISVOORSTEL: Thailand </b> ' +
+                message_html: '<b>AANVRAAG REISVOORSTEL: '+ this.state.formInfo.state.currentCountry.countryName + ' </b> ' +
                     '<br> <br> <b>Aanvrager voornaam:</b> ' + this.state.name + ' <br> ' +
                     '<b>Achternaam:</b> ' + this.state.lastname + '<br> ' +
                     '<b>E-mailadres:</b> ' + this.state.email + '<br>  ' +
@@ -154,8 +154,6 @@ class SendForm extends Component {
                 }, function (err) {
                     console.log(err)
                 });
-
-
         }
     }
 
@@ -190,6 +188,8 @@ class SendForm extends Component {
 
     componentDidMount() {
         var states = this.props.location.givenState;
+
+        console.log(states);
 
         this.setState({
             formInfo: states
