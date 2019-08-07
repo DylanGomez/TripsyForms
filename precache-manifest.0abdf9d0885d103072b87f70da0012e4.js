@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5479800e80ee882162bf428f95c05d1b",
+    "revision": "930d9e42de8556e91e2f7ed50986cc78",
     "url": "/index.html"
   },
   {
-    "revision": "802ed2bc72cf515d89f4",
+    "revision": "754fb62d8bd6bbf11710",
     "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "4f1f27566349cd512cf9",
+    "revision": "3231c5b61a71f1d90e1e",
     "url": "/static/css/main.7428cc31.chunk.css"
   },
   {
-    "revision": "802ed2bc72cf515d89f4",
-    "url": "/static/js/2.4a173c59.chunk.js"
+    "revision": "754fb62d8bd6bbf11710",
+    "url": "/static/js/2.bbe469f3.chunk.js"
   },
   {
-    "revision": "4f1f27566349cd512cf9",
-    "url": "/static/js/main.76d75a39.chunk.js"
+    "revision": "3231c5b61a71f1d90e1e",
+    "url": "/static/js/main.3cbf98ac.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -74,6 +74,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c9b975bad2a2c1d61e6715abea2c21e6",
     "url": "/static/media/adamspeak.c9b975ba.svg"
+  },
+  {
+    "revision": "567aa230664d93b9331dce0285d02ce8",
+    "url": "/static/media/alpaca.567aa230.svg"
+  },
+  {
+    "revision": "5144c799f2c146ccb534d0dd11c7f59a",
+    "url": "/static/media/amazone.5144c799.svg"
   },
   {
     "revision": "8901c93882d27b94e8229bb2f2a985ef",
@@ -152,8 +160,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/diepzeeduiken.5622e345.svg"
   },
   {
-    "revision": "514b6ebd1875377e3144ff4a649e123c",
-    "url": "/static/media/ecuador.514b6ebd.jpg"
+    "revision": "4ad7672b6269cb5b0d2e07d464bca117",
+    "url": "/static/media/ecuador.4ad7672b.jpg"
   },
   {
     "revision": "b9b441f3fe545ad5529b7fd1452ed50b",
@@ -236,6 +244,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/japan.0ef55455.jpg"
   },
   {
+    "revision": "8594266a6ac99fd8c1b7fc65b18a50ae",
+    "url": "/static/media/jezusbeeld.8594266a.svg"
+  },
+  {
     "revision": "3da0668e1970474cb89065460787e614",
     "url": "/static/media/kamperen.3da0668e.svg"
   },
@@ -252,12 +264,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/keniasafari.c28f6077.svg"
   },
   {
+    "revision": "e1dbb0ff4419a75ac046050d87c6d107",
+    "url": "/static/media/kerkchili.e1dbb0ff.svg"
+  },
+  {
+    "revision": "d98adad2d677887b89839fdd6f11d0b1",
+    "url": "/static/media/kerkcolombia.d98adad2.svg"
+  },
+  {
     "revision": "8cb6e58bd4033c9c1a8b6315d7159bd3",
     "url": "/static/media/kerknieuwzeeland.8cb6e58b.svg"
   },
   {
+    "revision": "d4c6b3f1682db9b113f0fb009251faa0",
+    "url": "/static/media/kerkperu.d4c6b3f1.svg"
+  },
+  {
     "revision": "3b87c4f646ef91baabc93b41e7b8e1c0",
     "url": "/static/media/klassiekeauto.3b87c4f6.svg"
+  },
+  {
+    "revision": "f468d4789edd8e5efc6d2db3d11fc3e6",
+    "url": "/static/media/koffieplantages.f468d478.svg"
   },
   {
     "revision": "ff92994f3051d213c330a424cbf9fe30",
@@ -266,6 +294,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1c87c2a0859da5d721552dea1975f64e",
     "url": "/static/media/maasai.1c87c2a0.svg"
+  },
+  {
+    "revision": "4a118b004a688879d09bbaf335a0648b",
+    "url": "/static/media/machupicchu.4a118b00.svg"
   },
   {
     "revision": "7c42175cd9603c83fd3d1839b5bb2251",
@@ -280,8 +312,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mayapiramide.ee7ab628.svg"
   },
   {
+    "revision": "3adb4c0d55d572831c5b6729682fb870",
+    "url": "/static/media/meer.3adb4c0d.svg"
+  },
+  {
     "revision": "99529ab34ccc937b1cbf2e0d51bc973d",
     "url": "/static/media/mexico.99529ab3.jpg"
+  },
+  {
+    "revision": "e7c4c4010ffd5218a0de20602154777d",
+    "url": "/static/media/middelpunt.e7c4c401.svg"
   },
   {
     "revision": "d5feb4ff70f399bb10bc4344850c853f",
@@ -320,8 +360,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/orangoetan.e6b4ad57.svg"
   },
   {
+    "revision": "19c5f001ef4a7f383f2425e194987f50",
+    "url": "/static/media/paaseiland.19c5f001.svg"
+  },
+  {
     "revision": "45cdae087f68b06418325e5ca84cf39f",
     "url": "/static/media/peru.45cdae08.jpg"
+  },
+  {
+    "revision": "ce46bf6b01d88a4b574b996957392cda",
+    "url": "/static/media/question1.ce46bf6b.svg"
   },
   {
     "revision": "257b4852f09c00763543603dd8961bf7",
@@ -408,6 +456,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/tiger.585732dd.svg"
   },
   {
+    "revision": "6d7ce912f2084339f0db4949bfae497f",
+    "url": "/static/media/turtle.6d7ce912.svg"
+  },
+  {
     "revision": "fe237515271cc304c2ab730147056ef0",
     "url": "/static/media/usa.fe237515.jpg"
   },
@@ -434,6 +486,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b3367262d5274f5aebb8dcb646350466",
     "url": "/static/media/woestijn.b3367262.svg"
+  },
+  {
+    "revision": "b9cda8e14c668dbb94b9c05df262be9d",
+    "url": "/static/media/zandboarden.b9cda8e1.svg"
+  },
+  {
+    "revision": "80e150721d112f3a440792154635ad79",
+    "url": "/static/media/zoutvlaktes.80e15072.svg"
   },
   {
     "revision": "b2c3eaaae4c16f65b5424a0b7de56dc3",
