@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f96c91054a6eb25d19601246c72cfc4",
+    "revision": "8c5d769d21aafc1ba5c3783d40515244",
     "url": "/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "4cc788d8195777cc0b8c",
-    "url": "/static/css/main.7428cc31.chunk.css"
+    "revision": "a825d9311de9260d5efa",
+    "url": "/static/css/main.9b4cf268.chunk.css"
   },
   {
     "revision": "836a904a9aaea6591e49",
     "url": "/static/js/2.df6a6c64.chunk.js"
   },
   {
-    "revision": "4cc788d8195777cc0b8c",
+    "revision": "a825d9311de9260d5efa",
     "url": "/static/js/main.9953b480.chunk.js"
   },
   {
@@ -56,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Hoe-lang-wil-je-op-reis.fd01e63e.svg"
   },
   {
-    "revision": "b1342f65e796184ece73c82c283762c3",
-    "url": "/static/media/Logo_tripsy.b1342f65.svg"
-  },
-  {
     "revision": "7656ef17a5ee87f1916191e1be38021e",
     "url": "/static/media/Partner.7656ef17.svg"
   },
@@ -70,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1342f65e796184ece73c82c283762c3",
     "url": "/static/media/Tripsy_black.b1342f65.svg"
+  },
+  {
+    "revision": "762aca615b18f9a3ab6b3ef9f2089c89",
+    "url": "/static/media/aanvraag.762aca61.svg"
   },
   {
     "revision": "c9b975bad2a2c1d61e6715abea2c21e6",
