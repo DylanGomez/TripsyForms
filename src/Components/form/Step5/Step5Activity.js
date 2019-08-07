@@ -61,7 +61,7 @@ class Step5Activity extends Component {
                                     <img className="activityIcon" src={questionmark} alt=""/>
                                 </Card.Body>
                                 <Card.Footer className="cardFooter">
-                                    Weet ik niet
+                                    Allemaal
                                 </Card.Footer>
                             </Card>
                         </CardDeck>

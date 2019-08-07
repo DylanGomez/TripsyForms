@@ -56,6 +56,13 @@ import luiaardIcon from '../../Icons/luiaard.svg';
 import klassiekeautoIcon from '../../Icons/klassiekeauto.svg';
 import cigaarIcon from '../../Icons/cigaar.svg';
 import mayapiramideIcon from '../../Icons/mayapiramide.svg';
+import vrijheidsbeeldIcon from '../../Icons/vrijheidsbeeld.svg';
+import grandcanyonIcon from '../../Icons/grandcanyon.svg';
+import operahouseIcon from '../../Icons/operahouse.svg';
+import kangarooIcon from '../../Icons/kangaroo.svg';
+import walvisIcon from '../../Icons/walvis.svg';
+import kerknieuwzeelandIcon from '../../Icons/kerknieuwzeeland.svg';
+import kayakIcon from '../../Icons/kayak.svg';
 
 import BackgroundThailand from '../../images/Phuket_thailand_mood.jpg';
 import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
@@ -217,7 +224,7 @@ class MainScreen extends Component {
                 },
                 two: {
                     icon: helicopterIcon,
-                    text: "helikoptervlucht",
+                    text: "Helikoptervlucht",
                     value: "HelikopterVlucht"
                 },
                 three: {
@@ -888,7 +895,7 @@ class MainScreen extends Component {
     , {
         cuba: {
             countryName: "Cuba",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundCuba})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundCuba})`,
             step5: {
                 one: {
                     icon: cigaarIcon,
@@ -928,7 +935,7 @@ class MainScreen extends Component {
     {
         mexico: {
             countryName: "Mexico",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMexico})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundMexico})`,
             step5: {
                 one: {
                     icon: mayapiramideIcon,
@@ -968,22 +975,22 @@ class MainScreen extends Component {
     , {
         usa: {
             countryName: "USA",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundUSA})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundUSA})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: vrijheidsbeeldIcon,
+                    text: "Het vrijheidsbeeld",
+                    value: "BezoekHetVrijheidsbeeld"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: helicopterIcon,
+                    text: "Helikoptervlucht",
+                    value: "HelikopterVlucht"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: grandcanyonIcon,
+                    text: "De Grand Canyon",
+                    value: "GrandCanyon"
                 },
             },
             step6: {
@@ -1008,22 +1015,22 @@ class MainScreen extends Component {
     {
         australie: {
             countryName: "Australië",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundAustralie})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundAustralie})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
+                    icon: operahouseIcon,
+                    text: "Het Opera House",
                     value: "elephantPark"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: diepzeeduikenIcon,
+                    text: "Diepzeeduiken",
+                    value: "Diepzeeduiken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: kangarooIcon,
+                    text: "Kangaroo's spotten",
+                    value: "KangarooBekijken"
                 },
             },
             step6: {
@@ -1048,22 +1055,22 @@ class MainScreen extends Component {
     , {
         nieuwzeeland: {
             countryName: "Nieuw-Zeeland",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundNieuwzeeland})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundNieuwzeeland})`,
             step5: {
                 one: {
-                    icon: elephantIcon,
-                    text: "Olifantenpark bezoeken",
-                    value: "elephantPark"
+                    icon: kerknieuwzeelandIcon,
+                    text: "Bezoek een kerk",
+                    value: "BezoekEenKerk"
                 },
                 two: {
-                    icon: templeIcon,
-                    text: "Tempel bezoeken",
-                    value: "templeVisit"
+                    icon: kayakIcon,
+                    text: "Kajakken",
+                    value: "Kajakken"
                 },
                 three: {
-                    icon: snorklingIcon,
-                    text: "Snorkelen",
-                    value: "Diving"
+                    icon: walvisIcon,
+                    text: "Walvis spotten",
+                    value: "WalvisSpotten"
                 },
             },
             step6: {
