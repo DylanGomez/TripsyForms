@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fea4ac15cc029cae060982fae4206772",
+    "revision": "5479800e80ee882162bf428f95c05d1b",
     "url": "/index.html"
   },
   {
-    "revision": "de6e148a9947e2799416",
-    "url": "/static/css/2.b957e0b3.chunk.css"
+    "revision": "802ed2bc72cf515d89f4",
+    "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "cb76c5c2d3c602537c81",
-    "url": "/static/css/main.e2e95ec7.chunk.css"
+    "revision": "4f1f27566349cd512cf9",
+    "url": "/static/css/main.7428cc31.chunk.css"
   },
   {
-    "revision": "de6e148a9947e2799416",
-    "url": "/static/js/2.fecad66f.chunk.js"
+    "revision": "802ed2bc72cf515d89f4",
+    "url": "/static/js/2.4a173c59.chunk.js"
   },
   {
-    "revision": "cb76c5c2d3c602537c81",
-    "url": "/static/js/main.6e768593.chunk.js"
+    "revision": "4f1f27566349cd512cf9",
+    "url": "/static/js/main.76d75a39.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -192,6 +192,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gorilla.1b9fa6fb.svg"
   },
   {
+    "revision": "a4ca746d874762a961918199fc808cae",
+    "url": "/static/media/grandcanyon.a4ca746d.svg"
+  },
+  {
     "revision": "95caf3f7ec2398560d2d3f0322a1f0e5",
     "url": "/static/media/helicopter.95caf3f7.svg"
   },
@@ -236,8 +240,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/kamperen.3da0668e.svg"
   },
   {
+    "revision": "0fc74a46643829a864ebda30a7365c8a",
+    "url": "/static/media/kangaroo.0fc74a46.svg"
+  },
+  {
+    "revision": "3785e480141cda42a4b7d5b2e327765d",
+    "url": "/static/media/kayak.3785e480.svg"
+  },
+  {
     "revision": "c28f6077892cc91cbe2023b712f7906f",
     "url": "/static/media/keniasafari.c28f6077.svg"
+  },
+  {
+    "revision": "8cb6e58bd4033c9c1a8b6315d7159bd3",
+    "url": "/static/media/kerknieuwzeeland.8cb6e58b.svg"
   },
   {
     "revision": "3b87c4f646ef91baabc93b41e7b8e1c0",
@@ -258,6 +274,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32dc14187173c11d93f621cde06f31b5",
     "url": "/static/media/maleisie.32dc1418.jpg"
+  },
+  {
+    "revision": "ee7ab6284167b36f5d5f7104deb80df4",
+    "url": "/static/media/mayapiramide.ee7ab628.svg"
   },
   {
     "revision": "99529ab34ccc937b1cbf2e0d51bc973d",
@@ -290,6 +310,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "467e7b22959d51888a25052f09c9e5f5",
     "url": "/static/media/olifant.467e7b22.svg"
+  },
+  {
+    "revision": "fb573fd71f33ce9be24fe2b5b7ca52ee",
+    "url": "/static/media/operahouse.fb573fd7.svg"
   },
   {
     "revision": "e6b4ad57edf08db3f5827c50b943083e",
@@ -390,6 +414,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "33cc0668e396a8db2f3221eae88bf889",
     "url": "/static/media/vietnam_reizen.33cc0668.jpg"
+  },
+  {
+    "revision": "94dbc31ff0f2548209f7ed83a6826f0a",
+    "url": "/static/media/vrijheidsbeeld.94dbc31f.svg"
+  },
+  {
+    "revision": "d07a23374b54f1610daff82bd3feb88e",
+    "url": "/static/media/walvis.d07a2337.svg"
   },
   {
     "revision": "c1fc845bcbab9873f4993989c8583799",
