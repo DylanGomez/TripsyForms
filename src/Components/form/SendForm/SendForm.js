@@ -93,7 +93,7 @@ class SendForm extends Component {
         event.preventDefault();
         if (form.checkValidity() === false || this.state.phoneNumber === "" || !validNumber || !validEmail) {
             event.preventDefault();
-            toast.error("Oeps, je telefoonnummer is nog niet helemaal compleet");
+            toast.error("Oeps, je telefoonnummer of e-mailadres is nog niet helemaal compleet");
         } else {
             this.setState({
                 buttonPressed: true,
