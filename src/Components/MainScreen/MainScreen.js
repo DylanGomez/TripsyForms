@@ -1502,7 +1502,11 @@ class MainScreen extends Component {
         }
         this.backgroundStylePhone = {
             //DEZE AANPASSEN naar PHONE
+            // TODO UNCOMMENT bottom one
             backgroundImage: this.state.currentCountry.backgroundImage,
+
+            // backgroundImage: this.state.currentCountry.backgroundImagePhone,
+
         }
 
         return (

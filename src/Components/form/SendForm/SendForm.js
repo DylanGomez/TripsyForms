@@ -79,12 +79,19 @@ class SendForm extends Component {
         return (isValidPhoneNumber)
     }
 
+    validateEmail = (email) => {
+        const isValidEmail = validator.isEmail(email);
+        return (isValidEmail);
+    }
+
     mailService(event) {
         const form = event.currentTarget;
         var check = false;
         const validNumber = this.validatePhoneNumber(this.state.phoneNumber);
+        const validEmail = this.validateEmail(this.state.email);
+
         event.preventDefault();
-        if (form.checkValidity() === false || this.state.phoneNumber === "" || !validNumber) {
+        if (form.checkValidity() === false || this.state.phoneNumber === "" || !validNumber || !validEmail) {
             event.preventDefault();
             toast.error("Oeps, je telefoonnummer is nog niet helemaal compleet");
         } else {
@@ -152,7 +159,7 @@ class SendForm extends Component {
                     'Website: www.tripsy.nl<br> <br>'
             }
             var _this = this;
-
+            
             emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 .then(function (response) {
                     emailjs.send('gmail', 'tripsytemplate', tripsyTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
