@@ -1318,8 +1318,8 @@ class MainScreen extends Component {
                 },
                 two: {
                     icon: middelpuntIcon,
-                    text: "Middelpunt van de aarde",
-                    value: "middelPuntVanDeAarde"
+                    text: "Historisch gebouw",
+                    value: "HistorischGebouw"
                 },
                 three: {
                     icon: snorklingIcon,
