@@ -187,10 +187,10 @@ class MainScreen extends Component {
         }
     } //EINDE LAND
         , {
-        thailand14dagen: {
+        vietnam: {
             countryName: "Thailand14dagen",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundThailand})`,
-            backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundThailand})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
+            backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             step5: {
                 one: {
                     icon: elephantIcon,
