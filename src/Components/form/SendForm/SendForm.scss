@@ -533,3 +533,31 @@ button.btn.btn-success.btn-lg {
   font-size: 15px;
   font-weight: 600;
 }
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+
+    .helpWidgetEmail {
+      position: absolute;
+      margin-left: 405px;
+      margin-top: -108px;
+      color: #e9e9eb;
+
+      @media screen and (max-width: $break-small) {
+        margin-left: 260px;
+      }
+    }
+
+    .helpWidgetPhone {
+      position: absolute;
+      margin-left: 405px;
+      margin-top: -40px;
+      color: #e9e9eb;
+      @media screen and (max-width: $break-small) {
+        margin-left: 260px;
+      }
+    }
+
+    
+}
