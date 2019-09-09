@@ -159,7 +159,7 @@ class SendForm extends Component {
                     'Website: www.tripsy.nl<br> <br>'
             }
             var _this = this;
-            
+
             emailjs.send('gmail', 'customertemplate', customerTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
                 .then(function (response) {
                     emailjs.send('gmail', 'tripsytemplate', tripsyTemplate, 'user_f1aefYYUBoh4CwEBL8rCN')
@@ -204,8 +204,6 @@ class SendForm extends Component {
 
     componentDidMount() {
         var states = this.props.location.givenState;
-
-        console.log(states);
 
         this.setState({
             formInfo: states
@@ -280,12 +278,14 @@ class SendForm extends Component {
                                             autoHideDialCode={true}
                                             required
                                         />
-                                        <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
-                                            <HelpIcon className="helpWidgetPhone" />
-                                        </OverlayTrigger>
-                                        <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">We hebben je e-mailadres nodig om een reisplan op maat naar je te kunnen sturen</Tooltip>}>
-                                            <HelpIcon className="helpWidgetEmail" />
-                                        </OverlayTrigger>
+                                        <span className="overlayTriggers">
+                                            <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">Wij gebruiken je telefoonnummer om persoonlijk met je in contact te komen voor een reisplan op maat</Tooltip>}>
+                                                <HelpIcon className="helpWidgetPhone" />
+                                            </OverlayTrigger>
+                                            <OverlayTrigger trigger={['hover', 'click']} overlay={<Tooltip id="tooltip-disabled">We hebben je e-mailadres nodig om een reisplan op maat naar je te kunnen sturen</Tooltip>}>
+                                                <HelpIcon className="helpWidgetEmail" />
+                                            </OverlayTrigger>
+                                        </span>
 
                                         {!this.state.buttonPressed &&
                                             <Button variant="success" size="lg" type="submit">Ja, ik wil graag een reisplan*</Button>
