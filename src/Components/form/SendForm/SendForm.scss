@@ -4,7 +4,7 @@ $break-large: 1025px;
 $break-extralarge: 1200px;
 
 .backgroundNew {
-    /*-webkit-filter: grayscale(40%);*/
+    -webkit-filter: grayscale(40%);
     height: 780px;
     margin-top: -6px;
     -webkit-background-size: cover;
@@ -26,7 +26,7 @@ $break-extralarge: 1200px;
 }
 
 .backgroundNew2 {
-  /*-webkit-filter: grayscale(40%);*/
+  -webkit-filter: grayscale(40%);
   height: 780px;
   margin-top: -6px;
   -webkit-background-size: cover;

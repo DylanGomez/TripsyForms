@@ -107,7 +107,7 @@ class SendForm extends Component {
 
         if (check) {
             var customerTemplate = {
-                from_name: 'hallo@tripsy.nl',
+                from_name: 'info@tripsy.nl',
                 to_name: this.state.email,
                 subject: this.state.name,
                 message_html: 'Beste ' + this.state.name + ', <br> ' +
@@ -125,7 +125,7 @@ class SendForm extends Component {
                     '<br>' +
                     '<br>' +
                     'Bellen: 030 - 711 68 97 <br>' +
-                    'Mailen: hallo@tripsy.nl <br>' +
+                    'Mailen: info@tripsy.nl <br>' +
                     'Website: www.tripsy.nl <br>' +
                     '<br>' +
                     '<br>' +
@@ -135,8 +135,8 @@ class SendForm extends Component {
 
             }
             var tripsyTemplate = {
-                from_name: 'hallo@tripsy.nl',
-                to_name: 'hallo@tripsy.nl',
+                from_name: 'info@tripsy.nl',
+                to_name: 'info@tripsy.nl',
                 subject: 'Bevestiging aanvraag',
                 message_html: '<b>AANVRAAG REISVOORSTEL: ' + this.state.formInfo.state.currentCountry.countryName + ' </b> ' +
                     '<br> <br> <b>Aanvrager voornaam:</b> ' + this.state.name + ' <br> ' +
@@ -155,7 +155,7 @@ class SendForm extends Component {
                     + '<br>' +
                     'Met vriendelijke groet,<br> Het Tripsy Team <br> <br>' +
                     'Bellen: +31 (0)30 - 711 62 47 <br>' +
-                    'Mailen: hallo@tripsy.nl<br>' +
+                    'Mailen: info@tripsy.nl<br>' +
                     'Website: www.tripsy.nl<br> <br>'
             }
             var _this = this;
