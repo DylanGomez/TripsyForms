@@ -83,7 +83,7 @@ import BackgroundVietnam from '../../images/vietnam_reizen.jpg';
 import BackgroundBotswana from '../../images/reis_botswana_afrika.jpg';
 import BackgroundKenia from '../../images/reis_kenia_afrika1.jpg';
 import BackgroundMozambique from '../../images/mozambique_reizen.jpg';
-import BackgroundZuidafrika from '../../images/zuidafrika-mood.jpg';
+import BackgroundZuidafrika from '../../images/de_highlights_van_zuid-afrika_mood.jpg';
 import BackgroundNamibie from '../../images/namibie.jpg';
 import BackgroundOeganda from '../../images/oeganda.jpg';
 import BackgroundTanzania from '../../images/tanzania.jpg';
@@ -476,7 +476,7 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundZuidafrika})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15), rgba(0,0,0,0.1)),url(${BackgroundZuidafrika})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
