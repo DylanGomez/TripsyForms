@@ -482,17 +482,17 @@ class MainScreen extends Component {
                 one: {
                     icon: lionIcon,
                     text: "Op safari",
-                    value: "elephantPark"
+                    value: "OpSafari"
                 },
                 two: {
                     icon: maskIcon,
                     text: "Bezoek een stam",
-                    value: "templeVisit"
+                    value: "BezoekEenStam"
                 },
                 three: {
                     icon: surfingIcon,
                     text: "Golfsurfen",
-                    value: "Diving"
+                    value: "Golfsurfen"
                 },
             },
             step6: {
