@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1df23b04fa773a9f74927623738ca6c3",
+    "revision": "c13adbf9a60a950853e0890e53a571ab",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "50ba86753deced432b26",
+    "revision": "88bc0d285539f373e4fd",
     "url": "/static/css/main.36002315.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.df6a6c64.chunk.js"
   },
   {
-    "revision": "50ba86753deced432b26",
-    "url": "/static/js/main.0d68f9c2.chunk.js"
+    "revision": "88bc0d285539f373e4fd",
+    "url": "/static/js/main.d38ac915.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -154,6 +154,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b218255e9034d95fc28b3b6e71278134",
     "url": "/static/media/cuba.b218255e.jpg"
+  },
+  {
+    "revision": "b2c3eaaae4c16f65b5424a0b7de56dc3",
+    "url": "/static/media/de_highlights_van_zuid-afrika_mood.b2c3eaaa.jpg"
   },
   {
     "revision": "5622e345b4fcd9160b0f06cb83ee90e0",
@@ -494,9 +498,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "80e150721d112f3a440792154635ad79",
     "url": "/static/media/zoutvlaktes.80e15072.svg"
-  },
-  {
-    "revision": "b2c3eaaae4c16f65b5424a0b7de56dc3",
-    "url": "/static/media/zuidafrika-mood.b2c3eaaa.jpg"
   }
 ]);
