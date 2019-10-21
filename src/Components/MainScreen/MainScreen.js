@@ -477,7 +477,7 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Jouw rondreis Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(${BackgroundZuidafrika})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(${BackgroundZuidafrika})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
@@ -1420,7 +1420,7 @@ class MainScreen extends Component {
     ,{
         zuidafrikareis1: {
             countryName: "Het beste van Noord",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.4)),url(${BackgroundHetbestevannoord})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url(${BackgroundHetbestevannoord})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundHetbestevannoord})`,
             step5: {
                 one: {
