@@ -1420,7 +1420,7 @@ class MainScreen extends Component {
     ,{
         zuidafrikareis1: {
             countryName: "Het beste van Noord",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(${BackgroundHetbestevannoord})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3), rgba(0,0,0,0.4)),url(${BackgroundHetbestevannoord})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundHetbestevannoord})`,
             step5: {
                 one: {
