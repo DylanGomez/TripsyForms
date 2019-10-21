@@ -148,7 +148,7 @@ class MainScreen extends Component {
 
     destinations = [{
         thailand: {
-            countryName: "Thailand",
+            countryName: "Jouw rondreis Thailand",
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundThailand})`,
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundThailand})`,
             step5: {
@@ -189,7 +189,7 @@ class MainScreen extends Component {
     } //EINDE LAND
         , {
         vietnam: {
-            countryName: "Thailand14dagen",
+            countryName: "Jouw rondreis Thailand14dagen",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             step5: {
@@ -230,7 +230,7 @@ class MainScreen extends Component {
     }, // EINDE LAND //BEGIN AFRIKA
      {
         botswana: {
-            countryName: "Botswana",
+            countryName: "Jouw rondreis Botswana",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundBotswana})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundBotswana})`,
             step5: {
@@ -271,7 +271,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         kenia: {
-            countryName: "Kenia",
+            countryName: "Jouw rondreis Kenia",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundKenia})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundKenia})`,
             step5: {
@@ -312,7 +312,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         mozambique: {
-            countryName: "Mozambique",
+            countryName: "Jouw rondreis Mozambique",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMozambique})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundMozambique})`,
             step5: {
@@ -353,7 +353,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         namibie: {
-            countryName: "Namibië",
+            countryName: "Jouw rondreis Namibië",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundNamibie})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundNamibie})`,
             step5: {
@@ -394,7 +394,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         oeganda: {
-            countryName: "Oeganda",
+            countryName: "Jouw rondreis Oeganda",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundOeganda})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundOeganda})`,
             step5: {
@@ -435,7 +435,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         tanzania: {
-            countryName: "Tanzania",
+            countryName: "Jouw rondreis Tanzania",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundTanzania})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundTanzania})`,
             step5: {
@@ -476,7 +476,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         zuidafrika: {
-            countryName: "Zuid-Afrika",
+            countryName: "Jouw rondreis Zuid-Afrika",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.15), rgba(0,0,0,0.1)),url(${BackgroundZuidafrika})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
             step5: {
@@ -517,7 +517,7 @@ class MainScreen extends Component {
     } // EINDE LAND //EINDE AFRIKA //BEGIN AZIE
     , {
         china: {
-            countryName: "China",
+            countryName: "Jouw rondreis China",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundChina})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundChina})`,
             step5: {
@@ -558,7 +558,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         india: {
-            countryName: "India",
+            countryName: "Jouw rondreis India",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3), rgba(0,0,0,0.01)),url(${BackgroundIndia})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundIndia})`,
             step5: {
@@ -599,7 +599,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         indonesie: {
-            countryName: "Indonesië",
+            countryName: "Jouw rondreis Indonesië",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundIndonesie})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundIndonesie})`,
             step5: {
@@ -640,7 +640,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         japan: {
-            countryName: "Japan",
+            countryName: "Jouw rondreis Japan",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundJapan})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundJapan})`,
             step5: {
@@ -681,7 +681,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         maleisie: {
-            countryName: "Maleisië",
+            countryName: "Jouw rondreis Maleisië",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundMaleisie})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundMaleisie})`,
             step5: {
@@ -722,7 +722,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         srilanka: {
-            countryName: "Sri Lanka",
+            countryName: "Jouw rondreis Sri Lanka",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundSrilanka})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundSrilanka})`,
             step5: {
@@ -763,7 +763,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         vietnam: {
-            countryName: "Vietnam",
+            countryName: "Jouw rondreis Vietnam",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundVietnam})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundVietnam})`,
             step5: {
@@ -804,7 +804,7 @@ class MainScreen extends Component {
     }, // EINDE LAND //EINDE AZIE //BEGIN EUROPA
     {
         ijsland: {
-            countryName: "IJsland",
+            countryName: "Jouw rondreis IJsland",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundIJsland})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundIJsland})`,
             step5: {
@@ -845,7 +845,7 @@ class MainScreen extends Component {
     } // EINDE LAND //EINDE EUROPA //BEGIN NOORD-AMERIKA
     , {
         canada: {
-            countryName: "Canada",
+            countryName: "Jouw rondreis Canada",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundCanada})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundCanada})`,
             step5: {
@@ -886,7 +886,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         costarica: {
-            countryName: "Costa Rica",
+            countryName: "Jouw rondreis Costa Rica",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundCostarica})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundCostarica})`,
             step5: {
@@ -927,7 +927,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         cuba: {
-            countryName: "Cuba",
+            countryName: "Jouw rondreis Cuba",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundCuba})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundCuba})`,
             step5: {
@@ -968,7 +968,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         mexico: {
-            countryName: "Mexico",
+            countryName: "Jouw rondreis Mexico",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundMexico})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundMexico})`,
             step5: {
@@ -1009,7 +1009,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         usa: {
-            countryName: "USA",
+            countryName: "Jouw rondreis USA",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundUSA})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundUSA})`,
             step5: {
@@ -1050,7 +1050,7 @@ class MainScreen extends Component {
     }, // EINDE LAND //EINDE NOORD-AMERIKA //BEGIN OCEANIE
     {
         australie: {
-            countryName: "Australië",
+            countryName: "Jouw rondreis Australië",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundAustralie})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundAustralie})`,
             step5: {
@@ -1091,7 +1091,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         nieuwzeeland: {
-            countryName: "Nieuw-Zeeland",
+            countryName: "Jouw rondreis Nieuw-Zeeland",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), rgba(0,0,0,0.01)),url(${BackgroundNieuwzeeland})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundNieuwzeeland})`,
             step5: {
@@ -1132,7 +1132,7 @@ class MainScreen extends Component {
     }, // EINDE LAND //EINDE OCEANIE //BEGIN ZUID-AMERIKA
     {
         argentinie: {
-            countryName: "Argentinië",
+            countryName: "Jouw rondreis Argentinië",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundArgentinie})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundArgentinie})`,
             step5: {
@@ -1173,7 +1173,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         bolivia: {
-            countryName: "Bolivia",
+            countryName: "Jouw rondreis Bolivia",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.01)),url(${BackgroundBolivia})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundBolivia})`,
             step5: {
@@ -1214,7 +1214,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         brazilie: {
-            countryName: "Brazilië",
+            countryName: "Jouw rondreis Brazilië",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2), rgba(0,0,0,0.01)),url(${BackgroundBrazilie})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundBrazilie})`,
             step5: {
@@ -1255,7 +1255,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         chili: {
-            countryName: "Chili",
+            countryName: "Jouw rondreis Chili",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.35), rgba(0,0,0,0.01)),url(${BackgroundChili})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundChili})`,
             step5: {
@@ -1296,7 +1296,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         colombia: {
-            countryName: "Colombia",
+            countryName: "Jouw rondreis Colombia",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.01)),url(${BackgroundColombia})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundColombia})`,
             step5: {
@@ -1337,7 +1337,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     , {
         ecuador: {
-            countryName: "Ecuador",
+            countryName: "Jouw rondreis Ecuador",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2), rgba(0,0,0,0.01)),url(${BackgroundEcuador})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundEcuador})`,
             step5: {
@@ -1378,7 +1378,7 @@ class MainScreen extends Component {
     }, // EINDE LAND
     {
         peru: {
-            countryName: "Peru",
+            countryName: "Jouw rondreis Peru",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.20), rgba(0,0,0,0.01)),url(${BackgroundPeru})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundPeru})`,
             step5: {
@@ -1419,7 +1419,7 @@ class MainScreen extends Component {
     } // EINDE LAND //EINDE LANDEN //BEGIN REIZEN
     ,{
         zuidafrikareis1: {
-            countryName: "- Het beste van Noord",
+            countryName: "Jouw rondreis Zuid-Afrika",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.1)),url(${BackgroundHetbestevannoord})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundHetbestevannoord})`,
             step5: {
@@ -1593,7 +1593,7 @@ class MainScreen extends Component {
                 </div>
                 <div style={this.detectMobile() ? this.backgroundStylePhone : this.backgroundStyleDesktop } className="topDiv">
                     <div className="textDiv">
-                        <span className="tripText">Jouw rondreis {this.state.currentCountry.countryName}</span>
+                        <span className="tripText">{this.state.currentCountry.countryName}</span>
                         <br />
                         <MediaQuery query='(min-device-width: 575px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
