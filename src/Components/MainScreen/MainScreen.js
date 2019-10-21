@@ -1419,7 +1419,7 @@ class MainScreen extends Component {
     } // EINDE LAND //EINDE LANDEN //BEGIN REIZEN
     ,{
         zuidafrikareis1: {
-            countryName: "Jouw rondreis Zuid-Afrika",
+            countryName: "Het beste van Noord",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.1)),url(${BackgroundHetbestevannoord})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundHetbestevannoord})`,
             step5: {
