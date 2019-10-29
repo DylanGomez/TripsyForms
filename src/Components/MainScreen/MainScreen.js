@@ -110,6 +110,7 @@ import BackgroundColombia from '../../images/colombia.jpg';
 import BackgroundEcuador from '../../images/ecuador.jpg';
 import BackgroundPeru from '../../images/peru.jpg';
 import BackgroundHetbestevannoord from '../../images/hetbestevannoord.jpg';
+import BackgroundHighlightssafari from '../../images/Highlights-safari-zuid-afrika.jpg';
 
 import HelpModal from './helpModal/HelpModal';
 
@@ -1422,6 +1423,47 @@ class MainScreen extends Component {
             countryName: "Het beste van Noord",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.1)),url(${BackgroundHetbestevannoord})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundHetbestevannoord})`,
+            step5: {
+                one: {
+                    icon: lionIcon,
+                    text: "Op safari",
+                    value: "OpSafari"
+                },
+                two: {
+                    icon: maskIcon,
+                    text: "Bezoek een stam",
+                    value: "BezoekEenStam"
+                },
+                three: {
+                    icon: surfingIcon,
+                    text: "Golfsurfen",
+                    value: "Golfsurfen"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND
+    ,{
+        zuidafrikareis1: {
+            countryName: "Highlights & Safari",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2), rgba(0,0,0,0.1)),url(${BackgroundHighlightssafari})`,
+            backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundHighlightssafari})`,
             step5: {
                 one: {
                     icon: lionIcon,
