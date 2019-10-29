@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "669a66258fceae1bee5423a339e9c96f",
+    "revision": "cefd5ac7d9d806650b8cc8f800a8b31d",
     "url": "/index.html"
   },
   {
-    "revision": "4a27ec8a37017a9c2890",
+    "revision": "d487e6c58ec6f90206f2",
     "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "6c33a0fd860124ec94fe",
+    "revision": "3348de40b307d8c592a7",
     "url": "/static/css/main.36002315.chunk.css"
   },
   {
-    "revision": "4a27ec8a37017a9c2890",
-    "url": "/static/js/2.77bc19f2.chunk.js"
+    "revision": "d487e6c58ec6f90206f2",
+    "url": "/static/js/2.07f7875f.chunk.js"
   },
   {
-    "revision": "6c33a0fd860124ec94fe",
-    "url": "/static/js/main.8b884df2.chunk.js"
+    "revision": "3348de40b307d8c592a7",
+    "url": "/static/js/main.a122d220.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "428d5abc46196f5b63e0db37aaf2d56c",
     "url": "/static/media/GGTO_logo_grijs_zonder ondertitel.428d5abc.svg"
+  },
+  {
+    "revision": "23b094c4c22083da8c97c03ac4318fe4",
+    "url": "/static/media/Highlights-safari-zuid-afrika.23b094c4.jpg"
   },
   {
     "revision": "fd01e63ef2f68ba4c9a83ecfba900f33",
