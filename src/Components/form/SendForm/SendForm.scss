@@ -500,7 +500,7 @@ button.btn.btn-success.btn-lg {
 
 .helpWidgetEmail {
   position: absolute;
-  margin-left: 4px;
+  margin-left: 4px !important;
   margin-top: -53px;
   color: #e9e9eb;
 }
@@ -511,7 +511,7 @@ button.btn.btn-success.btn-lg {
 
 .helpWidgetPhone {
   position: absolute;
-  margin-left: 4px;
+  margin-left: 4px !important;
   margin-top: 16px;
   color: #e9e9eb;
 }
