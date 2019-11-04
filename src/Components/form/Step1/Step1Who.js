@@ -25,7 +25,7 @@ class Step1Who extends Component {
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
-                                this.handleClick("step2", "alone");
+                                this.handleClick("step2", "Met jezelf of partner");
                             }}>
                                 <Card.Body>
                                     <img className="svgIcon" src={travelerSvg} alt="" />
@@ -35,7 +35,7 @@ class Step1Who extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                this.handleClick("step2", "partner");
+                                this.handleClick("step2", "mat familie");
                             }}>
                                 <Card.Body>
                                     <img className="svgIcon" src={familieSvg} alt="" />
@@ -45,7 +45,7 @@ class Step1Who extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                this.handleClick("step2", "family");
+                                this.handleClick("step2", "met vrienden");
                             }}>
                                 <Card.Body>
                                     <img className="svgIcon" src={vriendenSvg} alt="" />
@@ -55,7 +55,7 @@ class Step1Who extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                this.handleClick("step2A", "group");
+                                this.handleClick("step2A", "met je bedrijf");
                             }}>
                                 <Card.Body>
                                     <img className="svgIcon" src={bedrijfSvg} alt="" />
