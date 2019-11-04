@@ -1542,6 +1542,47 @@ class MainScreen extends Component {
             }
         }
     } // EINDE LAND
+    ,{
+        zuidafrikareizen: {
+            countryName: "Jouw rondreis Zuid-Afrika",
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(${BackgroundZuidafrika})`,
+            backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
+            step5: {
+                one: {
+                    icon: lionIcon,
+                    text: "Op safari",
+                    value: "OpSafari"
+                },
+                two: {
+                    icon: maskIcon,
+                    text: "Bezoek een stam",
+                    value: "BezoekEenStam"
+                },
+                three: {
+                    icon: surfingIcon,
+                    text: "Golfsurfen",
+                    value: "Golfsurfen"
+                },
+            },
+            step6: {
+                one: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Hotel",
+                    value: "Hotel"
+                },
+                two: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Resort",
+                    value: "Resort"
+                },
+                three: {
+                    icon: "../../Icons/icons_forms.svg",
+                    text: "Strandhutje",
+                    value: "Beachhouse"
+                },
+            }
+        }
+    } // EINDE LAND 
 
     ]
 
