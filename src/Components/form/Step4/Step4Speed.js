@@ -26,7 +26,7 @@ class Step4Speed extends Component {
                     <div className="cardPosition">
                         <CardDeck className="cardDeck">
                             <Card onClick={() => {
-                                    this.handleClick("step5", "FAST");
+                                    this.handleClick("step5", "Actief");
                                 }}>
                                 <Card.Body>
                                     <img className="speedIcon" src={bunnyIcon} alt=""/>
@@ -36,7 +36,7 @@ class Step4Speed extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step5", "MODERATE");
+                                    this.handleClick("step5", "In balans");
                                 }}>
                                 <Card.Body>
                                     <img className="speedIcon" src={meditateIcon} alt=""/>
@@ -46,7 +46,7 @@ class Step4Speed extends Component {
                                 </Card.Footer>
                             </Card>
                             <Card onClick={() => {
-                                    this.handleClick("step5", "SLOW");
+                                    this.handleClick("step5", "Rustig aan");
                                 }}>
                                 <Card.Body>
                                     <img className="speedIcon" src={turtleIcon} alt=""/>
