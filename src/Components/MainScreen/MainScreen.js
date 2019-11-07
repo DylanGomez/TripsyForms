@@ -1544,7 +1544,7 @@ class MainScreen extends Component {
     } // EINDE LAND
     ,{
         zuidafrikareizen: {
-            countryName: "Jouw rondreis Zuid-Afrika",
+            countryName: "Jouw rondreis in Zuid-Afrika",
             backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(${BackgroundZuidafrika})`,
             backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
             step5: {
