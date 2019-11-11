@@ -28,12 +28,12 @@ $break-large: 1025px;
 .logo {
     float: left;
     margin: 0;
-    content: url(../../Icons/aanvraag.svg);
+    content: url(../../Icons/logo-aanvraagformulier.svg);
     color: white;
     width: 9,6vh;
     @media screen and (max-width: $break-small) {
         position: absolute;
-        height: 20px;
+        height: 32px;
     }
 }
 
@@ -64,11 +64,12 @@ $break-large: 1025px;
 
 .headerDiv {
     display: inline-block;
-    padding: 24px 32px;
+    padding: 18px 32px;
     width: 100vw;
     text-align: left;
+    min-height: 70px;
     @media screen and (max-width: $break-small) {
-        padding: 24px;
+        padding: 18px 24px;
     }
 }
 
@@ -242,7 +243,7 @@ $break-large: 1025px;
 }
 
 .helpword {
-    // margin-left: 6px;
+    margin-top: 5px;
     float: right;
     vertical-align: center;
     font-size: 16px;
@@ -250,9 +251,9 @@ $break-large: 1025px;
     font-weight: 600;
     // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     color: #404348;
-    @media screen and (max-width: $break-small) {
-        line-height: 20px;
-    }
+    /* @media screen and (max-width: $break-small) {
+        line-height: 24px;
+    }*/
 }
 
 .onsGarantiefonds {
