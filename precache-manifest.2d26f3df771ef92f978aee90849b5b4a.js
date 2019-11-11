@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd30938e02f8bbe7f59a5da2136c848c",
+    "revision": "1e3f44ac505b4e3ac6771076eb3b801d",
     "url": "/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.1130dcb5.chunk.css"
   },
   {
-    "revision": "8fb2d22df90ed9e257dc",
-    "url": "/static/css/main.df5d50a7.chunk.css"
+    "revision": "2906ef3d56aa18538180",
+    "url": "/static/css/main.ac57294e.chunk.css"
   },
   {
     "revision": "82a446cfe1ededa5a01b",
     "url": "/static/js/2.db85c261.chunk.js"
   },
   {
-    "revision": "8fb2d22df90ed9e257dc",
+    "revision": "2906ef3d56aa18538180",
     "url": "/static/js/main.0300cc78.chunk.js"
   },
   {
@@ -70,10 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1342f65e796184ece73c82c283762c3",
     "url": "/static/media/Tripsy_black.b1342f65.svg"
-  },
-  {
-    "revision": "762aca615b18f9a3ab6b3ef9f2089c89",
-    "url": "/static/media/aanvraag.762aca61.svg"
   },
   {
     "revision": "c9b975bad2a2c1d61e6715abea2c21e6",
@@ -302,6 +298,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f468d4789edd8e5efc6d2db3d11fc3e6",
     "url": "/static/media/koffieplantages.f468d478.svg"
+  },
+  {
+    "revision": "2275425d474ac5af99c6045ce1b818ec",
+    "url": "/static/media/logo-aanvraagformulier.2275425d.svg"
   },
   {
     "revision": "ff92994f3051d213c330a424cbf9fe30",
