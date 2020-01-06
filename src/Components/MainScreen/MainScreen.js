@@ -479,8 +479,8 @@ class MainScreen extends Component {
     {
         zuidafrika: {
             countryName: "Jouw rondreis Zuid-Afrika",
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(${BackgroundZuidafrika})`,
-            backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
+            // backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.3)),url(${BackgroundZuidafrika})`,
+            // backgroundImagePhone: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(${BackgroundZuidafrika})`,
             step5: {
                 one: {
                     icon: lionIcon,
@@ -1718,8 +1718,7 @@ class MainScreen extends Component {
                 </div>
                 <div style={this.detectMobile() ? this.backgroundStylePhone : this.backgroundStyleDesktop } className="topDiv">
                     <div className="textDiv">
-                        <span className="tripText">{this.state.currentCountry.countryName}</span>
-                        <br />
+                        <div className="tripText"><span>{this.state.currentCountry.countryName}</span></div>
                         <MediaQuery query='(min-device-width: 575px)'>
                             <span className="subTripText">Wij maken je reis - gratis en vrijblijvend - volledig op maat</span>
                         </MediaQuery>

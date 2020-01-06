@@ -28,7 +28,7 @@ $break-large: 1025px;
 .logo {
     float: left;
     margin: 0;
-    content: url(../../Icons/logo-aanvraagformulier.svg);
+    content: url(../../Icons/tripsy-aanvraagform.svg);
     color: white;
     width: 9,6vh;
     @media screen and (max-width: $break-small) {
@@ -37,10 +37,10 @@ $break-large: 1025px;
     }
 }
 
+
 .textDiv {
     padding-top: 11vh;
     text-align: center;
-
     @media screen and (max-width: $break-large) {
        padding-top: 11vh;
     }
@@ -52,8 +52,8 @@ $break-large: 1025px;
 
 .cardBox {
     position: relative;
-    padding-top: 3vh;
-    text-align: center;
+    // padding-top: 3vh;
+    text-align: left;
     @media screen and (max-width: $break-large) {
         padding-top: 3vh;
     }
@@ -88,7 +88,7 @@ $break-large: 1025px;
 
 .progress {
     position: relative;
-    top: 63px;
+    top: 43px;
     width: 950px;
     vertical-align: middle;
     margin: auto;
@@ -111,19 +111,19 @@ $break-large: 1025px;
 
 .tripText {
     font-family: 'Catamaran', sans-serif;
-    font-size: 56px;
-    line-height: 64px;
-    color: white;
+    font-size: 40px;
+    line-height: 48px;
+    color: #272727;
     font-weight: 800;
-    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    // text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
     /*@media screen and (max-width: $break-large) {
         display: block;
         font-size: 30px;
         padding: 0px 64px 0px 64px;
     }*/
     @media screen and (max-width: $break-small) {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 24px;
+        line-height: 32px;
     }
 }
 
@@ -131,10 +131,10 @@ $break-large: 1025px;
     font-family: lato;
     font-size: 16px;
     line-height: 0px;
-    color: white;
+    color: #272727;
     font-weight: 500;
-    text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
-    margin-top: -24px;
+    // text-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    padding-top: 24px !important;
     @media screen and (max-width: $break-large) {
         font-size: 15px;
         position: relative;
